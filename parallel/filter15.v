@@ -31,9 +31,6 @@
 // Multipliers           : 47
 
 
-
-`timescale 1 ns / 1 ns
-
 module filter15
                (
                 clk,
