@@ -34,20 +34,15 @@
 
 
 module filter1(
-                clk,
-                clk_enable,
-                reset,
-                filter_in,
-                delay_pipeline,
-                filter_out
+  input   clk,
+  input   clk_enable, 
+  input   reset,
+  input   signed [12:0] filter_in, //sfix13_En12
+  input   signed [12:0] delay_pipeline [0:118] , // sfix13_En12
+  output  signed [32:0] filter_out //sfix33_En28
                 );
 
-  input   clk; 
-  input   clk_enable; 
-  input   reset; 
-  input   signed [12:0] filter_in; //sfix13_En12
-  input   signed [12:0] delay_pipeline [0:118] ; // sfix13_En12
-  output  signed [32:0] filter_out; //sfix33_En28
+
 
 ////////////////////////////////////////////////////////////////
 //Module Architecture: filter1
