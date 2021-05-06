@@ -114,7 +114,7 @@ SYNFILES = total_filter.vg
 
 export CLOCK_NET_NAME = clock
 export RESET_NET_NAME = reset
-export HEADERS = params.svh 
+#export HEADERS = params.svh 
 export SOURCES = verilog/rob.sv 
 export DESIGN_NAME = rob
 
