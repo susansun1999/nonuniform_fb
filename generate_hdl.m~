@@ -34,8 +34,14 @@ for filt_idx = 1:num_filter
     %generatehdl(filter_obj,'InputDataType', T, 'Name', name,...
     %    "TargetLanguage", 'Verilog','GenerateHDLTestBench','on',...
     %    "ClockHighTime", 15);
-
-    serial = [60,58,58,58,59,59,59,58,58,58,59,57,60,60,58,49];
-    filter_obj.generatehdl('InputDataType', T, 'Name', name,'SerialPartition',serial(filt_idx),...
+    serial = 60;
+    if filt_idx ~= 1 && filt_idx ~=num_filter
+        serial = 58;
+    end
+    if filt_idx == 5
+        serial = 59;
+    end
+    serial = [60,58,58,58,59,
+    filter_obj.generatehdl('InputDataType', T, 'Name', name,'SerialPartition',serial,...
         "TargetLanguage", 'Verilog') 
 end
