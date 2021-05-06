@@ -30,22 +30,22 @@ module total_filter(
 
     reg     signed [12:0] delay_pipeline [0:118] ; // sfix13_En12
 
-    filter1 f1(.clk(clock), .clk_enable(clk_enable), .reset(reset), .filter_in(filter_in), .filter_out(filter_out[0]), .delay_pipeline(delay_pipeline));
-    filter2 f2(.clk(clock), .clk_enable(clk_enable), .reset(reset), .filter_in(filter_in), .filter_out(filter_out[1]), .delay_pipeline(delay_pipeline));
-    filter3 f3(.clk(clock), .clk_enable(clk_enable), .reset(reset), .filter_in(filter_in), .filter_out(filter_out[2]), .delay_pipeline(delay_pipeline));
-    filter4 f4(.clk(clock), .clk_enable(clk_enable), .reset(reset), .filter_in(filter_in), .filter_out(filter_out[3]), .delay_pipeline(delay_pipeline));
-    filter5 f5(.clk(clock), .clk_enable(clk_enable), .reset(reset), .filter_in(filter_in), .filter_out(filter_out[4]), .delay_pipeline(delay_pipeline));
-    filter6 f6(.clk(clock), .clk_enable(clk_enable), .reset(reset), .filter_in(filter_in), .filter_out(filter_out[5]), .delay_pipeline(delay_pipeline));
-    filter7 f7(.clk(clock), .clk_enable(clk_enable), .reset(reset), .filter_in(filter_in), .filter_out(filter_out[6]), .delay_pipeline(delay_pipeline));
-    filter8 f8(.clk(clock), .clk_enable(clk_enable), .reset(reset), .filter_in(filter_in), .filter_out(filter_out[7]), .delay_pipeline(delay_pipeline));
-    filter9 f9(.clk(clock), .clk_enable(clk_enable), .reset(reset), .filter_in(filter_in), .filter_out(filter_out[8]), .delay_pipeline(delay_pipeline));
-    filter10 f10(.clk(clock), .clk_enable(clk_enable), .reset(reset), .filter_in(filter_in), .filter_out(filter_out[9]), .delay_pipeline(delay_pipeline));
-    filter11 f11(.clk(clock), .clk_enable(clk_enable), .reset(reset), .filter_in(filter_in), .filter_out(filter_out[10]), .delay_pipeline(delay_pipeline));
-    filter12 f12(.clk(clock), .clk_enable(clk_enable), .reset(reset), .filter_in(filter_in), .filter_out(filter_out[11]), .delay_pipeline(delay_pipeline));
-    filter13 f13(.clk(clock), .clk_enable(clk_enable), .reset(reset), .filter_in(filter_in), .filter_out(filter_out[12]), .delay_pipeline(delay_pipeline));
-    filter14 f14(.clk(clock), .clk_enable(clk_enable), .reset(reset), .filter_in(filter_in), .filter_out(filter_out[13]), .delay_pipeline(delay_pipeline));
-    filter15 f15(.clk(clock), .clk_enable(clk_enable), .reset(reset), .filter_in(filter_in), .filter_out(filter_out[14]), .delay_pipeline(delay_pipeline));
-    filter16 f16(.clk(clock), .clk_enable(clk_enable), .reset(reset), .filter_in(filter_in), .filter_out(filter_out[15]), .delay_pipeline(delay_pipeline));
+    filter1 f1(.clk(clock), .clk_enable(clk_enable), .reset(reset), .filter_in(filter_in),.delay_pipeline(delay_pipeline),  .filter_out(filter_out[0]));
+    filter2 f2(.clk(clock), .clk_enable(clk_enable), .reset(reset), .filter_in(filter_in),.delay_pipeline(delay_pipeline),  .filter_out(filter_out[1]));
+    filter3 f3(.clk(clock), .clk_enable(clk_enable), .reset(reset), .filter_in(filter_in),.delay_pipeline(delay_pipeline),  .filter_out(filter_out[2]));
+    filter4 f4(.clk(clock), .clk_enable(clk_enable), .reset(reset), .filter_in(filter_in),.delay_pipeline(delay_pipeline),  .filter_out(filter_out[3]));
+    filter5 f5(.clk(clock), .clk_enable(clk_enable), .reset(reset), .filter_in(filter_in),.delay_pipeline(delay_pipeline),  .filter_out(filter_out[4]));
+    filter6 f6(.clk(clock), .clk_enable(clk_enable), .reset(reset), .filter_in(filter_in),.delay_pipeline(delay_pipeline),  .filter_out(filter_out[5]));
+    filter7 f7(.clk(clock), .clk_enable(clk_enable), .reset(reset), .filter_in(filter_in),.delay_pipeline(delay_pipeline),  .filter_out(filter_out[6]));
+    filter8 f8(.clk(clock), .clk_enable(clk_enable), .reset(reset), .filter_in(filter_in),.delay_pipeline(delay_pipeline),  .filter_out(filter_out[7]));
+    filter9 f9(.clk(clock), .clk_enable(clk_enable), .reset(reset), .filter_in(filter_in),.delay_pipeline(delay_pipeline),  .filter_out(filter_out[8]));
+    filter10 f10(.clk(clock), .clk_enable(clk_enable), .reset(reset), .filter_in(filter_in),.delay_pipeline(delay_pipeline),  .filter_out(filter_out[9]));
+    filter11 f11(.clk(clock), .clk_enable(clk_enable), .reset(reset), .filter_in(filter_in), .delay_pipeline(delay_pipeline), .filter_out(filter_out[10]));
+    filter12 f12(.clk(clock), .clk_enable(clk_enable), .reset(reset), .filter_in(filter_in), .delay_pipeline(delay_pipeline), .filter_out(filter_out[11]));
+    filter13 f13(.clk(clock), .clk_enable(clk_enable), .reset(reset), .filter_in(filter_in), .delay_pipeline(delay_pipeline), .filter_out(filter_out[12]));
+    filter14 f14(.clk(clock), .clk_enable(clk_enable), .reset(reset), .filter_in(filter_in), .delay_pipeline(delay_pipeline), .filter_out(filter_out[13]));
+    filter15 f15(.clk(clock), .clk_enable(clk_enable), .reset(reset), .filter_in(filter_in), .delay_pipeline(delay_pipeline), .filter_out(filter_out[14]));
+    filter16 f16(.clk(clock), .clk_enable(clk_enable), .reset(reset), .filter_in(filter_in), .delay_pipeline(delay_pipeline), .filter_out(filter_out[15]));
 
   // Block Statements
   always @( posedge clock or posedge reset)
