@@ -33,7 +33,8 @@
 
 
 
-module filter1( input   clk,
+module filter1( 
+  input   clk,
   input   clk_enable, 
   input   reset,
   input   signed [12:0] filter_in, //sfix13_En12
