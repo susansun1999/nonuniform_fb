@@ -33,8 +33,7 @@
 
 
 
-module filter1
-               (
+module filter1(
                 clk,
                 clk_enable,
                 reset,
