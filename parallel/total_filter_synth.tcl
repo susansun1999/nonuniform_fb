@@ -18,7 +18,7 @@ suppress_message {"VER-130"}
 #/* The following five lines must be updated for every      */
 #/* new design                                              */
 #/***********************************************************/
-analyze -f sverilog [list "filter1.v"  "filter2.v" "filter3.v" "filter4.v" "filter5.v" "filter6.v" "filter7.v" "filter8.v" "filter9.v" "filter10.v" "filter11.v" "filter12.v" "filter13.v" "filter14.v" "filter15.v" "filter16.v" "total_filter.v"]
+analyze -f sverilog [list "total_filter.v"]
 elaborate total_filter
 set design_name total_filter
 set clock_name clock

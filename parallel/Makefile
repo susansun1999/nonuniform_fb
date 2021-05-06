@@ -102,7 +102,7 @@ HEADERS =
 #SIMFILES = matlab_bc/total.v matlab_bc/input_ctrl.v matlab_bc/bc_1.v matlab_bc/bc_2.v matlab_bc/bc_3.v matlab_bc/bc_4.v matlab_bc/bc_5.v matlab_bc/bc_6.v matlab_bc/bc_7.v matlab_bc/bc_8.v
 #SIMFILES = matlab_bc/total_cas.v matlab_bc/input_ctrl_cas.v matlab_bc/fir1.v matlab_bc/fir2/fir2.v matlab_bc/fir3/fir3.v matlab_bc/fir4/fir4.v
 #SIMFILES = matlab_bc/fir3/total_scale.v matlab_bc/fir3/input_ctrl_2.v matlab_bc/fir3/input_ctrl.v matlab_bc/fir4/input_ctrl_4.v matlab_bc/fir3/mult_out.v matlab_bc/total_cas.v matlab_bc/fir1.v matlab_bc/fir2/fir2.v matlab_bc/fir3/fir3.v matlab_bc/fir4/fir4.v matlab_bc/input_ctrl_cas.v
-SIMFILES = total_filter.v #filter1.v filter2.v filter3.v filter4.v filter5.v filter6.v filter7.v filter8.v filter9.v filter10.v filter11.v filter12.v filter13.v filter14.v filter15.v filter16.v 
+SIMFILES = total_filter.v
 
 #SYNFILES = synth/HWA_total.vg
 #SYNFILES = synth/BC_total.vg
