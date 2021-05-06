@@ -14,7 +14,7 @@
 `include "filter14.v"
 `include "filter15.v"
 `include "filter16.v"
-
+`timescale 1 ns / 1 ns
 module total_filter(
                 clock,
                 clk_enable,
