@@ -49,6 +49,7 @@ module filter10
   input   clk_enable; 
   input   reset; 
   input   signed [13:0] filter_in; //sfix14_En13
+  reg  signed [13:0] delay_pipeline [0:118] ; // sfix14_En13
   output  signed [34:0] filter_out; //sfix35_En29
 
 ////////////////////////////////////////////////////////////////
@@ -123,7 +124,6 @@ module filter10
   reg  [5:0] cur_count; // ufix6
   wire phase_57; // boolean
   wire phase_0; // boolean
-  reg  signed [13:0] delay_pipeline [0:118] ; // sfix14_En13
   wire signed [13:0] preaddmux_a1; // sfix14_En13
   wire signed [13:0] preaddmux_b1; // sfix14_En13
   wire signed [14:0] tapsum_1; // sfix15_En13
