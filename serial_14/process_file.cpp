@@ -36,7 +36,7 @@ int main (int argc, char *argv[]) {
         }
         */
         if(line == "  input   signed [13:0] filter_in; //sfix14_En13"){
-            new_file<<"  reg  signed [13:0] delay_pipeline [0:118] ; // sfix14_En13"<<endl;
+            new_file<<"  input  signed [13:0] delay_pipeline [0:118] ; // sfix14_En13"<<endl;
         }
     }
     new_file.close();

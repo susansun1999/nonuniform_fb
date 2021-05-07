@@ -49,7 +49,7 @@ module filter13
   input   clk_enable; 
   input   reset; 
   input   signed [13:0] filter_in; //sfix14_En13
-  reg  signed [13:0] delay_pipeline [0:118] ; // sfix14_En13
+  input  signed [13:0] delay_pipeline [0:118] ; // sfix14_En13
   output  signed [34:0] filter_out; //sfix35_En29
 
 ////////////////////////////////////////////////////////////////
