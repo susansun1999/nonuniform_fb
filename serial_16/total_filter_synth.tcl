@@ -22,7 +22,7 @@ analyze -f sverilog [list "total_filter.v"]
 elaborate total_filter
 set design_name total_filter
 set clock_name clock
-set CLK_PERIOD 3
+set CLK_PERIOD 62500
 
 
 #/***********************************************************/
