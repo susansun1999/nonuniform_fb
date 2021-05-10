@@ -199,4 +199,4 @@ clean:
 
 nuke:	clean
 	rm -rf *.vg *.ddc *.chk command.log *.syn
-	rm -rf *.out command.log *.db *.svf *.mr *.pvl
+	rm -rf command.log *.db *.svf *.mr *.pvl

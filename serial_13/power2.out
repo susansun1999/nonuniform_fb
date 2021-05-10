@@ -1,0 +1,133 @@
+ 
+****************************************
+Report : power
+        -hier
+        -analysis_effort low
+        -verbose
+Design : total_filter
+Version: O-2018.06
+Date   : Mon May 10 19:40:46 2021
+****************************************
+
+
+Library(s) Used:
+
+    NangateOpenCellLibrary (File: /afs/umich.edu/user/s/u/sunsusan/Desktop/SC_FIR_hardware_syn/Nangate/NangateOpenCellLibrary.db)
+
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+Design        Wire Load Model            Library
+------------------------------------------------
+total_filter           5K_hvratio_1_1    NangateOpenCellLibrary
+
+
+Global Operating Voltage = 1.1  
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000ff
+    Time Units = 1ns
+    Dynamic Power Units = 1uW    (derived from V,C,T units)
+    Leakage Power Units = 1nW
+
+
+--------------------------------------------------------------------------------
+                                       Switch   Int      Leak     Total
+Hierarchy                              Power    Power    Power    Power    %
+--------------------------------------------------------------------------------
+total_filter                              5.232   24.803 1.54e+06 1.57e+03 100.0
+  f16/mult_324 (total_filter_DW02_mult_12)
+                                          0.194    0.139 1.50e+04   15.301   1.0
+  f16/add_269 (total_filter_DW01_add_41)
+                                       1.51e-03 1.83e-03  699.408    0.703   0.0
+  f15/mult_351 (total_filter_DW02_mult_8)
+                                          0.164    0.127 1.50e+04   15.267   1.0
+  f15/add_287 (total_filter_DW01_add_33)
+                                       1.51e-03 1.83e-03  683.032    0.686   0.0
+  f14/mult_357 (total_filter_DW02_mult_1)
+                                          0.172    0.130 1.51e+04   15.426   1.0
+  f14/add_291 (total_filter_DW01_add_19)
+                                       1.50e-03 1.82e-03  723.416    0.727   0.0
+  f13/mult_357 (total_filter_DW02_mult_6)
+                                          0.162    0.122 1.53e+04   15.540   1.0
+  f13/add_291 (total_filter_DW01_add_29)
+                                       1.50e-03 1.82e-03  723.416    0.727   0.0
+  f12/mult_348 (total_filter_DW02_mult_2)
+                                       8.61e-02 6.39e-02 1.48e+04   14.997   1.0
+  f12/add_285 (total_filter_DW01_add_21)
+                                       4.23e-05 6.20e-05  675.161    0.675   0.0
+  f11/mult_354 (total_filter_DW02_mult_3)
+                                          0.170    0.129 1.58e+04   16.057   1.0
+  f11/add_289 (total_filter_DW01_add_23)
+                                       1.51e-03 1.82e-03  723.054    0.726   0.0
+  f10/mult_351 (total_filter_DW02_mult_9)
+                                       7.77e-02 5.24e-02 1.53e+04   15.469   1.0
+  f10/add_287 (total_filter_DW01_add_35)
+                                       3.46e-05 4.87e-05  675.365    0.675   0.0
+  f9/mult_351 (total_filter_DW02_mult_13)
+                                          0.130 9.56e-02 1.56e+04   15.873   1.0
+  f9/add_287 (total_filter_DW01_add_43)
+                                       1.51e-03 1.82e-03  713.156    0.716   0.0
+  f8/mult_351 (total_filter_DW02_mult_10)
+                                          0.110 7.60e-02 1.54e+04   15.615   1.0
+  f8/add_287 (total_filter_DW01_add_37)
+                                       1.53e-03 1.85e-03  682.689    0.686   0.0
+  f7/mult_354 (total_filter_DW02_mult_4)
+                                          0.139    0.105 1.57e+04   15.969   1.0
+  f7/add_289 (total_filter_DW01_add_25)
+                                       1.52e-03 1.85e-03  722.704    0.726   0.0
+  f6/mult_354 (total_filter_DW02_mult_14)
+                                          0.130 9.69e-02 1.58e+04   16.033   1.0
+  f6/add_289 (total_filter_DW01_add_45)
+                                       1.51e-03 1.82e-03  723.054    0.726   0.0
+  f5/mult_354 (total_filter_DW02_mult_0)
+                                          0.126 9.33e-02 1.58e+04   15.996   1.0
+  f5/add_289 (total_filter_DW01_add_17)
+                                       1.52e-03 1.85e-03  722.704    0.726   0.0
+  f4/mult_351 (total_filter_DW02_mult_5)
+                                       9.40e-02 6.20e-02 1.55e+04   15.664   1.0
+  f4/add_287 (total_filter_DW01_add_27)
+                                       1.51e-03 1.83e-03  689.416    0.693   0.0
+  f3/mult_351 (total_filter_DW02_mult_7)
+                                          0.106 7.81e-02 1.58e+04   15.991   1.0
+  f3/add_287 (total_filter_DW01_add_31)
+                                       1.51e-03 1.82e-03  721.922    0.725   0.0
+  f2/mult_351 (total_filter_DW02_mult_15)
+                                       5.86e-02 3.17e-02 1.54e+04   15.481   1.0
+  f2/add_287 (total_filter_DW01_add_47)
+                                       1.51e-03 1.83e-03  689.416    0.693   0.0
+  f1/mult_357 (total_filter_DW02_mult_11)
+                                       7.77e-02 5.14e-02 1.52e+04   15.318   1.0
+  f1/add_291 (total_filter_DW01_add_39)
+                                       1.50e-03 1.82e-03  723.416    0.727   0.0
+  f1/add_363 (total_filter_DW01_add_15)
+                                       9.85e-03 1.99e-02 1.85e+03    1.884   0.1
+  f2/add_357 (total_filter_DW01_add_14)
+                                       3.98e-03 8.26e-03 1.74e+03    1.753   0.1
+  f3/add_357 (total_filter_DW01_add_13)
+                                       1.01e-02 2.03e-02 1.86e+03    1.887   0.1
+  f4/add_357 (total_filter_DW01_add_12)
+                                       3.89e-03 8.09e-03 1.73e+03    1.744   0.1
+  f5/add_360 (total_filter_DW01_add_11)
+                                       1.12e-02 2.24e-02 1.85e+03    1.889   0.1
+  f6/add_360 (total_filter_DW01_add_10)
+                                       1.15e-02 2.31e-02 1.85e+03    1.885   0.1
+  f7/add_360 (total_filter_DW01_add_9) 1.39e-02 2.75e-02 1.86e+03    1.896   0.1
+  f8/add_357 (total_filter_DW01_add_8) 1.74e-03 4.18e-03 1.71e+03    1.719   0.1
+  f9/add_357 (total_filter_DW01_add_7) 1.22e-02 2.41e-02 1.82e+03    1.854   0.1
+  f10/add_357 (total_filter_DW01_add_6)
+                                       2.14e-04 4.10e-04 1.59e+03    1.590   0.1
+  f11/add_360 (total_filter_DW01_add_5)
+                                       1.64e-02 3.28e-02 1.86e+03    1.908   0.1
+  f12/add_354 (total_filter_DW01_add_4)
+                                       1.53e-04 2.96e-04 1.59e+03    1.592   0.1
+  f13/add_363 (total_filter_DW01_add_3)
+                                       1.37e-02 2.80e-02 1.86e+03    1.900   0.1
+  f14/add_363 (total_filter_DW01_add_2)
+                                       1.37e-02 2.82e-02 1.85e+03    1.892   0.1
+  f15/add_357 (total_filter_DW01_add_1)
+                                       1.84e-03 4.44e-03 1.71e+03    1.719   0.1
+  f16/add_330 (total_filter_DW01_add_0)
+                                       8.86e-03 1.83e-02 1.72e+03    1.744   0.1
+1
