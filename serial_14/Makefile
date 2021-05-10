@@ -123,6 +123,9 @@ export CLOCK_PERIOD = 5	# TODO: You will want to make this more aggresive
 total_filter.vg:		$(HEADERS) $(SIMFILES) total_filter_synth.tcl
 	dc_shell-t -f ./total_filter_synth.tcl | tee synth.out 
 
+power: $(HEADERS) $(SIMFILES) power.tcl
+	dc_shell -f power.tcl | tee synth.out
+
 synth/HWA_total.vg:      $(HEADERS) $(SIMFILES) synth/HWA_total_synth.tcl
 	cd synth && dc_shell-t -f ./HWA_total_synth.tcl | tee synth.out 
 
@@ -196,4 +199,4 @@ clean:
 
 nuke:	clean
 	rm -rf *.vg *.ddc *.chk command.log *.syn
-	rm -rf *.out command.log *.db *.svf *.mr *.pvl
+	rm -rf command.log *.db *.svf *.mr *.pvl
