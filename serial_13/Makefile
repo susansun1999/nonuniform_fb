@@ -123,7 +123,7 @@ export CLOCK_PERIOD = 5	# TODO: You will want to make this more aggresive
 total_filter.vg:		$(HEADERS) $(SIMFILES) total_filter_synth.tcl
 	dc_shell-t -f ./total_filter_synth.tcl | tee synth.out 
 
-power:					$(SIMFILES) power.tcl
+power: $(HEADERS) $(SIMFILES) power.tcl
  	dc_shell-t -f ./power.tcl | tee synth.out
 
 synth/HWA_total.vg:      $(HEADERS) $(SIMFILES) synth/HWA_total_synth.tcl
