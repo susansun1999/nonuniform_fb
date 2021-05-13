@@ -39,7 +39,7 @@ module testbench;
    endfunction // function abs
 
   task filter_in_data_log_task; 
-    input          clk;
+    input          clock;
     input          reset;
     input          rdenb;
     inout  [10:0]  addr;
@@ -70,7 +70,7 @@ module testbench;
   endtask // filter_in_data_log_task
 
   task filter_out_task; 
-    input          clk;
+    input          clock;
     input          reset;
     input          rdenb;
     inout  [10:0]  addr;
@@ -2929,7 +2929,7 @@ module testbench;
  // Module Instances
   total_filter u_total_filter
     (
-    .clock(clk),
+    .clock(clock),
     .clk_enable(clk_enable),
     .reset(reset),
     .filter_in(filter_in),
@@ -2954,7 +2954,7 @@ module testbench;
     end
   end
 
-  always @(posedge clk or posedge reset) // completed_msg
+  always @(posedge clock or posedge reset) // completed_msg
   begin
     if (reset) begin 
        // Nothing to reset.
@@ -2975,14 +2975,14 @@ module testbench;
 
   always  // clock generation
   begin // clk_gen
-    clk <= 1'b1;
+    clock <= 1'b1;
     # clk_high;
-    clk <= 1'b0;
+    clock <= 1'b0;
     # clk_low;
     if (snkDone == 1) begin
-      clk <= 1'b1;
+      clock <= 1'b1;
       # clk_high;
-      clk <= 1'b0;
+      clock <= 1'b0;
       # clk_low;
       $stop;
     end
@@ -2992,7 +2992,7 @@ module testbench;
   begin // reset_gen
     reset <= 1'b1;
     # (clk_period * 2);
-    @ (posedge clk);
+    @ (posedge clock);
     # (clk_hold);
     reset <= 1'b0;
   end  // reset_gen
@@ -3001,7 +3001,7 @@ module testbench;
   // Testbench clock enable
   // -------------------------------------------------------------
 
-  always @ (posedge clk or posedge reset)
+  always @ (posedge clock or posedge reset)
     begin: tb_enb_delay
       if (reset == 1'b1) begin
         tbenb_dly <= 1'b0;
@@ -3017,7 +3017,7 @@ module testbench;
   // Slow Clock (clkenb)
   // -------------------------------------------------------------
 
-  always @ (posedge clk or posedge reset)
+  always @ (posedge clock or posedge reset)
     begin: slow_clock_enable
       if (reset == 1'b1) begin
         counter <= 6'b000001;
@@ -3042,16 +3042,16 @@ module testbench;
   // Read the data and transmit it to the DUT
   // -------------------------------------------------------------
 
-  always @(posedge clk or posedge reset)
+  always @(posedge clock or posedge reset)
   begin
-    filter_in_data_log_task(clk,reset,
+    filter_in_data_log_task(clock,reset,
                             filter_in_data_log_rdenb,filter_in_data_log_addr,
                             filter_in_data_log_done);
   end
 
   assign filter_in_data_log_rdenb = rdEnb_phase_1;
 
-  always @ (posedge clk or posedge reset)
+  always @ (posedge clock or posedge reset)
   begin // stimuli_filter_in_data_log_filter_in_reg
     if (reset) begin 
       holdData_filter_in <=  13'bx;
@@ -3078,7 +3078,7 @@ module testbench;
   assign srcDone = filter_in_data_log_done;
 
 
-  always @( posedge clk or posedge reset)
+  always @( posedge clock or posedge reset)
     begin: ceout_delayLine
       if (reset == 1'b1) begin
         int_delay_pipe[0] <= 1'b0;
@@ -3338,9 +3338,9 @@ module testbench;
   //  Checker: Checking the data received from the DUT.
   // -------------------------------------------------------------
 
-  always @(posedge clk or posedge reset)
+  always @(posedge clock or posedge reset)
   begin
-    filter_out_task(clk,reset,
+    filter_out_task(clock,reset,
                     filter_out_rdenb,filter_out_addr,
                     filter_out_done);
   end
@@ -3350,7 +3350,7 @@ module testbench;
   assign # clk_hold filter_out_dataTable = filter_out_expected[filter_out_addr];
 
 // ---- Bypass Register ----
-  always @ (posedge clk or posedge reset)
+  always @ (posedge clock or posedge reset)
     begin: DataHoldRegister_temp_process2
       if (reset == 1'b1) begin
         regout <= 0;
@@ -3370,7 +3370,7 @@ module testbench;
 
 
 
-  always @ (posedge clk or posedge reset) // checker_filter_out
+  always @ (posedge clock or posedge reset) // checker_filter_out
   begin
     if (reset == 1) begin
       filter_out_testFailure <= 0;
@@ -3391,7 +3391,7 @@ module testbench;
     end
   end // checker_filter_out
 
-  always @ (posedge clk or posedge reset) // checkDone_1
+  always @ (posedge clock or posedge reset) // checkDone_1
   begin
     if (reset == 1)
       check1_Done <= 0;
