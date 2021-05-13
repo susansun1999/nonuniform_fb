@@ -165,7 +165,6 @@ module filter1
   assign  phase_0 = (cur_count == 6'b000000 && clk_enable == 1'b1) ? 1'b1 : 1'b0;
 
 
-
   assign preaddmux_a1 = (cur_count == 6'b000000) ? delay_pipeline[0] :
                        (cur_count == 6'b000001) ? delay_pipeline[1] :
                        (cur_count == 6'b000010) ? delay_pipeline[2] :
