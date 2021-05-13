@@ -4768,7 +4768,7 @@ module testbench;
            if (filter_out_errCnt >= MAX_ERROR_COUNT) 
              $display("Warning: Number of errors for filter_out have exceeded the maximum error limit");
         end
-        if ((((filter_out[0] - filter_out_expected_1[filter_out_addr]) !== 0))) begin
+        if (filter_out[0] != filter_out_expected_1[filter_out_addr]) begin
            filter_out_testFailure <= 1;
                    $display("ERROR  in filter_out1 at time %t : Expected '%h' Actual '%h'", 
                         $time, filter_out_expected[filter_out_addr], filter_out[12]);
