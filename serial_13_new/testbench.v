@@ -101,9 +101,9 @@ module testbench;
   endtask // filter_out_task
 
  // Constants
- parameter clk_high                         = 500;
- parameter clk_low                          = 541;
- parameter clk_period                       = 1041;
+ parameter clk_high                         = 5;
+ parameter clk_low                          = 5;
+ parameter clk_period                       = 10;
  parameter clk_hold                         = 2;
 // -------------------------------------------------------------
 //
