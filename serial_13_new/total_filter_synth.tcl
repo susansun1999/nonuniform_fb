@@ -1,4 +1,4 @@
-#/***********************************************************/
+#***********************************************************/
 #/*   FILE        : defaults.tcl                            */
 #/*   Description : Default Synopsys Design Compiler Script */
 #/*   Usage       : dc_shell -tcl_mode -f default.tcl       */
