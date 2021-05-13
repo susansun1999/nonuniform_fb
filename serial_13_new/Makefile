@@ -87,7 +87,7 @@ VISFLAGS = -lncurses
 #TESTBENCH = SC_fb/HWA_total_test.v
 #TESTBENCH = BC_fb/BC_total_test.v
 #TESTBENCH = matlab_bc/bc_1_test.v
-TESTBENCH = tb.v
+TESTBENCH = testbench.v
 
 HEADERS = 
 
