@@ -39,8 +39,9 @@ for filt_idx = 1:num_filter
 %               60,58,59,58,59,59,59,58,58,58,59,59,60,60,59,49;...
 %               padding;
 %               60,59,59,59,59,59,59,59,58,59,59,60,60,60,59,49];
-    serial = [59,55,56,56,58,58,57,57,57,58,57,56,60,56,56,47;...
-              60,56,59,58,59,59,59,58,58,58,57,56,60,59,56,48];
-      filter_obj.generatehdl('InputDataType', T, 'Name', name,'SerialPartition',serial(wordlength-12,filt_idx),...
-        "TargetLanguage", 'Verilog','GenerateHDLTestbench','on','TestBenchName',tb_name,'TestBenchStimulus',{'ramp','impulse'}) 
+    serial = zeros(4,16);
+    serial = [59
+    
+    filter_obj.generatehdl('InputDataType', T, 'Name', name,'SerialPartition',serial(wordlength-12,filt_idx),...
+        "TargetLanguage", 'Verilog','GenerateHDLTestbench','on','TestBenchName',tb_name) 
 end
