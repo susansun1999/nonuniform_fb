@@ -42,7 +42,8 @@ module filter13
                 reset,
                 filter_in,
                 delay_pipeline,
-                filter_out
+                filter_out,
+                phase_59
                 );
 
   input   clk; 
@@ -51,6 +52,7 @@ module filter13
   input   signed [12:0] filter_in; //sfix13_En12
   input   signed [12:0] delay_pipeline [0:118] ; // sfix13_En12
   output  signed [32:0] filter_out; //sfix33_En27
+  output wire phase_59; // boolean
 
 ////////////////////////////////////////////////////////////////
 //Module Architecture: filter13
@@ -122,7 +124,6 @@ module filter13
   parameter signed [12:0] const_zero = 13'b0000000000000; //sfix13_En12
   // Signals
   reg  [5:0] cur_count; // ufix6
-  wire phase_59; // boolean
   wire phase_0; // boolean
   wire signed [12:0] preaddmux_a1; // sfix13_En12
   wire signed [12:0] preaddmux_b1; // sfix13_En12

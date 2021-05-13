@@ -29,6 +29,7 @@ module total_filter(
     output  signed [32:0] filter_out [15:0]; //sfix37_En32
 
     reg     signed [12:0] delay_pipeline [0:118] ; // sfix13_En12
+    wire    phase_59; // boolean
 
     filter1 f1(.clk(clock), .clk_enable(clk_enable), .reset(reset), .filter_in(filter_in), .filter_out(filter_out[0]), .delay_pipeline(delay_pipeline));
     filter2 f2(.clk(clock), .clk_enable(clk_enable), .reset(reset), .filter_in(filter_in), .filter_out(filter_out[1]), .delay_pipeline(delay_pipeline));
@@ -42,7 +43,7 @@ module total_filter(
     filter10 f10(.clk(clock), .clk_enable(clk_enable), .reset(reset), .filter_in(filter_in), .filter_out(filter_out[9]), .delay_pipeline(delay_pipeline));
     filter11 f11(.clk(clock), .clk_enable(clk_enable), .reset(reset), .filter_in(filter_in), .filter_out(filter_out[10]), .delay_pipeline(delay_pipeline));
     filter12 f12(.clk(clock), .clk_enable(clk_enable), .reset(reset), .filter_in(filter_in), .filter_out(filter_out[11]), .delay_pipeline(delay_pipeline));
-    filter13 f13(.clk(clock), .clk_enable(clk_enable), .reset(reset), .filter_in(filter_in), .filter_out(filter_out[12]), .delay_pipeline(delay_pipeline));
+    filter13 f13(.clk(clock), .clk_enable(clk_enable), .reset(reset), .filter_in(filter_in), .filter_out(filter_out[12]), .delay_pipeline(delay_pipeline),.phase_59(phase_59));
     filter14 f14(.clk(clock), .clk_enable(clk_enable), .reset(reset), .filter_in(filter_in), .filter_out(filter_out[13]), .delay_pipeline(delay_pipeline));
     filter15 f15(.clk(clock), .clk_enable(clk_enable), .reset(reset), .filter_in(filter_in), .filter_out(filter_out[14]), .delay_pipeline(delay_pipeline));
     filter16 f16(.clk(clock), .clk_enable(clk_enable), .reset(reset), .filter_in(filter_in), .filter_out(filter_out[15]), .delay_pipeline(delay_pipeline));
@@ -172,7 +173,7 @@ module total_filter(
         delay_pipeline[118] <= 0;
       end
       else begin
-        if (clk_enable == 1'b1) begin
+        if (phase_59 == 1'b1) begin
           delay_pipeline[0] <= filter_in;
           delay_pipeline[1] <= delay_pipeline[0];
           delay_pipeline[2] <= delay_pipeline[1];
