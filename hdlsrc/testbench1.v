@@ -3024,7 +3024,7 @@ module testbench1;
       end
       else begin
         if (tbenb_dly == 1'b1) begin
-          if (counter >= 6'b111010) begin
+          if (counter >= 6'b111011) begin
             counter <= 6'b000000;
           end
           else begin
@@ -3200,6 +3200,8 @@ module testbench1;
         int_delay_pipe[116] <= 1'b0;
         int_delay_pipe[117] <= 1'b0;
         int_delay_pipe[118] <= 1'b0;
+        int_delay_pipe[119] <= 1'b0;
+        int_delay_pipe[120] <= 1'b0;
       end
       else begin
         if (clk_enable == 1'b1) begin
@@ -3322,11 +3324,13 @@ module testbench1;
         int_delay_pipe[116] <= int_delay_pipe[115];
         int_delay_pipe[117] <= int_delay_pipe[116];
         int_delay_pipe[118] <= int_delay_pipe[117];
+        int_delay_pipe[119] <= int_delay_pipe[118];
+        int_delay_pipe[120] <= int_delay_pipe[119];
         end
       end
     end // ceout_delayLine
 
-  assign delayLine_out = int_delay_pipe[118];
+  assign delayLine_out = int_delay_pipe[120];
 
   assign expected_ce_out =  delayLine_out & clk_enable;
 

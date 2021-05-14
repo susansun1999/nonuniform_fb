@@ -122,6 +122,8 @@ module filter1
   // Signals
   reg  [5:0] cur_count; // ufix6
   wire phase_58; // boolean
+  wire phase_59; // boolean
+
   wire phase_0; // boolean
   reg  signed [12:0] delay_pipeline [0:118] ; // sfix13_En12
   wire signed [12:0] preaddmux_a1; // sfix13_En12
@@ -146,11 +148,11 @@ module filter1
   always @ (posedge clk or posedge reset)
     begin: Counter_process
       if (reset == 1'b1) begin
-        cur_count <= 6'b111010;
+        cur_count <= 6'b111011;
       end
       else begin
         if (clk_enable == 1'b1) begin
-          if (cur_count >= 6'b111010) begin
+          if (cur_count >= 6'b111011) begin
             cur_count <= 6'b000000;
           end
           else begin
@@ -159,6 +161,7 @@ module filter1
         end
       end
     end // Counter_process
+  assign  phase_59 = (cur_count == 6'b111011 && clk_enable == 1'b1) ? 1'b1 : 1'b0;
 
   assign  phase_58 = (cur_count == 6'b111010 && clk_enable == 1'b1) ? 1'b1 : 1'b0;
 
@@ -288,7 +291,7 @@ module filter1
         delay_pipeline[118] <= 0;
       end
       else begin
-        if (phase_58 == 1'b1) begin
+        if (phase_59 == 1'b1) begin
           delay_pipeline[0] <= filter_in;
           delay_pipeline[1] <= delay_pipeline[0];
           delay_pipeline[2] <= delay_pipeline[1];
