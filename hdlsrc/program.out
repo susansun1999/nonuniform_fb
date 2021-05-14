@@ -1,11 +1,11 @@
 Chronologic VCS simulator copyright 1991-2017
 Contains Synopsys proprietary information.
-Compiler version N-2017.12-SP2-1_Full64; Runtime version N-2017.12-SP2-1_Full64;  May 13 14:46 2021
+Compiler version N-2017.12-SP2-1_Full64; Runtime version N-2017.12-SP2-1_Full64;  May 14 14:29 2021
 VCD+ Writer N-2017.12-SP2-1_Full64 Copyright (c) 1991-2017 by Synopsys Inc.
 **************TEST COMPLETED (PASSED)**************
 $stop at time 829270 Scope: testbench13 File: testbench13.v Line: 2987
-ucli% git pu[K[K[K[K[Kq
+ucli% q
            V C S   S i m u l a t i o n   R e p o r t 
 Time: 829270 ns
-CPU Time:      0.850 seconds;       Data structure size:   0.3Mb
-Thu May 13 14:50:06 2021
+CPU Time:      0.790 seconds;       Data structure size:   0.3Mb
+Fri May 14 14:34:43 2021

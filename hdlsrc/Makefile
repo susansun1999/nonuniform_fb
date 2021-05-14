@@ -87,7 +87,7 @@ VISFLAGS = -lncurses
 #TESTBENCH = SC_fb/HWA_total_test.v
 #TESTBENCH = BC_fb/BC_total_test.v
 #TESTBENCH = matlab_bc/bc_1_test.v
-TESTBENCH = testbench13.v
+TESTBENCH = testbench1.v
 
 HEADERS = 
 
@@ -102,7 +102,7 @@ HEADERS =
 #SIMFILES = matlab_bc/total.v matlab_bc/input_ctrl.v matlab_bc/bc_1.v matlab_bc/bc_2.v matlab_bc/bc_3.v matlab_bc/bc_4.v matlab_bc/bc_5.v matlab_bc/bc_6.v matlab_bc/bc_7.v matlab_bc/bc_8.v
 #SIMFILES = matlab_bc/total_cas.v matlab_bc/input_ctrl_cas.v matlab_bc/fir1.v matlab_bc/fir2/fir2.v matlab_bc/fir3/fir3.v matlab_bc/fir4/fir4.v
 #SIMFILES = matlab_bc/fir3/total_scale.v matlab_bc/fir3/input_ctrl_2.v matlab_bc/fir3/input_ctrl.v matlab_bc/fir4/input_ctrl_4.v matlab_bc/fir3/mult_out.v matlab_bc/total_cas.v matlab_bc/fir1.v matlab_bc/fir2/fir2.v matlab_bc/fir3/fir3.v matlab_bc/fir4/fir4.v matlab_bc/input_ctrl_cas.v
-SIMFILES = filter13.v
+SIMFILES = filter1.v
 
 #SYNFILES = synth/HWA_total.vg
 #SYNFILES = synth/BC_total.vg

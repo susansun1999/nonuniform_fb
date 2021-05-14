@@ -5,23 +5,17 @@
         "module",
         1
     ],
+    "filter9": [
+        "filter9",
+        "tzFxa",
+        "module",
+        4
+    ],
     "filter13": [
         "filter13",
         "yaKdZ",
         "module",
         8
-    ],
-    "filter14": [
-        "filter14",
-        "Edc5A",
-        "module",
-        9
-    ],
-    "filter10": [
-        "filter10",
-        "Ahe9s",
-        "module",
-        5
     ],
     "testbench": [
         "testbench",
@@ -29,29 +23,11 @@
         "module",
         2
     ],
-    "filter16": [
-        "filter16",
-        "tC43H",
+    "filter10": [
+        "filter10",
+        "Ahe9s",
         "module",
-        11
-    ],
-    "filter8": [
-        "filter8",
-        "L7YTh",
-        "module",
-        3
-    ],
-    "filter9": [
-        "filter9",
-        "tzFxa",
-        "module",
-        4
-    ],
-    "filter11": [
-        "filter11",
-        "ZhBzp",
-        "module",
-        6
+        5
     ],
     "filter12": [
         "filter12",
@@ -59,16 +35,40 @@
         "module",
         7
     ],
-    "filter15": [
-        "filter15",
-        "RSF23",
+    "filter8": [
+        "filter8",
+        "L7YTh",
         "module",
-        10
+        3
+    ],
+    "filter11": [
+        "filter11",
+        "ZhBzp",
+        "module",
+        6
+    ],
+    "filter14": [
+        "filter14",
+        "Edc5A",
+        "module",
+        9
     ],
     "...MASTER...": [
         "SIM",
         "amcQw",
         "module",
         12
+    ],
+    "filter15": [
+        "filter15",
+        "RSF23",
+        "module",
+        10
+    ],
+    "filter16": [
+        "filter16",
+        "tC43H",
+        "module",
+        11
     ]
 }
