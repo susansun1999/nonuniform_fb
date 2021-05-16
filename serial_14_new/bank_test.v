@@ -3931,12 +3931,8 @@ module testbench();
 
 
   @(negedge clock);
-    reset = 0;
-  @(negedge clock);
-    reset = 1;
+    reset = 0;    
     clk_enable = 1;
-  @(negedge clock);
-    reset = 0;
     // next two lines below should be added    
     $set_toggle_region(filt);
     $toggle_start();
@@ -3950,7 +3946,7 @@ module testbench();
     
     // next two lines should be added
     $toggle_stop();
-    $toggle_report("rand.saif", 1e-9, filt);
+    $toggle_report("rand", 1e-9, filt);
     $finish;
 	end
 endmodule
