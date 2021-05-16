@@ -26,7 +26,7 @@ set CLK_PERIOD 1041
 #read_verilog "vg/filters/cemux_n10_q10_M100_d0_s0_g1.vg"
 
 # will have to change next line
-read_verilog "vg/banks/cemux_n10_q10_M119_d0_s0_g0.vg"
+read_verilog "total_filter.vg"
 
 # will need to change next line
 current_design total_filter
