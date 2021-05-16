@@ -34,7 +34,7 @@ link_design
 
 create_clock -period $CLK_PERIOD -name $sys_clk [find port $sys_clk]
 # will have to change strip_path on next line
-read_saif rand.saif -strip_path "testbench/filt"
+read_saif saifs/banks/rand.saif -strip_path "testbench/filt"
 
 update_power
 
