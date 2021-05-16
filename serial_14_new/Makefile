@@ -191,5 +191,5 @@ clean:
 	rm -f *.elf *.dump *.mem debug_bin
 
 nuke:	clean
-	rm -rf *.vg *.ddc *.chk command.log *.syn
+	rm -rf *.ddc *.chk command.log *.syn
 	rm -rf command.log *.db *.svf *.mr *.pvl
