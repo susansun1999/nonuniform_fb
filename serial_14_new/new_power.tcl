@@ -10,7 +10,7 @@
 #/* new design                                              */
 #/***********************************************************/
 # will need to change next line
-set search_path [ list "./" "/afs/umich.edu/user/b/a/bakertim/Private/Synopsys/"]
+set search_path [ list "./" "/afs/umich.edu/user/s/u/sunsusan/Desktop/SC_FIR_hardware_syn/Nangate/" ]
 set target_library "NangateOpenCellLibrary.db"
 set link_library [concat  "*" $target_library]
 set power_enable_analysis true
@@ -19,7 +19,7 @@ set clock_name clock
 set sys_clk $clock_name
 set reset_name reset
 # will need to change next line
-set CLK_PERIOD 2
+set CLK_PERIOD 1041
 
 #read_verilog "${VER_DIR}/${filenamer}.v"
 #read_verilog "vg/comps/vdc.vg"
@@ -29,12 +29,12 @@ set CLK_PERIOD 2
 read_verilog "vg/banks/cemux_n10_q10_M119_d0_s0_g0.vg"
 
 # will need to change next line
-current_design filter
+current_design total_filter
 link_design
 
 create_clock -period $CLK_PERIOD -name $sys_clk [find port $sys_clk]
 # will have to change strip_path on next line
-read_saif saifs/banks/rand.saif -strip_path "testbench/filt"
+read_saif rand.saif -strip_path "testbench/filt"
 
 update_power
 

@@ -3950,7 +3950,7 @@ module testbench();
     
     // next two lines should be added
     $toggle_stop();
-    $toggle_report("saifs/banks/rand.saif", 1e-9, filt);
+    $toggle_report("rand.saif", 1e-9, filt);
     $finish;
 	end
 endmodule

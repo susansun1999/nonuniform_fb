@@ -112,13 +112,6 @@ SYNFILES = total_filter.vg
 #SYNFILES = synth/fir1.vg
 #SYNFILES = synth/filter.vg
 
-export CLOCK_NET_NAME = clock
-export RESET_NET_NAME = reset
-#export HEADERS = params.svh 
-export SOURCES = verilog/rob.sv 
-export DESIGN_NAME = rob
-
-export CLOCK_PERIOD = 5	# TODO: You will want to make this more aggresive
 
 total_filter.vg:		$(HEADERS) $(SIMFILES) total_filter_synth.tcl
 	dc_shell-t -f ./total_filter_synth.tcl | tee synth.out 
