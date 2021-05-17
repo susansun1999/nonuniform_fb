@@ -3946,7 +3946,7 @@ module testbench();
     
     // next two lines should be added
     $toggle_stop();
-    $toggle_report("rand", 1e-9, filt);
+    $toggle_report("rand.saif", 1e-9, filt);
     $finish;
 	end
 endmodule
