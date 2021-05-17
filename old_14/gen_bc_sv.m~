@@ -1,0 +1,20 @@
+wordlength = 13; % determines precision
+load("nonuniform500.mat");
+
+num_filter = size(all_coefs,1);
+num_taps = size(all_coefs,2);
+
+structure = "Direct form symmetric";
+
+scalings = zeros(num_filter,1);
+
+for filt_idx = 1:num_filter
+    % first compute the scaling factor that we can apply to filter coefficients
+    max_abs = max(abs(all_Hs(filt_idx,:)));
+    while 2*scaling*max_abs < 1
+        scaling = scaling * 2;
+    end
+
+    OUT = dsp.FIRFilter('Numerator', all_coefs(1,:), 'Structure', structure,'OutputDataType', 'Custom','CustomOutputDataType',numerictype(1,wordlength,wordlength-1));
+    OUT.generatehdl('InputDataType', T,"TargetLanguage", 'Verilog') 
+end
