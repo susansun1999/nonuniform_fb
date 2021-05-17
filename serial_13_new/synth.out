@@ -19,31 +19,26 @@
  of a written license agreement with Synopsys, Inc. All other use, reproduction,
             or distribution of this software is strictly prohibited.
 Initializing...
-#***********************************************************/
-#/*   FILE        : defaults.tcl                            */
+#/***********************************************************/
+#/*   FILE        : tut_synth.tcl                          */
 #/*   Description : Default Synopsys Design Compiler Script */
 #/*   Usage       : dc_shell -tcl_mode -f default.tcl       */
 #/*   You'll need to minimally set design_name & read files */
 #/***********************************************************/
-#set search_path [ list "./" "/afs/umich.edu/class/eecs470/lib/synopsys/" ]
-set search_path [ list "./" "/afs/umich.edu/user/s/u/sunsusan/Desktop/SC_FIR_hardware_syn/Nangate/" ]
-./ /afs/umich.edu/user/s/u/sunsusan/Desktop/SC_FIR_hardware_syn/Nangate/
-set target_library "NangateOpenCellLibrary.db"
-NangateOpenCellLibrary.db
-set link_library [concat  "*" $target_library]
-* NangateOpenCellLibrary.db
-#/***********************************************************/
-#/* Set some flags to suppress warnings we don't care about */
-set suppress_errors [concat $suppress_errors "UID-401"]
-UID-401
-suppress_message {"VER-130"}
 #/***********************************************************/
 #/* The following five lines must be updated for every      */
 #/* new design                                              */
 #/***********************************************************/
-analyze -f sverilog [list "total_filter.v"]
+read_file -f sverilog [list "total_filter.v"]
+Loading db file '/usr/caen/synopsys-synth-2018.06/libraries/syn/gtech.db'
+Loading db file '/usr/caen/synopsys-synth-2018.06/libraries/syn/standard.sldb'
+  Loading link library 'gtech'
+Loading sverilog file '/afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_13_new/total_filter.v'
+Detecting input file type automatically (-rtl or -netlist).
+Reading with Presto HDL Compiler (equivalent to -rtl option).
 Running PRESTO HDLC
-Compiling source file ./total_filter.v
+Warning: Can't read link_library file 'your_library.db'. (UID-3)
+Compiling source file /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_13_new/total_filter.v
 Opening include file filter1.v
 Opening include file filter2.v
 Opening include file filter3.v
@@ -60,30 +55,7 @@ Opening include file filter13.v
 Opening include file filter14.v
 Opening include file filter15.v
 Opening include file filter16.v
-Presto compilation completed successfully.
-Loading db file '/afs/umich.edu/user/s/u/sunsusan/Desktop/SC_FIR_hardware_syn/Nangate/NangateOpenCellLibrary.db'
-Information: Using CCS timing libraries. (TIM-024)
-1
-elaborate total_filter
-Loading db file '/usr/caen/synopsys-synth-2018.06/libraries/syn/gtech.db'
-Loading db file '/usr/caen/synopsys-synth-2018.06/libraries/syn/standard.sldb'
-  Loading link library 'NangateOpenCellLibrary'
-  Loading link library 'gtech'
-Running PRESTO HDLC
-
-Inferred memory devices in process
-	in routine total_filter line 51 in file
-		'./total_filter.v'.
-===============================================================================
-|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
-===============================================================================
-| delay_pipeline_reg  | Flip-flop | 1547  |  Y  | N  | Y  | N  | N  | N  | N  |
-===============================================================================
-Presto compilation completed successfully.
-Elaborated 1 design.
-Current design is now 'total_filter'.
-Information: Building the design 'filter1'. (HDL-193)
-Warning:  filter1.v:361: signed to unsigned part selection occurs. (VER-318)
+Warning:  filter1.v:360: signed to unsigned part selection occurs. (VER-318)
 
 Inferred memory devices in process
 	in routine filter1 line 146 in file
@@ -96,7 +68,7 @@ Inferred memory devices in process
 ===============================================================================
 
 Inferred memory devices in process
-	in routine filter1 line 366 in file
+	in routine filter1 line 365 in file
 		'filter1.v'.
 ===============================================================================
 |    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
@@ -105,7 +77,7 @@ Inferred memory devices in process
 ===============================================================================
 
 Inferred memory devices in process
-	in routine filter1 line 378 in file
+	in routine filter1 line 377 in file
 		'filter1.v'.
 ===============================================================================
 |    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
@@ -114,15 +86,13 @@ Inferred memory devices in process
 ===============================================================================
 
 Inferred memory devices in process
-	in routine filter1 line 390 in file
+	in routine filter1 line 389 in file
 		'filter1.v'.
 ===============================================================================
 |    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
 ===============================================================================
 | output_register_reg | Flip-flop |  33   |  Y  | N  | Y  | N  | N  | N  | N  |
 ===============================================================================
-Presto compilation completed successfully.
-Information: Building the design 'filter2'. (HDL-193)
 Warning:  filter2.v:349: signed to unsigned part selection occurs. (VER-318)
 
 Inferred memory devices in process
@@ -161,8 +131,6 @@ Inferred memory devices in process
 ===============================================================================
 | output_register_reg | Flip-flop |  33   |  Y  | N  | Y  | N  | N  | N  | N  |
 ===============================================================================
-Presto compilation completed successfully.
-Information: Building the design 'filter3'. (HDL-193)
 Warning:  filter3.v:352: signed to unsigned part selection occurs. (VER-318)
 
 Inferred memory devices in process
@@ -201,8 +169,6 @@ Inferred memory devices in process
 ===============================================================================
 | output_register_reg | Flip-flop |  33   |  Y  | N  | Y  | N  | N  | N  | N  |
 ===============================================================================
-Presto compilation completed successfully.
-Information: Building the design 'filter4'. (HDL-193)
 Warning:  filter4.v:352: signed to unsigned part selection occurs. (VER-318)
 
 Inferred memory devices in process
@@ -241,8 +207,6 @@ Inferred memory devices in process
 ===============================================================================
 | output_register_reg | Flip-flop |  33   |  Y  | N  | Y  | N  | N  | N  | N  |
 ===============================================================================
-Presto compilation completed successfully.
-Information: Building the design 'filter5'. (HDL-193)
 Warning:  filter5.v:358: signed to unsigned part selection occurs. (VER-318)
 
 Inferred memory devices in process
@@ -281,8 +245,6 @@ Inferred memory devices in process
 ===============================================================================
 | output_register_reg | Flip-flop |  33   |  Y  | N  | Y  | N  | N  | N  | N  |
 ===============================================================================
-Presto compilation completed successfully.
-Information: Building the design 'filter6'. (HDL-193)
 Warning:  filter6.v:358: signed to unsigned part selection occurs. (VER-318)
 
 Inferred memory devices in process
@@ -321,8 +283,6 @@ Inferred memory devices in process
 ===============================================================================
 | output_register_reg | Flip-flop |  33   |  Y  | N  | Y  | N  | N  | N  | N  |
 ===============================================================================
-Presto compilation completed successfully.
-Information: Building the design 'filter7'. (HDL-193)
 Warning:  filter7.v:355: signed to unsigned part selection occurs. (VER-318)
 
 Inferred memory devices in process
@@ -361,8 +321,6 @@ Inferred memory devices in process
 ===============================================================================
 | output_register_reg | Flip-flop |  33   |  Y  | N  | Y  | N  | N  | N  | N  |
 ===============================================================================
-Presto compilation completed successfully.
-Information: Building the design 'filter8'. (HDL-193)
 Warning:  filter8.v:355: signed to unsigned part selection occurs. (VER-318)
 
 Inferred memory devices in process
@@ -401,8 +359,6 @@ Inferred memory devices in process
 ===============================================================================
 | output_register_reg | Flip-flop |  33   |  Y  | N  | Y  | N  | N  | N  | N  |
 ===============================================================================
-Presto compilation completed successfully.
-Information: Building the design 'filter9'. (HDL-193)
 Warning:  filter9.v:355: signed to unsigned part selection occurs. (VER-318)
 
 Inferred memory devices in process
@@ -441,8 +397,6 @@ Inferred memory devices in process
 ===============================================================================
 | output_register_reg | Flip-flop |  33   |  Y  | N  | Y  | N  | N  | N  | N  |
 ===============================================================================
-Presto compilation completed successfully.
-Information: Building the design 'filter10'. (HDL-193)
 Warning:  filter10.v:358: signed to unsigned part selection occurs. (VER-318)
 
 Inferred memory devices in process
@@ -481,8 +435,6 @@ Inferred memory devices in process
 ===============================================================================
 | output_register_reg | Flip-flop |  33   |  Y  | N  | Y  | N  | N  | N  | N  |
 ===============================================================================
-Presto compilation completed successfully.
-Information: Building the design 'filter11'. (HDL-193)
 Warning:  filter11.v:355: signed to unsigned part selection occurs. (VER-318)
 
 Inferred memory devices in process
@@ -521,9 +473,6 @@ Inferred memory devices in process
 ===============================================================================
 | output_register_reg | Flip-flop |  33   |  Y  | N  | Y  | N  | N  | N  | N  |
 ===============================================================================
-Presto compilation completed successfully.
-Information: Building the design 'filter12'. (HDL-193)
-Warning:  filter12.v:352: signed to unsigned part selection occurs. (VER-318)
 
 Inferred memory devices in process
 	in routine filter12 line 146 in file
@@ -561,12 +510,10 @@ Inferred memory devices in process
 ===============================================================================
 | output_register_reg | Flip-flop |  33   |  Y  | N  | Y  | N  | N  | N  | N  |
 ===============================================================================
-Presto compilation completed successfully.
-Information: Building the design 'filter13'. (HDL-193)
-Warning:  filter13.v:364: signed to unsigned part selection occurs. (VER-318)
+Warning:  filter13.v:365: signed to unsigned part selection occurs. (VER-318)
 
 Inferred memory devices in process
-	in routine filter13 line 146 in file
+	in routine filter13 line 147 in file
 		'filter13.v'.
 ===============================================================================
 |    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
@@ -576,7 +523,7 @@ Inferred memory devices in process
 ===============================================================================
 
 Inferred memory devices in process
-	in routine filter13 line 369 in file
+	in routine filter13 line 370 in file
 		'filter13.v'.
 ===============================================================================
 |    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
@@ -585,7 +532,7 @@ Inferred memory devices in process
 ===============================================================================
 
 Inferred memory devices in process
-	in routine filter13 line 381 in file
+	in routine filter13 line 382 in file
 		'filter13.v'.
 ===============================================================================
 |    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
@@ -594,15 +541,13 @@ Inferred memory devices in process
 ===============================================================================
 
 Inferred memory devices in process
-	in routine filter13 line 393 in file
+	in routine filter13 line 394 in file
 		'filter13.v'.
 ===============================================================================
 |    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
 ===============================================================================
 | output_register_reg | Flip-flop |  33   |  Y  | N  | Y  | N  | N  | N  | N  |
 ===============================================================================
-Presto compilation completed successfully.
-Information: Building the design 'filter14'. (HDL-193)
 Warning:  filter14.v:352: signed to unsigned part selection occurs. (VER-318)
 
 Inferred memory devices in process
@@ -641,8 +586,6 @@ Inferred memory devices in process
 ===============================================================================
 | output_register_reg | Flip-flop |  33   |  Y  | N  | Y  | N  | N  | N  | N  |
 ===============================================================================
-Presto compilation completed successfully.
-Information: Building the design 'filter15'. (HDL-193)
 Warning:  filter15.v:352: signed to unsigned part selection occurs. (VER-318)
 
 Inferred memory devices in process
@@ -681,8 +624,6 @@ Inferred memory devices in process
 ===============================================================================
 | output_register_reg | Flip-flop |  33   |  Y  | N  | Y  | N  | N  | N  | N  |
 ===============================================================================
-Presto compilation completed successfully.
-Information: Building the design 'filter16'. (HDL-193)
 Warning:  filter16.v:325: signed to unsigned part selection occurs. (VER-318)
 
 Inferred memory devices in process
@@ -721,14 +662,29 @@ Inferred memory devices in process
 ===============================================================================
 | output_register_reg | Flip-flop |  33   |  Y  | N  | Y  | N  | N  | N  | N  |
 ===============================================================================
+
+Inferred memory devices in process
+	in routine total_filter line 52 in file
+		'/afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_13_new/total_filter.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+| delay_pipeline_reg  | Flip-flop | 1547  |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
 Presto compilation completed successfully.
-1
+Current design is now '/afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_13_new/filter1.db:filter1'
+Loaded 17 designs.
+Current design is 'filter1'.
+filter1 filter2 filter3 filter4 filter5 filter6 filter7 filter8 filter9 filter10 filter11 filter12 filter13 filter14 filter15 filter16 total_filter
 set design_name total_filter
 total_filter
 set clock_name clock
 clock
+set reset_name reset
+reset
 set CLK_PERIOD 1041
 1041
+#1041 = 62500/60
 #/***********************************************************/
 #/* The rest of this file may be left alone for most small  */
 #/* to moderate sized designs.  You may need to alter it    */
@@ -736,14 +692,16 @@ set CLK_PERIOD 1041
 #/***********************************************************/
 set SYN_DIR ./
 ./
+set search_path [ list "./" "/afs/umich.edu/user/s/u/sunsusan/Desktop/SC_FIR_hardware_syn/Nangate/" ]
+./ /afs/umich.edu/user/s/u/sunsusan/Desktop/SC_FIR_hardware_syn/Nangate/
+set target_library "NangateOpenCellLibrary.db"
+NangateOpenCellLibrary.db
+set link_library [concat  "*" $target_library]
+* NangateOpenCellLibrary.db
 #/***********************************************************/
 #/* Set some flags for optimisation */
-set compile_top_all_paths "true"
-true
-set auto_wire_load_selection "true"
-true
-set compile_seqmap_synchronous_extraction "true"
-true
+# set compile_top_all_paths "true"
+# set auto_wire_load_selection "false"
 #/***********************************************************/
 #/*  Clk Periods/uncertainty/transition                     */
 set CLK_TRANSITION 0.1
@@ -783,8 +741,8 @@ set AVG_FANOUT_LOAD 10
 #/***********************************************************/
 #/*BASIC_INPUT = cb18os120_tsmc_max/nd02d1/A1
 #BASIC_OUTPUT = cb18os120_tsmc_max/nd02d1/ZN*/
-set DRIVING_CELL DFF_X1
-DFF_X1
+set DRIVING_CELL dffacs1
+dffacs1
 #/* DONT_USE_LIST = {   } */
 #/*************operation cons**************/
 #/*OP_WCASE = WCCOM;
@@ -803,13 +761,27 @@ set ddc_file [format "%s%s"  [format "%s%s"  $SYN_DIR $design_name] ".ddc"]
 ./total_filter.ddc
 set rep_file [format "%s%s"  [format "%s%s"  $SYN_DIR $design_name] ".rep"]
 ./total_filter.rep
+set power_file [format "%s%s"  [format "%s%s"  $SYN_DIR $design_name] ".power"]
+./total_filter.power
 set dc_shell_status [ set chk_file [format "%s%s"  [format "%s%s"  $SYN_DIR $design_name] ".chk"] ]
 ./total_filter.chk
 #/* if we didnt find errors at this point, run */
 if {  $dc_shell_status != [list] } {
-   current_design $design_name
+  current_design $design_name
+#   set_tlu_plus_files
+#   # Then create your milkyway database
+#   define_design_lib WORK -path ./work;
+ 
+# # create milky way database 
+#   set mw_design_library test_milkyway
+ 
+#   create_mw_lib  -mw_reference_library $mw_design_library $mw_design_library 
+#   open_mw_lib $mw_design_library
+ 
+  # check_tlu_plus_files
+  # check_library
   link
-#  set_wire_load_model -name $WIRE_LOAD -lib $LOGICLIB $design_name
+  set_wire_load_model -name $WIRE_LOAD -lib $LOGICLIB $design_name
   set_wire_load_mode top
   set_fix_multiple_port_nets -outputs -buffer_constants
   create_clock -period $CLK_PERIOD -name $sys_clk [find port $sys_clk]
@@ -824,6 +796,9 @@ if {  $dc_shell_status != [list] } {
   set_input_delay $AVG_INPUT_DELAY -clock $sys_clk [all_inputs]
   remove_input_delay -clock $sys_clk [find port $sys_clk]
   set_output_delay $AVG_OUTPUT_DELAY -clock $sys_clk [all_outputs]
+  set_dont_touch $reset_name
+  set_resistance 0 $reset_name
+  set_drive 0 $reset_name
   set_critical_range $CRIT_RANGE [current_design]
   set_max_delay $CLK_PERIOD [all_outputs]
   set MAX_FANOUT $MAX_FANOUT
@@ -831,21 +806,28 @@ if {  $dc_shell_status != [list] } {
   uniquify
   ungroup -all -flatten
   redirect $chk_file { check_design }
-  compile -map_effort medium
-  write -hier -format verilog -output $netlist_file $design_name
-  write -hier -format ddc -output $ddc_file $design_name
-  redirect $rep_file { report_design -nosplit }
-  redirect -append $rep_file { report_area }
-  redirect -append $rep_file { report_timing -max_paths 2 -input_pins -nets -transition_time -nosplit }
-  redirect -append $rep_file { report_constraint -max_delay -verbose -nosplit }
-  remove_design -all
-  read_file -format verilog $netlist_file
-  current_design $design_name
-  redirect -append $rep_file { report_reference -nosplit }
+  # saif_map -start 
+  # set_power_prediction
+  compile -map_effort low
+  # compile_ultra -no_autoungroup 
+#   report_power
+#   write -hier -format verilog -output $netlist_file $design_name
+#   write -hier -format ddc -output $ddc_file $design_name
+  redirect $power_file { report_power }
+  report_power -verbose -hierarchy -levels 2 -analysis_effort low > ./power2.out
+  # report_power
+  # redirect -append $rep_file { report_area }
+#   redirect -append $rep_file { report_timing -max_paths 2 -input_pins -nets -transition_time -nosplit }
+#   redirect -append $rep_file { report_constraint -max_delay -verbose -nosplit }
+#   remove_design -all
+#   read_file -format verilog $netlist_file
+#   current_design $design_name
+#   redirect -append $rep_file { report_reference -nosplit }
   quit
 } else {
    quit
-}
+}Loading db file '/afs/umich.edu/user/s/u/sunsusan/Desktop/SC_FIR_hardware_syn/Nangate/NangateOpenCellLibrary.db'
+Information: Using CCS timing libraries. (TIM-024)
 Current design is 'total_filter'.
 
   Linking design 'total_filter'
@@ -854,9 +836,19 @@ Current design is 'total_filter'.
   * (17 designs)              /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_13_new/total_filter.db, etc
   NangateOpenCellLibrary (library) /afs/umich.edu/user/s/u/sunsusan/Desktop/SC_FIR_hardware_syn/Nangate/NangateOpenCellLibrary.db
 
+Error: Can't find the specified library 'lec25dscc25_TT' in memory. (UID-131)
+Error: Wire load 'tsmcwire' not found. (UID-40)
+Error: Cannot find the specified driving cell in memory.   (UID-993)
 Current design is 'total_filter'.
+Warning: Dont_touch on net 'reset' may be overridden by compile because it
+	is connected to generic logic. Use all_connected to see net
+	connections. (OPT-461)
+Warning: Dont_touch on net 'reset' may be overridden by compile because it
+	is connected to generic logic. Use all_connected to see net
+	connections. (OPT-461)
 Information: Updating graph... (UID-83)
-Warning: Design 'total_filter' contains 16 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+Warning: Design 'total_filter' contains 15 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+Warning: The compile -map_effort low is obsolete. Setting this variable now defaults to compile -map_effort medium. Please update your script accordingly. (OPT-1303)
 Information: Evaluating DesignWare library utilization. (UISN-27)
 
 ============================================================================
@@ -866,6 +858,9 @@ Information: Evaluating DesignWare library utilization. (UISN-27)
 | Licensed DW Building Blocks        |                         |           |
 ============================================================================
 
+Warning: Dont_touch on net 'reset' may be overridden by compile because it
+	is connected to generic logic. Use all_connected to see net
+	connections. (OPT-461)
 
 Information: There are 16 potential problems in your design. Please run 'check_design' for more information. (LINT-99)
 
@@ -984,27 +979,10 @@ Information: Updating design information... (UID-85)
    ELAPSED            WORST NEG   SETUP    DESIGN                              MIN DELAY 
     TIME      AREA      SLACK     COST    RULE COST         ENDPOINT             COST    
   --------- --------- --------- --------- --------- ------------------------- -----------
-    0:00:51   87346.4      0.00       0.0   29030.0                                0.00  
-    0:00:51   87346.4      0.00       0.0   29030.0                                0.00  
-    0:00:52   88165.7      0.00       0.0   14408.1                                0.00  
-    0:00:53   88946.9      0.00       0.0    7013.7                                0.00  
-    0:01:01   90339.5      0.00       0.0    1811.3                                0.00  
-    0:01:01   90339.5      0.00       0.0    1811.3                                0.00  
-    0:01:01   90339.5      0.00       0.0    1811.3                                0.00  
-    0:01:01   90339.5      0.00       0.0    1811.3                                0.00  
-    0:01:01   90339.5      0.00       0.0    1811.3                                0.00  
-    0:01:16   66872.7      0.00       0.0     150.1                                0.00  
-    0:01:17   66867.9      0.00       0.0     150.1                                0.00  
-    0:01:21   66867.9      0.00       0.0     150.1                                0.00  
-    0:01:21   66867.9      0.00       0.0     150.1                                0.00  
-    0:01:21   66867.9      0.00       0.0     150.1                                0.00  
-    0:01:21   66867.9      0.00       0.0     150.1                                0.00  
-    0:01:22   66880.6      0.00       0.0       0.0                                0.00  
-    0:01:22   66880.6      0.00       0.0       0.0                                0.00  
-    0:01:22   66880.6      0.00       0.0       0.0                                0.00  
-    0:01:22   66880.6      0.00       0.0       0.0                                0.00  
-
-
+    0:00:55   87362.9      0.00       0.0   29030.0                                0.00  
+    0:00:55   87362.9      0.00       0.0   29030.0                                0.00  
+    0:00:56   88182.2      0.00       0.0   14408.1                                0.00  
+    0:00:57   88963.4      0.00       0.0    7013.7                                0.00  
 
   Beginning Delay Optimization Phase
   ----------------------------------
@@ -1013,9 +991,26 @@ Information: Updating design information... (UID-85)
    ELAPSED            WORST NEG   SETUP    DESIGN                              MIN DELAY 
     TIME      AREA      SLACK     COST    RULE COST         ENDPOINT             COST    
   --------- --------- --------- --------- --------- ------------------------- -----------
-    0:01:22   66880.6      0.00       0.0       0.0                                0.00  
-    0:01:22   66880.6      0.00       0.0       0.0                                0.00  
-    0:01:22   66880.6      0.00       0.0       0.0                                0.00  
+    0:01:02   90091.8      0.00       0.0     815.5                                0.00  
+    0:01:05   90449.3      0.00       0.0     815.5                                0.00  
+    0:01:05   90449.3      0.00       0.0     815.5                                0.00  
+
+
+  Beginning Design Rule Fixing  (max_capacitance)
+  ----------------------------
+
+                                  TOTAL                                                  
+   ELAPSED            WORST NEG   SETUP    DESIGN                              MIN DELAY 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT             COST    
+  --------- --------- --------- --------- --------- ------------------------- -----------
+    0:01:07   90449.3      0.00       0.0     815.5                                0.00  
+    0:01:08   90222.4      0.00       0.0     513.1 n2299                          0.00  
+    0:01:09   89879.5      0.00       0.0     310.1 n14161                         0.00  
+    0:01:10   89521.8      0.00       0.0     179.4 n12212                         0.00  
+    0:01:11   89218.3      0.00       0.0      70.7 n1056                          0.00  
+    0:01:12   88810.8      0.00       0.0      22.7 n16051                         0.00  
+    0:01:13   88465.7      0.00       0.0       4.9 n23154                         0.00  
+    0:01:14   88245.2      0.00       0.0       0.0                                0.00  
 
 
   Beginning Critical Range Optimization
@@ -1025,7 +1020,7 @@ Information: Updating design information... (UID-85)
    ELAPSED            WORST NEG   SETUP    DESIGN                              MIN DELAY 
     TIME      AREA      SLACK     COST    RULE COST         ENDPOINT             COST    
   --------- --------- --------- --------- --------- ------------------------- -----------
-    0:01:23   66880.6      0.00       0.0       0.0                                0.00  
+    0:01:14   88245.2      0.00       0.0       0.0                                0.00  
 
 
   Beginning Area-Recovery Phase  (cleanup)
@@ -1035,32 +1030,32 @@ Information: Updating design information... (UID-85)
    ELAPSED            WORST NEG   SETUP    DESIGN                              MIN DELAY 
     TIME      AREA      SLACK     COST    RULE COST         ENDPOINT             COST    
   --------- --------- --------- --------- --------- ------------------------- -----------
-    0:01:24   66880.6      0.00       0.0       0.0                                0.00  
-    0:01:24   66880.6      0.00       0.0       0.0                                0.00  
-    0:01:33   66089.6      0.00       0.0       0.0                                0.00  
-    0:01:36   65709.2      0.00       0.0       0.0                                0.00  
-    0:01:39   65461.0      0.00       0.0       0.0                                0.00  
-    0:01:41   65334.7      0.00       0.0       0.0                                0.00  
-    0:01:44   65312.3      0.00       0.0       0.0                                0.00  
-    0:01:45   65295.6      0.00       0.0       0.0                                0.00  
-    0:01:45   65287.3      0.00       0.0       0.0                                0.00  
-    0:01:46   65278.3      0.00       0.0       0.0                                0.00  
-    0:01:51   65274.0      0.00       0.0       0.0                                0.00  
-    0:01:52   65272.9      0.00       0.0       0.0                                0.00  
-    0:01:52   65272.4      0.00       0.0       0.0                                0.00  
-    0:01:52   65271.9      0.00       0.0       0.0                                0.00  
-    0:01:52   65271.3      0.00       0.0       0.0                                0.00  
-    0:01:52   65270.8      0.00       0.0       0.0                                0.00  
-    0:01:53   65270.3      0.00       0.0       0.0                                0.00  
-    0:01:53   65269.8      0.00       0.0       0.0                                0.00  
-    0:01:53   65269.8      0.00       0.0       0.0                                0.00  
-    0:01:53   65269.8      0.00       0.0       0.0                                0.00  
-    0:01:54   65229.1      0.00       0.0       0.0                                0.00  
-    0:01:54   65229.1      0.00       0.0       0.0                                0.00  
-    0:01:54   65229.1      0.00       0.0       0.0                                0.00  
-    0:01:54   65229.1      0.00       0.0       0.0                                0.00  
-    0:01:54   65229.1      0.00       0.0       0.0                                0.00  
-    0:01:54   65229.1      0.00       0.0       0.0                                0.00  
+    0:01:14   88245.2      0.00       0.0       0.0                                0.00  
+    0:01:14   88245.2      0.00       0.0       0.0                                0.00  
+    0:01:23   86376.9      0.00       0.0       0.0                                0.00  
+    0:01:26   85559.7      0.00       0.0       0.0                                0.00  
+    0:01:29   85173.5      0.00       0.0       0.0                                0.00  
+    0:01:33   84969.7      0.00       0.0       0.0                                0.00  
+    0:01:34   84922.4      0.00       0.0       0.0                                0.00  
+    0:01:35   84906.9      0.00       0.0       0.0                                0.00  
+    0:01:35   84893.1      0.00       0.0       0.0                                0.00  
+    0:01:40   84884.6      0.00       0.0       0.0                                0.00  
+    0:01:41   84878.7      0.00       0.0       0.0                                0.00  
+    0:01:41   84875.3      0.00       0.0       0.0                                0.00  
+    0:01:41   84872.1      0.00       0.0       0.0                                0.00  
+    0:01:41   84868.9      0.00       0.0       0.0                                0.00  
+    0:01:41   84866.2      0.00       0.0       0.0                                0.00  
+    0:01:42   84863.6      0.00       0.0       0.0                                0.00  
+    0:01:42   84860.9      0.00       0.0       0.0                                0.00  
+    0:01:42   84858.3      0.00       0.0       0.0                                0.00  
+    0:01:42   84858.3      0.00       0.0       0.0                                0.00  
+    0:01:42   84858.3      0.00       0.0       0.0                                0.00  
+    0:01:55   65372.4      0.00       0.0       0.0                                0.00  
+    0:01:55   65372.4      0.00       0.0       0.0                                0.00  
+    0:01:55   65372.4      0.00       0.0       0.0                                0.00  
+    0:01:55   65372.4      0.00       0.0       0.0                                0.00  
+    0:01:55   65372.4      0.00       0.0       0.0                                0.00  
+    0:01:55   65372.4      0.00       0.0       0.0                                0.00  
 
 
   Beginning Critical Range Optimization
@@ -1070,8 +1065,8 @@ Information: Updating design information... (UID-85)
    ELAPSED            WORST NEG   SETUP    DESIGN                              MIN DELAY 
     TIME      AREA      SLACK     COST    RULE COST         ENDPOINT             COST    
   --------- --------- --------- --------- --------- ------------------------- -----------
-    0:01:54   65229.1      0.00       0.0       0.0                                0.00  
-    0:01:55   65229.1      0.00       0.0       0.0                                0.00  
+    0:01:55   65372.4      0.00       0.0       0.0                                0.00  
+    0:01:55   65372.4      0.00       0.0       0.0                                0.00  
 
 
 Note: Symbol # after min delay cost means estimated hold TNS across all active scenarios 
@@ -1081,92 +1076,5 @@ Note: Symbol # after min delay cost means estimated hold TNS across all active s
   ---------------------
 Warning: Design 'total_filter' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
      Net 'clock': 3227 load(s), 1 driver(s)
-Writing verilog file '/afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_13_new/total_filter.vg'.
-Warning: Verilog 'assign' or 'tran' statements are written out. (VO-4)
-Writing ddc file './total_filter.ddc'.
-Removing design 'total_filter'
-Removing design 'total_filter_DW01_add_0'
-Removing design 'total_filter_DW01_add_1'
-Removing design 'total_filter_DW01_add_2'
-Removing design 'total_filter_DW01_add_3'
-Removing design 'total_filter_DW01_add_4'
-Removing design 'total_filter_DW01_add_5'
-Removing design 'total_filter_DW01_add_6'
-Removing design 'total_filter_DW01_add_7'
-Removing design 'total_filter_DW01_add_8'
-Removing design 'total_filter_DW01_add_9'
-Removing design 'total_filter_DW01_add_10'
-Removing design 'total_filter_DW01_add_11'
-Removing design 'total_filter_DW01_add_12'
-Removing design 'total_filter_DW01_add_13'
-Removing design 'total_filter_DW01_add_14'
-Removing design 'total_filter_DW01_add_15'
-Removing design 'total_filter_DW02_mult_0'
-Removing design 'total_filter_DW01_add_16'
-Removing design 'total_filter_DW01_add_17'
-Removing design 'total_filter_DW02_mult_1'
-Removing design 'total_filter_DW01_add_18'
-Removing design 'total_filter_DW01_add_19'
-Removing design 'total_filter_DW02_mult_2'
-Removing design 'total_filter_DW01_add_20'
-Removing design 'total_filter_DW01_add_21'
-Removing design 'total_filter_DW02_mult_3'
-Removing design 'total_filter_DW01_add_22'
-Removing design 'total_filter_DW01_add_23'
-Removing design 'total_filter_DW02_mult_4'
-Removing design 'total_filter_DW01_add_24'
-Removing design 'total_filter_DW01_add_25'
-Removing design 'total_filter_DW02_mult_5'
-Removing design 'total_filter_DW01_add_26'
-Removing design 'total_filter_DW01_add_27'
-Removing design 'total_filter_DW02_mult_6'
-Removing design 'total_filter_DW01_add_28'
-Removing design 'total_filter_DW01_add_29'
-Removing design 'total_filter_DW02_mult_7'
-Removing design 'total_filter_DW01_add_30'
-Removing design 'total_filter_DW01_add_31'
-Removing design 'total_filter_DW02_mult_8'
-Removing design 'total_filter_DW01_add_32'
-Removing design 'total_filter_DW01_add_33'
-Removing design 'total_filter_DW02_mult_9'
-Removing design 'total_filter_DW01_add_34'
-Removing design 'total_filter_DW01_add_35'
-Removing design 'total_filter_DW02_mult_10'
-Removing design 'total_filter_DW01_add_36'
-Removing design 'total_filter_DW01_add_37'
-Removing design 'total_filter_DW02_mult_11'
-Removing design 'total_filter_DW01_add_38'
-Removing design 'total_filter_DW01_add_39'
-Removing design 'total_filter_DW02_mult_12'
-Removing design 'total_filter_DW01_add_40'
-Removing design 'total_filter_DW01_add_41'
-Removing design 'total_filter_DW02_mult_13'
-Removing design 'total_filter_DW01_add_42'
-Removing design 'total_filter_DW01_add_43'
-Removing design 'total_filter_DW02_mult_14'
-Removing design 'total_filter_DW01_add_44'
-Removing design 'total_filter_DW01_add_45'
-Removing design 'total_filter_DW02_mult_15'
-Removing design 'total_filter_DW01_add_46'
-Removing design 'total_filter_DW01_add_47'
-Removing library 'NangateOpenCellLibrary'
-Removing library 'gtech'
-Removing library 'standard.sldb'
-Loading db file '/afs/umich.edu/user/s/u/sunsusan/Desktop/SC_FIR_hardware_syn/Nangate/NangateOpenCellLibrary.db'
-Loading db file '/usr/caen/synopsys-synth-2018.06/libraries/syn/gtech.db'
-Loading db file '/usr/caen/synopsys-synth-2018.06/libraries/syn/standard.sldb'
-  Loading link library 'NangateOpenCellLibrary'
-  Loading link library 'gtech'
-Loading verilog file '/afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_13_new/total_filter.vg'
-Detecting input file type automatically (-rtl or -netlist).
-Running DC verilog reader
-Performing 'read' command.
-Compiling source file /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_13_new/total_filter.vg
-Reading with netlist reader (equivalent to -netlist option).
-Verilog netlist reader completed successfully.
-Current design is now '/afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_13_new/total_filter_DW01_add_0.db:total_filter_DW01_add_0'
-Loaded 65 designs.
-Current design is 'total_filter_DW01_add_0'.
-Current design is 'total_filter'.
 
 Thank you...
