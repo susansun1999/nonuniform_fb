@@ -15,8 +15,8 @@ read_file -f sverilog [list "total_filter.v"]
 set design_name total_filter
 set clock_name clock
 set reset_name reset
-set CLK_PERIOD 1041
-#1041 = 62500/60
+set CLK_PERIOD 1116
+#1041 = 62500/56
 
 
 
