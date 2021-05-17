@@ -26,15 +26,15 @@ int main (int argc, char *argv[]) {
             }
             continue;
         }   
-        if(line == "  reg  signed [12:0] delay_pipeline [0:118] ; // sfix13_En12"){
+        if(line == "  reg  signed [11:0] delay_pipeline [0:118] ; // sfix12_En11"){
             continue;
         }     
         new_file << line << endl;
         if(line == "                filter_in,"){
             new_file<<"                delay_pipeline,"<<endl;
         }
-        if(line == "  input   signed [12:0] filter_in; //sfix13_En12"){
-            new_file<<"  input   signed [12:0] delay_pipeline [0:118] ; // sfix13_En12"<<endl;
+        if(line == "  input   signed [11:0] filter_in; //sfix12_En11"){
+            new_file<<"  input   signed [11:0] delay_pipeline [0:118] ; // sfix12_En11"<<endl;
         }
     }
     new_file.close();
