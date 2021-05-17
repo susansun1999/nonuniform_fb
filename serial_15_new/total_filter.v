@@ -25,18 +25,18 @@ module total_filter(
     input   clock; 
     input   clk_enable; 
     input   reset; 
-    input   signed [9:0] filter_in;        //sfix15_En14
-    output  signed [26:0] filter_out [15:0]; //sfix37_En32
+    input   signed [14:0] filter_in;        //sfix15_En14
+    output  signed [36:0] filter_out [15:0]; //sfix37_En32
 
-    reg     signed [9:0] delay_pipeline [0:118] ; // sfix13_En12
-    wire    phase_52; // boolean
+    reg     signed [14:0] delay_pipeline [0:118] ; // sfix13_En12
+    wire    phase_59; // boolean
 
-    filter1 f1(.clk(clock), .clk_enable(clk_enable), .reset(reset), .filter_in(filter_in), .filter_out(filter_out[0]), .delay_pipeline(delay_pipeline));
+    filter1 f1(.clk(clock), .clk_enable(clk_enable), .reset(reset), .filter_in(filter_in), .filter_out(filter_out[0]), .delay_pipeline(delay_pipeline),.phase_59(phase_59));
     filter2 f2(.clk(clock), .clk_enable(clk_enable), .reset(reset), .filter_in(filter_in), .filter_out(filter_out[1]), .delay_pipeline(delay_pipeline));
     filter3 f3(.clk(clock), .clk_enable(clk_enable), .reset(reset), .filter_in(filter_in), .filter_out(filter_out[2]), .delay_pipeline(delay_pipeline));
     filter4 f4(.clk(clock), .clk_enable(clk_enable), .reset(reset), .filter_in(filter_in), .filter_out(filter_out[3]), .delay_pipeline(delay_pipeline));
     filter5 f5(.clk(clock), .clk_enable(clk_enable), .reset(reset), .filter_in(filter_in), .filter_out(filter_out[4]), .delay_pipeline(delay_pipeline));
-    filter6 f6(.clk(clock), .clk_enable(clk_enable), .reset(reset), .filter_in(filter_in), .filter_out(filter_out[5]), .delay_pipeline(delay_pipeline),.phase_52(phase_52));
+    filter6 f6(.clk(clock), .clk_enable(clk_enable), .reset(reset), .filter_in(filter_in), .filter_out(filter_out[5]), .delay_pipeline(delay_pipeline));
     filter7 f7(.clk(clock), .clk_enable(clk_enable), .reset(reset), .filter_in(filter_in), .filter_out(filter_out[6]), .delay_pipeline(delay_pipeline));
     filter8 f8(.clk(clock), .clk_enable(clk_enable), .reset(reset), .filter_in(filter_in), .filter_out(filter_out[7]), .delay_pipeline(delay_pipeline));
     filter9 f9(.clk(clock), .clk_enable(clk_enable), .reset(reset), .filter_in(filter_in), .filter_out(filter_out[8]), .delay_pipeline(delay_pipeline));
@@ -173,7 +173,7 @@ module total_filter(
         delay_pipeline[118] <= 0;
       end
       else begin
-        if (phase_52 == 1'b1) begin
+        if (phase_59 == 1'b1) begin
           delay_pipeline[0] <= filter_in;
           delay_pipeline[1] <= delay_pipeline[0];
           delay_pipeline[2] <= delay_pipeline[1];
