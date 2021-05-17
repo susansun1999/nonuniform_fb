@@ -1,6 +1,6 @@
 clear
 % parameters
-wordlength = 15; % determines precision
+wordlength = 16; % determines precision
 %load("nonuniform500.mat");
 load("nonuniform500_v2.mat");
 %all_Hs = Bark_coefs();
@@ -44,7 +44,8 @@ for filt_idx = 1:num_filter
               55,55,52,55,54,57,56,56,55,56,56,54,58,53,54,44;...
               59,55,56,56,58,58,57,57,57,58,57,56,60,56,56,47;...
               60,56,59,58,59,59,59,58,58,58,57,56,60,59,56,48;...
-              60,57,59,58,59,59,59,58,58,58,58,57,60,60,57,49];
+              60,57,59,58,59,59,59,58,58,58,58,57,60,60,57,49;...
+              60,58,59,58,59,59,59,58,58,58,59,59,60,60,59,49];
       filter_obj.generatehdl('InputDataType', T, 'Name', name,'SerialPartition',serial(wordlength-9,filt_idx),...
         "TargetLanguage", 'Verilog') 
     % 'GenerateHDLTestbench','on','TestBenchName',tb_name,'TestBenchStimulus',{'ramp','impulse'}
