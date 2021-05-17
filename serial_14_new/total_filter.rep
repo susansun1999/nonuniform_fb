@@ -5,7 +5,7 @@ Warning: Design 'total_filter' contains 1 high-fanout nets. A fanout number of 1
 Report : design
 Design : total_filter
 Version: O-2018.06
-Date   : Sun May 16 14:56:20 2021
+Date   : Sun May 16 22:25:47 2021
 ****************************************
 
 Design allows ideal nets on clock nets.
@@ -92,7 +92,7 @@ Design Parameters:
 Report : area
 Design : total_filter
 Version: O-2018.06
-Date   : Sun May 16 14:56:20 2021
+Date   : Sun May 16 22:25:47 2021
 ****************************************
 
 Library(s) Used:
@@ -128,7 +128,7 @@ Report : timing
         -transition_time
 Design : total_filter
 Version: O-2018.06
-Date   : Sun May 16 14:56:20 2021
+Date   : Sun May 16 22:25:47 2021
 ****************************************
 
  # A fanout number of 1000 was used for high fanout net computations.
@@ -762,7 +762,7 @@ Report : constraint
         -max_delay
 Design : total_filter
 Version: O-2018.06
-Date   : Sun May 16 14:56:20 2021
+Date   : Sun May 16 22:25:47 2021
 ****************************************
 
 
@@ -935,7 +935,7 @@ Warning: Design 'total_filter' contains 1 high-fanout nets. A fanout number of 1
 Report : reference
 Design : total_filter
 Version: O-2018.06
-Date   : Sun May 16 14:56:24 2021
+Date   : Sun May 16 22:25:50 2021
 ****************************************
 
 Attributes:
