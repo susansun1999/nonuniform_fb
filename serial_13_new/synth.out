@@ -804,7 +804,7 @@ if {  $dc_shell_status != [list] } {
   set MAX_FANOUT $MAX_FANOUT
   set MAX_TRANSITION $MAX_TRANSITION
   uniquify
-  ungroup -all -flatten
+#  ungroup -all -flatten
   redirect $chk_file { check_design }
   # saif_map -start 
   # set_power_prediction
@@ -814,7 +814,7 @@ if {  $dc_shell_status != [list] } {
 #   write -hier -format verilog -output $netlist_file $design_name
 #   write -hier -format ddc -output $ddc_file $design_name
   redirect $power_file { report_power }
-  report_power -verbose -hierarchy -levels 2 -analysis_effort low > ./power2.out
+  report_power -verbose -hierarchy -levels 2 > ./power2.out
   # report_power
   # redirect -append $rep_file { report_area }
 #   redirect -append $rep_file { report_timing -max_paths 2 -input_pins -nets -transition_time -nosplit }
@@ -826,7 +826,8 @@ if {  $dc_shell_status != [list] } {
   quit
 } else {
    quit
-}Loading db file '/afs/umich.edu/user/s/u/sunsusan/Desktop/SC_FIR_hardware_syn/Nangate/NangateOpenCellLibrary.db'
+}
+Loading db file '/afs/umich.edu/user/s/u/sunsusan/Desktop/SC_FIR_hardware_syn/Nangate/NangateOpenCellLibrary.db'
 Information: Using CCS timing libraries. (TIM-024)
 Current design is 'total_filter'.
 
@@ -843,11 +844,6 @@ Current design is 'total_filter'.
 Warning: Dont_touch on net 'reset' may be overridden by compile because it
 	is connected to generic logic. Use all_connected to see net
 	connections. (OPT-461)
-Warning: Dont_touch on net 'reset' may be overridden by compile because it
-	is connected to generic logic. Use all_connected to see net
-	connections. (OPT-461)
-Information: Updating graph... (UID-83)
-Warning: Design 'total_filter' contains 15 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
 Warning: The compile -map_effort low is obsolete. Setting this variable now defaults to compile -map_effort medium. Please update your script accordingly. (OPT-1303)
 Information: Evaluating DesignWare library utilization. (UISN-27)
 
@@ -862,12 +858,28 @@ Warning: Dont_touch on net 'reset' may be overridden by compile because it
 	is connected to generic logic. Use all_connected to see net
 	connections. (OPT-461)
 
-Information: There are 16 potential problems in your design. Please run 'check_design' for more information. (LINT-99)
+Information: There are 1706 potential problems in your design. Please run 'check_design' for more information. (LINT-99)
 
 
 
   Beginning Pass 1 Mapping
   ------------------------
+  Processing 'filter16'
+  Processing 'filter15'
+  Processing 'filter14'
+  Processing 'filter13'
+  Processing 'filter12'
+  Processing 'filter11'
+  Processing 'filter10'
+  Processing 'filter9'
+  Processing 'filter8'
+  Processing 'filter7'
+  Processing 'filter6'
+  Processing 'filter5'
+  Processing 'filter4'
+  Processing 'filter3'
+  Processing 'filter2'
+  Processing 'filter1'
   Processing 'total_filter'
 
   Updating timing information
@@ -875,102 +887,102 @@ Information: Updating design information... (UID-85)
 
   Beginning Implementation Selection
   ----------------------------------
-  Processing 'total_filter_DW01_add_0'
-  Processing 'total_filter_DW01_inc_0'
-  Processing 'total_filter_DW01_cmp2_0'
-  Processing 'total_filter_DW01_add_1'
-  Processing 'total_filter_DW01_inc_1'
-  Processing 'total_filter_DW01_cmp2_1'
-  Processing 'total_filter_DW01_add_2'
-  Processing 'total_filter_DW01_inc_2'
-  Processing 'total_filter_DW01_cmp2_2'
-  Processing 'total_filter_DW01_add_3'
-  Processing 'total_filter_DW01_inc_3'
-  Processing 'total_filter_DW01_cmp2_3'
-  Processing 'total_filter_DW01_add_4'
-  Processing 'total_filter_DW01_inc_4'
-  Processing 'total_filter_DW01_cmp2_4'
-  Processing 'total_filter_DW01_add_5'
-  Processing 'total_filter_DW01_inc_5'
-  Processing 'total_filter_DW01_cmp2_5'
-  Processing 'total_filter_DW01_add_6'
-  Processing 'total_filter_DW01_inc_6'
-  Processing 'total_filter_DW01_cmp2_6'
-  Processing 'total_filter_DW01_add_7'
-  Processing 'total_filter_DW01_inc_7'
-  Processing 'total_filter_DW01_cmp2_7'
-  Processing 'total_filter_DW01_add_8'
-  Processing 'total_filter_DW01_inc_8'
-  Processing 'total_filter_DW01_cmp2_8'
-  Processing 'total_filter_DW01_add_9'
-  Processing 'total_filter_DW01_inc_9'
-  Processing 'total_filter_DW01_cmp2_9'
-  Processing 'total_filter_DW01_add_10'
-  Processing 'total_filter_DW01_inc_10'
-  Processing 'total_filter_DW01_cmp2_10'
-  Processing 'total_filter_DW01_add_11'
-  Processing 'total_filter_DW01_inc_11'
-  Processing 'total_filter_DW01_cmp2_11'
-  Processing 'total_filter_DW01_add_12'
-  Processing 'total_filter_DW01_inc_12'
-  Processing 'total_filter_DW01_cmp2_12'
-  Processing 'total_filter_DW01_add_13'
-  Processing 'total_filter_DW01_inc_13'
-  Processing 'total_filter_DW01_cmp2_13'
-  Processing 'total_filter_DW01_add_14'
-  Processing 'total_filter_DW01_inc_14'
-  Processing 'total_filter_DW01_cmp2_14'
-  Processing 'total_filter_DW01_add_15'
-  Processing 'total_filter_DW01_inc_15'
-  Processing 'total_filter_DW01_cmp2_15'
-  Processing 'total_filter_DW02_mult_0'
-  Processing 'total_filter_DW01_add_16'
-  Processing 'total_filter_DW01_add_17'
-  Processing 'total_filter_DW02_mult_1'
-  Processing 'total_filter_DW01_add_18'
-  Processing 'total_filter_DW01_add_19'
-  Processing 'total_filter_DW02_mult_2'
-  Processing 'total_filter_DW01_add_20'
-  Processing 'total_filter_DW01_add_21'
-  Processing 'total_filter_DW02_mult_3'
-  Processing 'total_filter_DW01_add_22'
-  Processing 'total_filter_DW01_add_23'
-  Processing 'total_filter_DW02_mult_4'
-  Processing 'total_filter_DW01_add_24'
-  Processing 'total_filter_DW01_add_25'
-  Processing 'total_filter_DW02_mult_5'
-  Processing 'total_filter_DW01_add_26'
-  Processing 'total_filter_DW01_add_27'
-  Processing 'total_filter_DW02_mult_6'
-  Processing 'total_filter_DW01_add_28'
-  Processing 'total_filter_DW01_add_29'
-  Processing 'total_filter_DW02_mult_7'
-  Processing 'total_filter_DW01_add_30'
-  Processing 'total_filter_DW01_add_31'
-  Processing 'total_filter_DW02_mult_8'
-  Processing 'total_filter_DW01_add_32'
-  Processing 'total_filter_DW01_add_33'
-  Processing 'total_filter_DW02_mult_9'
-  Processing 'total_filter_DW01_add_34'
-  Processing 'total_filter_DW01_add_35'
-  Processing 'total_filter_DW02_mult_10'
-  Processing 'total_filter_DW01_add_36'
-  Processing 'total_filter_DW01_add_37'
-  Processing 'total_filter_DW02_mult_11'
-  Processing 'total_filter_DW01_add_38'
-  Processing 'total_filter_DW01_add_39'
-  Processing 'total_filter_DW02_mult_12'
-  Processing 'total_filter_DW01_add_40'
-  Processing 'total_filter_DW01_add_41'
-  Processing 'total_filter_DW02_mult_13'
-  Processing 'total_filter_DW01_add_42'
-  Processing 'total_filter_DW01_add_43'
-  Processing 'total_filter_DW02_mult_14'
-  Processing 'total_filter_DW01_add_44'
-  Processing 'total_filter_DW01_add_45'
-  Processing 'total_filter_DW02_mult_15'
-  Processing 'total_filter_DW01_add_46'
-  Processing 'total_filter_DW01_add_47'
+  Processing 'filter16_DW01_add_0'
+  Processing 'filter16_DW01_inc_0'
+  Processing 'filter16_DW01_cmp2_0'
+  Processing 'filter15_DW01_add_0'
+  Processing 'filter15_DW01_inc_0'
+  Processing 'filter15_DW01_cmp2_0'
+  Processing 'filter14_DW01_add_0'
+  Processing 'filter14_DW01_inc_0'
+  Processing 'filter14_DW01_cmp2_0'
+  Processing 'filter13_DW01_add_0'
+  Processing 'filter13_DW01_inc_0'
+  Processing 'filter13_DW01_cmp2_0'
+  Processing 'filter12_DW01_add_0'
+  Processing 'filter12_DW01_inc_0'
+  Processing 'filter12_DW01_cmp2_0'
+  Processing 'filter11_DW01_add_0'
+  Processing 'filter11_DW01_inc_0'
+  Processing 'filter11_DW01_cmp2_0'
+  Processing 'filter10_DW01_add_0'
+  Processing 'filter10_DW01_inc_0'
+  Processing 'filter10_DW01_cmp2_0'
+  Processing 'filter9_DW01_add_0'
+  Processing 'filter9_DW01_inc_0'
+  Processing 'filter9_DW01_cmp2_0'
+  Processing 'filter8_DW01_add_0'
+  Processing 'filter8_DW01_inc_0'
+  Processing 'filter8_DW01_cmp2_0'
+  Processing 'filter7_DW01_add_0'
+  Processing 'filter7_DW01_inc_0'
+  Processing 'filter7_DW01_cmp2_0'
+  Processing 'filter6_DW01_add_0'
+  Processing 'filter6_DW01_inc_0'
+  Processing 'filter6_DW01_cmp2_0'
+  Processing 'filter5_DW01_add_0'
+  Processing 'filter5_DW01_inc_0'
+  Processing 'filter5_DW01_cmp2_0'
+  Processing 'filter4_DW01_add_0'
+  Processing 'filter4_DW01_inc_0'
+  Processing 'filter4_DW01_cmp2_0'
+  Processing 'filter3_DW01_add_0'
+  Processing 'filter3_DW01_inc_0'
+  Processing 'filter3_DW01_cmp2_0'
+  Processing 'filter2_DW01_add_0'
+  Processing 'filter2_DW01_inc_0'
+  Processing 'filter2_DW01_cmp2_0'
+  Processing 'filter1_DW01_add_0'
+  Processing 'filter1_DW01_inc_0'
+  Processing 'filter1_DW01_cmp2_0'
+  Processing 'filter14_DW02_mult_0'
+  Processing 'filter14_DW01_add_1'
+  Processing 'filter14_DW01_add_2'
+  Processing 'filter13_DW02_mult_0'
+  Processing 'filter13_DW01_add_1'
+  Processing 'filter13_DW01_add_2'
+  Processing 'filter9_DW02_mult_0'
+  Processing 'filter9_DW01_add_1'
+  Processing 'filter9_DW01_add_2'
+  Processing 'filter3_DW02_mult_0'
+  Processing 'filter3_DW01_add_1'
+  Processing 'filter3_DW01_add_2'
+  Processing 'filter16_DW02_mult_0'
+  Processing 'filter16_DW01_add_1'
+  Processing 'filter16_DW01_add_2'
+  Processing 'filter12_DW02_mult_0'
+  Processing 'filter12_DW01_add_1'
+  Processing 'filter12_DW01_add_2'
+  Processing 'filter7_DW02_mult_0'
+  Processing 'filter7_DW01_add_1'
+  Processing 'filter7_DW01_add_2'
+  Processing 'filter6_DW02_mult_0'
+  Processing 'filter6_DW01_add_1'
+  Processing 'filter6_DW01_add_2'
+  Processing 'filter4_DW02_mult_0'
+  Processing 'filter4_DW01_add_1'
+  Processing 'filter4_DW01_add_2'
+  Processing 'filter11_DW02_mult_0'
+  Processing 'filter11_DW01_add_1'
+  Processing 'filter11_DW01_add_2'
+  Processing 'filter8_DW02_mult_0'
+  Processing 'filter8_DW01_add_1'
+  Processing 'filter8_DW01_add_2'
+  Processing 'filter2_DW02_mult_0'
+  Processing 'filter2_DW01_add_1'
+  Processing 'filter2_DW01_add_2'
+  Processing 'filter1_DW02_mult_0'
+  Processing 'filter1_DW01_add_1'
+  Processing 'filter1_DW01_add_2'
+  Processing 'filter15_DW02_mult_0'
+  Processing 'filter15_DW01_add_1'
+  Processing 'filter15_DW01_add_2'
+  Processing 'filter10_DW02_mult_0'
+  Processing 'filter10_DW01_add_1'
+  Processing 'filter10_DW01_add_2'
+  Processing 'filter5_DW02_mult_0'
+  Processing 'filter5_DW01_add_1'
+  Processing 'filter5_DW01_add_2'
 
   Beginning Mapping Optimizations  (Medium effort)
   -------------------------------
@@ -979,10 +991,10 @@ Information: Updating design information... (UID-85)
    ELAPSED            WORST NEG   SETUP    DESIGN                              MIN DELAY 
     TIME      AREA      SLACK     COST    RULE COST         ENDPOINT             COST    
   --------- --------- --------- --------- --------- ------------------------- -----------
-    0:00:55   87362.9      0.00       0.0   29030.0                                0.00  
-    0:00:55   87362.9      0.00       0.0   29030.0                                0.00  
-    0:00:56   88182.2      0.00       0.0   14408.1                                0.00  
-    0:00:57   88963.4      0.00       0.0    7013.7                                0.00  
+    0:00:49   85812.1      0.00       0.0   15617.4                                0.00  
+    0:00:49   85812.1      0.00       0.0   15617.4                                0.00  
+    0:00:50   86776.9      0.00       0.0   12248.9                                0.00  
+    0:00:50   87740.4      0.00       0.0    8897.0                                0.00  
 
   Beginning Delay Optimization Phase
   ----------------------------------
@@ -991,9 +1003,9 @@ Information: Updating design information... (UID-85)
    ELAPSED            WORST NEG   SETUP    DESIGN                              MIN DELAY 
     TIME      AREA      SLACK     COST    RULE COST         ENDPOINT             COST    
   --------- --------- --------- --------- --------- ------------------------- -----------
-    0:01:02   90091.8      0.00       0.0     815.5                                0.00  
-    0:01:05   90449.3      0.00       0.0     815.5                                0.00  
-    0:01:05   90449.3      0.00       0.0     815.5                                0.00  
+    0:00:56   89324.4      0.00       0.0    5620.1                                0.00  
+    0:01:01   89681.9      0.00       0.0    5620.1                                0.00  
+    0:01:01   89681.9      0.00       0.0    5620.1                                0.00  
 
 
   Beginning Design Rule Fixing  (max_capacitance)
@@ -1003,14 +1015,22 @@ Information: Updating design information... (UID-85)
    ELAPSED            WORST NEG   SETUP    DESIGN                              MIN DELAY 
     TIME      AREA      SLACK     COST    RULE COST         ENDPOINT             COST    
   --------- --------- --------- --------- --------- ------------------------- -----------
-    0:01:07   90449.3      0.00       0.0     815.5                                0.00  
-    0:01:08   90222.4      0.00       0.0     513.1 n2299                          0.00  
-    0:01:09   89879.5      0.00       0.0     310.1 n14161                         0.00  
-    0:01:10   89521.8      0.00       0.0     179.4 n12212                         0.00  
-    0:01:11   89218.3      0.00       0.0      70.7 n1056                          0.00  
-    0:01:12   88810.8      0.00       0.0      22.7 n16051                         0.00  
-    0:01:13   88465.7      0.00       0.0       4.9 n23154                         0.00  
-    0:01:14   88245.2      0.00       0.0       0.0                                0.00  
+    0:01:03   89681.9      0.00       0.0    5620.1                                0.00  
+    0:01:04   89336.6      0.00       0.0    5037.1 delay_pipeline[31][6]          0.00  
+    0:01:05   88857.0      0.00       0.0    4361.0 delay_pipeline[22][10]         0.00  
+    0:01:06   88307.5      0.00       0.0    3514.2 delay_pipeline[73][1]          0.00  
+    0:01:07   87836.1      0.00       0.0    3012.0 delay_pipeline[80][1]          0.00  
+    0:01:08   87351.5      0.00       0.0    2445.9 delay_pipeline[92][1]          0.00  
+    0:01:09   86871.1      0.00       0.0    2126.9 delay_pipeline[38][1]          0.00  
+    0:01:11   86359.8      0.00       0.0    1628.8 delay_pipeline[66][1]          0.00  
+    0:01:12   85870.4      0.00       0.0    1224.0 delay_pipeline[83][1]          0.00  
+    0:01:13   85377.2      0.00       0.0     851.5 delay_pipeline[62][1]          0.00  
+    0:01:15   84843.6      0.00       0.0     552.1 delay_pipeline[50][12]         0.00  
+    0:01:17   84299.1      0.00       0.0     279.6 delay_pipeline[105][5]         0.00  
+    0:01:17   84090.0      0.00       0.0     184.5 delay_pipeline[76][4]          0.00  
+    0:01:19   83813.9      0.00       0.0      56.1 delay_pipeline[25][2]          0.00  
+    0:01:20   83403.2      0.00       0.0       9.7 delay_pipeline[55][12]         0.00  
+    0:01:20   83421.9      0.00       0.0       0.0                                0.00  
 
 
   Beginning Critical Range Optimization
@@ -1020,7 +1040,7 @@ Information: Updating design information... (UID-85)
    ELAPSED            WORST NEG   SETUP    DESIGN                              MIN DELAY 
     TIME      AREA      SLACK     COST    RULE COST         ENDPOINT             COST    
   --------- --------- --------- --------- --------- ------------------------- -----------
-    0:01:14   88245.2      0.00       0.0       0.0                                0.00  
+    0:01:20   83421.9      0.00       0.0       0.0                                0.00  
 
 
   Beginning Area-Recovery Phase  (cleanup)
@@ -1030,32 +1050,32 @@ Information: Updating design information... (UID-85)
    ELAPSED            WORST NEG   SETUP    DESIGN                              MIN DELAY 
     TIME      AREA      SLACK     COST    RULE COST         ENDPOINT             COST    
   --------- --------- --------- --------- --------- ------------------------- -----------
-    0:01:14   88245.2      0.00       0.0       0.0                                0.00  
-    0:01:14   88245.2      0.00       0.0       0.0                                0.00  
-    0:01:23   86376.9      0.00       0.0       0.0                                0.00  
-    0:01:26   85559.7      0.00       0.0       0.0                                0.00  
-    0:01:29   85173.5      0.00       0.0       0.0                                0.00  
-    0:01:33   84969.7      0.00       0.0       0.0                                0.00  
-    0:01:34   84922.4      0.00       0.0       0.0                                0.00  
-    0:01:35   84906.9      0.00       0.0       0.0                                0.00  
-    0:01:35   84893.1      0.00       0.0       0.0                                0.00  
-    0:01:40   84884.6      0.00       0.0       0.0                                0.00  
-    0:01:41   84878.7      0.00       0.0       0.0                                0.00  
-    0:01:41   84875.3      0.00       0.0       0.0                                0.00  
-    0:01:41   84872.1      0.00       0.0       0.0                                0.00  
-    0:01:41   84868.9      0.00       0.0       0.0                                0.00  
-    0:01:41   84866.2      0.00       0.0       0.0                                0.00  
-    0:01:42   84863.6      0.00       0.0       0.0                                0.00  
-    0:01:42   84860.9      0.00       0.0       0.0                                0.00  
-    0:01:42   84858.3      0.00       0.0       0.0                                0.00  
-    0:01:42   84858.3      0.00       0.0       0.0                                0.00  
-    0:01:42   84858.3      0.00       0.0       0.0                                0.00  
-    0:01:55   65372.4      0.00       0.0       0.0                                0.00  
-    0:01:55   65372.4      0.00       0.0       0.0                                0.00  
-    0:01:55   65372.4      0.00       0.0       0.0                                0.00  
-    0:01:55   65372.4      0.00       0.0       0.0                                0.00  
-    0:01:55   65372.4      0.00       0.0       0.0                                0.00  
-    0:01:55   65372.4      0.00       0.0       0.0                                0.00  
+    0:01:20   83421.9      0.00       0.0       0.0                                0.00  
+    0:01:20   83421.9      0.00       0.0       0.0                                0.00  
+    0:01:30   82394.8      0.00       0.0       0.0                                0.00  
+    0:01:42   82055.7      0.00       0.0       0.0                                0.00  
+    0:01:44   81984.1      0.00       0.0       0.0                                0.00  
+    0:01:44   81930.1      0.00       0.0       0.0                                0.00  
+    0:01:44   81915.5      0.00       0.0       0.0                                0.00  
+    0:01:45   81910.2      0.00       0.0       0.0                                0.00  
+    0:01:45   81907.0      0.00       0.0       0.0                                0.00  
+    0:01:45   81904.3      0.00       0.0       0.0                                0.00  
+    0:01:45   81902.2      0.00       0.0       0.0                                0.00  
+    0:01:45   81901.4      0.00       0.0       0.0                                0.00  
+    0:01:45   81900.6      0.00       0.0       0.0                                0.00  
+    0:01:45   81899.8      0.00       0.0       0.0                                0.00  
+    0:01:46   81899.0      0.00       0.0       0.0                                0.00  
+    0:01:46   81898.2      0.00       0.0       0.0                                0.00  
+    0:01:46   81897.4      0.00       0.0       0.0                                0.00  
+    0:01:46   81896.1      0.00       0.0       0.0                                0.00  
+    0:01:46   81896.1      0.00       0.0       0.0                                0.00  
+    0:01:47   81896.1      0.00       0.0       0.0                                0.00  
+    0:01:59   67203.0      0.00       0.0       0.0                                0.00  
+    0:01:59   67203.0      0.00       0.0       0.0                                0.00  
+    0:01:59   67203.0      0.00       0.0       0.0                                0.00  
+    0:01:59   67203.0      0.00       0.0       0.0                                0.00  
+    0:01:59   67203.0      0.00       0.0       0.0                                0.00  
+    0:01:59   67203.0      0.00       0.0       0.0                                0.00  
 
 
   Beginning Critical Range Optimization
@@ -1065,8 +1085,8 @@ Information: Updating design information... (UID-85)
    ELAPSED            WORST NEG   SETUP    DESIGN                              MIN DELAY 
     TIME      AREA      SLACK     COST    RULE COST         ENDPOINT             COST    
   --------- --------- --------- --------- --------- ------------------------- -----------
-    0:01:55   65372.4      0.00       0.0       0.0                                0.00  
-    0:01:55   65372.4      0.00       0.0       0.0                                0.00  
+    0:01:59   67203.0      0.00       0.0       0.0                                0.00  
+    0:02:00   67203.0      0.00       0.0       0.0                                0.00  
 
 
 Note: Symbol # after min delay cost means estimated hold TNS across all active scenarios 
@@ -1075,6 +1095,6 @@ Note: Symbol # after min delay cost means estimated hold TNS across all active s
   Optimization Complete
   ---------------------
 Warning: Design 'total_filter' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
-     Net 'clock': 3227 load(s), 1 driver(s)
+     Net 'f16/clk': 3227 load(s), 1 driver(s)
 
 Thank you...
