@@ -33,12 +33,12 @@ read_file -f sverilog [list "total_filter.v"]
 Loading db file '/usr/caen/synopsys-synth-2018.06/libraries/syn/gtech.db'
 Loading db file '/usr/caen/synopsys-synth-2018.06/libraries/syn/standard.sldb'
   Loading link library 'gtech'
-Loading sverilog file '/afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_14_new/total_filter.v'
+Loading sverilog file '/afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_13_new/total_filter.v'
 Detecting input file type automatically (-rtl or -netlist).
 Reading with Presto HDL Compiler (equivalent to -rtl option).
 Running PRESTO HDLC
 Warning: Can't read link_library file 'your_library.db'. (UID-3)
-Compiling source file /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_14_new/total_filter.v
+Compiling source file /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_13_new/total_filter.v
 Opening include file filter1.v
 Opening include file filter2.v
 Opening include file filter3.v
@@ -55,10 +55,10 @@ Opening include file filter13.v
 Opening include file filter14.v
 Opening include file filter15.v
 Opening include file filter16.v
-Warning:  filter1.v:365: signed to unsigned part selection occurs. (VER-318)
+Warning:  filter1.v:360: signed to unsigned part selection occurs. (VER-318)
 
 Inferred memory devices in process
-	in routine filter1 line 147 in file
+	in routine filter1 line 146 in file
 		'filter1.v'.
 ===============================================================================
 |    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
@@ -68,32 +68,32 @@ Inferred memory devices in process
 ===============================================================================
 
 Inferred memory devices in process
-	in routine filter1 line 370 in file
+	in routine filter1 line 365 in file
 		'filter1.v'.
 ===============================================================================
 |    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
 ===============================================================================
-|    acc_out_1_reg    | Flip-flop |  35   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    acc_out_1_reg    | Flip-flop |  33   |  Y  | N  | Y  | N  | N  | N  | N  |
 ===============================================================================
 
 Inferred memory devices in process
-	in routine filter1 line 382 in file
+	in routine filter1 line 377 in file
 		'filter1.v'.
 ===============================================================================
 |    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
 ===============================================================================
-|    acc_final_reg    | Flip-flop |  35   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    acc_final_reg    | Flip-flop |  33   |  Y  | N  | Y  | N  | N  | N  | N  |
 ===============================================================================
 
 Inferred memory devices in process
-	in routine filter1 line 394 in file
+	in routine filter1 line 389 in file
 		'filter1.v'.
 ===============================================================================
 |    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
 ===============================================================================
-| output_register_reg | Flip-flop |  35   |  Y  | N  | Y  | N  | N  | N  | N  |
+| output_register_reg | Flip-flop |  33   |  Y  | N  | Y  | N  | N  | N  | N  |
 ===============================================================================
-Warning:  filter2.v:352: signed to unsigned part selection occurs. (VER-318)
+Warning:  filter2.v:349: signed to unsigned part selection occurs. (VER-318)
 
 Inferred memory devices in process
 	in routine filter2 line 146 in file
@@ -106,32 +106,32 @@ Inferred memory devices in process
 ===============================================================================
 
 Inferred memory devices in process
-	in routine filter2 line 357 in file
+	in routine filter2 line 354 in file
 		'filter2.v'.
 ===============================================================================
 |    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
 ===============================================================================
-|    acc_out_1_reg    | Flip-flop |  35   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    acc_out_1_reg    | Flip-flop |  33   |  Y  | N  | Y  | N  | N  | N  | N  |
 ===============================================================================
 
 Inferred memory devices in process
-	in routine filter2 line 369 in file
+	in routine filter2 line 366 in file
 		'filter2.v'.
 ===============================================================================
 |    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
 ===============================================================================
-|    acc_final_reg    | Flip-flop |  35   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    acc_final_reg    | Flip-flop |  33   |  Y  | N  | Y  | N  | N  | N  | N  |
 ===============================================================================
 
 Inferred memory devices in process
-	in routine filter2 line 381 in file
+	in routine filter2 line 378 in file
 		'filter2.v'.
 ===============================================================================
 |    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
 ===============================================================================
-| output_register_reg | Flip-flop |  35   |  Y  | N  | Y  | N  | N  | N  | N  |
+| output_register_reg | Flip-flop |  33   |  Y  | N  | Y  | N  | N  | N  | N  |
 ===============================================================================
-Warning:  filter3.v:361: signed to unsigned part selection occurs. (VER-318)
+Warning:  filter3.v:352: signed to unsigned part selection occurs. (VER-318)
 
 Inferred memory devices in process
 	in routine filter3 line 146 in file
@@ -144,32 +144,32 @@ Inferred memory devices in process
 ===============================================================================
 
 Inferred memory devices in process
-	in routine filter3 line 366 in file
+	in routine filter3 line 357 in file
 		'filter3.v'.
 ===============================================================================
 |    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
 ===============================================================================
-|    acc_out_1_reg    | Flip-flop |  35   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    acc_out_1_reg    | Flip-flop |  33   |  Y  | N  | Y  | N  | N  | N  | N  |
 ===============================================================================
 
 Inferred memory devices in process
-	in routine filter3 line 378 in file
+	in routine filter3 line 369 in file
 		'filter3.v'.
 ===============================================================================
 |    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
 ===============================================================================
-|    acc_final_reg    | Flip-flop |  35   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    acc_final_reg    | Flip-flop |  33   |  Y  | N  | Y  | N  | N  | N  | N  |
 ===============================================================================
 
 Inferred memory devices in process
-	in routine filter3 line 390 in file
+	in routine filter3 line 381 in file
 		'filter3.v'.
 ===============================================================================
 |    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
 ===============================================================================
-| output_register_reg | Flip-flop |  35   |  Y  | N  | Y  | N  | N  | N  | N  |
+| output_register_reg | Flip-flop |  33   |  Y  | N  | Y  | N  | N  | N  | N  |
 ===============================================================================
-Warning:  filter4.v:358: signed to unsigned part selection occurs. (VER-318)
+Warning:  filter4.v:352: signed to unsigned part selection occurs. (VER-318)
 
 Inferred memory devices in process
 	in routine filter4 line 146 in file
@@ -182,32 +182,32 @@ Inferred memory devices in process
 ===============================================================================
 
 Inferred memory devices in process
-	in routine filter4 line 363 in file
+	in routine filter4 line 357 in file
 		'filter4.v'.
 ===============================================================================
 |    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
 ===============================================================================
-|    acc_out_1_reg    | Flip-flop |  35   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    acc_out_1_reg    | Flip-flop |  33   |  Y  | N  | Y  | N  | N  | N  | N  |
 ===============================================================================
 
 Inferred memory devices in process
-	in routine filter4 line 375 in file
+	in routine filter4 line 369 in file
 		'filter4.v'.
 ===============================================================================
 |    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
 ===============================================================================
-|    acc_final_reg    | Flip-flop |  35   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    acc_final_reg    | Flip-flop |  33   |  Y  | N  | Y  | N  | N  | N  | N  |
 ===============================================================================
 
 Inferred memory devices in process
-	in routine filter4 line 387 in file
+	in routine filter4 line 381 in file
 		'filter4.v'.
 ===============================================================================
 |    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
 ===============================================================================
-| output_register_reg | Flip-flop |  35   |  Y  | N  | Y  | N  | N  | N  | N  |
+| output_register_reg | Flip-flop |  33   |  Y  | N  | Y  | N  | N  | N  | N  |
 ===============================================================================
-Warning:  filter5.v:361: signed to unsigned part selection occurs. (VER-318)
+Warning:  filter5.v:358: signed to unsigned part selection occurs. (VER-318)
 
 Inferred memory devices in process
 	in routine filter5 line 146 in file
@@ -220,32 +220,32 @@ Inferred memory devices in process
 ===============================================================================
 
 Inferred memory devices in process
-	in routine filter5 line 366 in file
+	in routine filter5 line 363 in file
 		'filter5.v'.
 ===============================================================================
 |    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
 ===============================================================================
-|    acc_out_1_reg    | Flip-flop |  35   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    acc_out_1_reg    | Flip-flop |  33   |  Y  | N  | Y  | N  | N  | N  | N  |
 ===============================================================================
 
 Inferred memory devices in process
-	in routine filter5 line 378 in file
+	in routine filter5 line 375 in file
 		'filter5.v'.
 ===============================================================================
 |    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
 ===============================================================================
-|    acc_final_reg    | Flip-flop |  35   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    acc_final_reg    | Flip-flop |  33   |  Y  | N  | Y  | N  | N  | N  | N  |
 ===============================================================================
 
 Inferred memory devices in process
-	in routine filter5 line 390 in file
+	in routine filter5 line 387 in file
 		'filter5.v'.
 ===============================================================================
 |    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
 ===============================================================================
-| output_register_reg | Flip-flop |  35   |  Y  | N  | Y  | N  | N  | N  | N  |
+| output_register_reg | Flip-flop |  33   |  Y  | N  | Y  | N  | N  | N  | N  |
 ===============================================================================
-Warning:  filter6.v:361: signed to unsigned part selection occurs. (VER-318)
+Warning:  filter6.v:358: signed to unsigned part selection occurs. (VER-318)
 
 Inferred memory devices in process
 	in routine filter6 line 146 in file
@@ -258,32 +258,32 @@ Inferred memory devices in process
 ===============================================================================
 
 Inferred memory devices in process
-	in routine filter6 line 366 in file
+	in routine filter6 line 363 in file
 		'filter6.v'.
 ===============================================================================
 |    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
 ===============================================================================
-|    acc_out_1_reg    | Flip-flop |  35   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    acc_out_1_reg    | Flip-flop |  33   |  Y  | N  | Y  | N  | N  | N  | N  |
 ===============================================================================
 
 Inferred memory devices in process
-	in routine filter6 line 378 in file
+	in routine filter6 line 375 in file
 		'filter6.v'.
 ===============================================================================
 |    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
 ===============================================================================
-|    acc_final_reg    | Flip-flop |  35   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    acc_final_reg    | Flip-flop |  33   |  Y  | N  | Y  | N  | N  | N  | N  |
 ===============================================================================
 
 Inferred memory devices in process
-	in routine filter6 line 390 in file
+	in routine filter6 line 387 in file
 		'filter6.v'.
 ===============================================================================
 |    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
 ===============================================================================
-| output_register_reg | Flip-flop |  35   |  Y  | N  | Y  | N  | N  | N  | N  |
+| output_register_reg | Flip-flop |  33   |  Y  | N  | Y  | N  | N  | N  | N  |
 ===============================================================================
-Warning:  filter7.v:361: signed to unsigned part selection occurs. (VER-318)
+Warning:  filter7.v:355: signed to unsigned part selection occurs. (VER-318)
 
 Inferred memory devices in process
 	in routine filter7 line 146 in file
@@ -296,32 +296,32 @@ Inferred memory devices in process
 ===============================================================================
 
 Inferred memory devices in process
-	in routine filter7 line 366 in file
+	in routine filter7 line 360 in file
 		'filter7.v'.
 ===============================================================================
 |    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
 ===============================================================================
-|    acc_out_1_reg    | Flip-flop |  35   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    acc_out_1_reg    | Flip-flop |  33   |  Y  | N  | Y  | N  | N  | N  | N  |
 ===============================================================================
 
 Inferred memory devices in process
-	in routine filter7 line 378 in file
+	in routine filter7 line 372 in file
 		'filter7.v'.
 ===============================================================================
 |    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
 ===============================================================================
-|    acc_final_reg    | Flip-flop |  35   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    acc_final_reg    | Flip-flop |  33   |  Y  | N  | Y  | N  | N  | N  | N  |
 ===============================================================================
 
 Inferred memory devices in process
-	in routine filter7 line 390 in file
+	in routine filter7 line 384 in file
 		'filter7.v'.
 ===============================================================================
 |    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
 ===============================================================================
-| output_register_reg | Flip-flop |  35   |  Y  | N  | Y  | N  | N  | N  | N  |
+| output_register_reg | Flip-flop |  33   |  Y  | N  | Y  | N  | N  | N  | N  |
 ===============================================================================
-Warning:  filter8.v:358: signed to unsigned part selection occurs. (VER-318)
+Warning:  filter8.v:355: signed to unsigned part selection occurs. (VER-318)
 
 Inferred memory devices in process
 	in routine filter8 line 146 in file
@@ -334,32 +334,32 @@ Inferred memory devices in process
 ===============================================================================
 
 Inferred memory devices in process
-	in routine filter8 line 363 in file
+	in routine filter8 line 360 in file
 		'filter8.v'.
 ===============================================================================
 |    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
 ===============================================================================
-|    acc_out_1_reg    | Flip-flop |  35   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    acc_out_1_reg    | Flip-flop |  33   |  Y  | N  | Y  | N  | N  | N  | N  |
 ===============================================================================
 
 Inferred memory devices in process
-	in routine filter8 line 375 in file
+	in routine filter8 line 372 in file
 		'filter8.v'.
 ===============================================================================
 |    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
 ===============================================================================
-|    acc_final_reg    | Flip-flop |  35   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    acc_final_reg    | Flip-flop |  33   |  Y  | N  | Y  | N  | N  | N  | N  |
 ===============================================================================
 
 Inferred memory devices in process
-	in routine filter8 line 387 in file
+	in routine filter8 line 384 in file
 		'filter8.v'.
 ===============================================================================
 |    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
 ===============================================================================
-| output_register_reg | Flip-flop |  35   |  Y  | N  | Y  | N  | N  | N  | N  |
+| output_register_reg | Flip-flop |  33   |  Y  | N  | Y  | N  | N  | N  | N  |
 ===============================================================================
-Warning:  filter9.v:358: signed to unsigned part selection occurs. (VER-318)
+Warning:  filter9.v:355: signed to unsigned part selection occurs. (VER-318)
 
 Inferred memory devices in process
 	in routine filter9 line 146 in file
@@ -372,30 +372,30 @@ Inferred memory devices in process
 ===============================================================================
 
 Inferred memory devices in process
-	in routine filter9 line 363 in file
+	in routine filter9 line 360 in file
 		'filter9.v'.
 ===============================================================================
 |    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
 ===============================================================================
-|    acc_out_1_reg    | Flip-flop |  35   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    acc_out_1_reg    | Flip-flop |  33   |  Y  | N  | Y  | N  | N  | N  | N  |
 ===============================================================================
 
 Inferred memory devices in process
-	in routine filter9 line 375 in file
+	in routine filter9 line 372 in file
 		'filter9.v'.
 ===============================================================================
 |    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
 ===============================================================================
-|    acc_final_reg    | Flip-flop |  35   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    acc_final_reg    | Flip-flop |  33   |  Y  | N  | Y  | N  | N  | N  | N  |
 ===============================================================================
 
 Inferred memory devices in process
-	in routine filter9 line 387 in file
+	in routine filter9 line 384 in file
 		'filter9.v'.
 ===============================================================================
 |    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
 ===============================================================================
-| output_register_reg | Flip-flop |  35   |  Y  | N  | Y  | N  | N  | N  | N  |
+| output_register_reg | Flip-flop |  33   |  Y  | N  | Y  | N  | N  | N  | N  |
 ===============================================================================
 Warning:  filter10.v:358: signed to unsigned part selection occurs. (VER-318)
 
@@ -415,7 +415,7 @@ Inferred memory devices in process
 ===============================================================================
 |    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
 ===============================================================================
-|    acc_out_1_reg    | Flip-flop |  35   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    acc_out_1_reg    | Flip-flop |  33   |  Y  | N  | Y  | N  | N  | N  | N  |
 ===============================================================================
 
 Inferred memory devices in process
@@ -424,7 +424,7 @@ Inferred memory devices in process
 ===============================================================================
 |    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
 ===============================================================================
-|    acc_final_reg    | Flip-flop |  35   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    acc_final_reg    | Flip-flop |  33   |  Y  | N  | Y  | N  | N  | N  | N  |
 ===============================================================================
 
 Inferred memory devices in process
@@ -433,7 +433,7 @@ Inferred memory devices in process
 ===============================================================================
 |    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
 ===============================================================================
-| output_register_reg | Flip-flop |  35   |  Y  | N  | Y  | N  | N  | N  | N  |
+| output_register_reg | Flip-flop |  33   |  Y  | N  | Y  | N  | N  | N  | N  |
 ===============================================================================
 Warning:  filter11.v:355: signed to unsigned part selection occurs. (VER-318)
 
@@ -453,7 +453,7 @@ Inferred memory devices in process
 ===============================================================================
 |    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
 ===============================================================================
-|    acc_out_1_reg    | Flip-flop |  35   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    acc_out_1_reg    | Flip-flop |  33   |  Y  | N  | Y  | N  | N  | N  | N  |
 ===============================================================================
 
 Inferred memory devices in process
@@ -462,7 +462,7 @@ Inferred memory devices in process
 ===============================================================================
 |    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
 ===============================================================================
-|    acc_final_reg    | Flip-flop |  35   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    acc_final_reg    | Flip-flop |  33   |  Y  | N  | Y  | N  | N  | N  | N  |
 ===============================================================================
 
 Inferred memory devices in process
@@ -471,9 +471,8 @@ Inferred memory devices in process
 ===============================================================================
 |    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
 ===============================================================================
-| output_register_reg | Flip-flop |  35   |  Y  | N  | Y  | N  | N  | N  | N  |
+| output_register_reg | Flip-flop |  33   |  Y  | N  | Y  | N  | N  | N  | N  |
 ===============================================================================
-Warning:  filter12.v:352: signed to unsigned part selection occurs. (VER-318)
 
 Inferred memory devices in process
 	in routine filter12 line 146 in file
@@ -491,7 +490,7 @@ Inferred memory devices in process
 ===============================================================================
 |    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
 ===============================================================================
-|    acc_out_1_reg    | Flip-flop |  35   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    acc_out_1_reg    | Flip-flop |  33   |  Y  | N  | Y  | N  | N  | N  | N  |
 ===============================================================================
 
 Inferred memory devices in process
@@ -500,7 +499,7 @@ Inferred memory devices in process
 ===============================================================================
 |    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
 ===============================================================================
-|    acc_final_reg    | Flip-flop |  35   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    acc_final_reg    | Flip-flop |  33   |  Y  | N  | Y  | N  | N  | N  | N  |
 ===============================================================================
 
 Inferred memory devices in process
@@ -509,12 +508,12 @@ Inferred memory devices in process
 ===============================================================================
 |    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
 ===============================================================================
-| output_register_reg | Flip-flop |  35   |  Y  | N  | Y  | N  | N  | N  | N  |
+| output_register_reg | Flip-flop |  33   |  Y  | N  | Y  | N  | N  | N  | N  |
 ===============================================================================
-Warning:  filter13.v:364: signed to unsigned part selection occurs. (VER-318)
+Warning:  filter13.v:365: signed to unsigned part selection occurs. (VER-318)
 
 Inferred memory devices in process
-	in routine filter13 line 146 in file
+	in routine filter13 line 147 in file
 		'filter13.v'.
 ===============================================================================
 |    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
@@ -524,31 +523,32 @@ Inferred memory devices in process
 ===============================================================================
 
 Inferred memory devices in process
-	in routine filter13 line 369 in file
+	in routine filter13 line 370 in file
 		'filter13.v'.
 ===============================================================================
 |    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
 ===============================================================================
-|    acc_out_1_reg    | Flip-flop |  35   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    acc_out_1_reg    | Flip-flop |  33   |  Y  | N  | Y  | N  | N  | N  | N  |
 ===============================================================================
 
 Inferred memory devices in process
-	in routine filter13 line 381 in file
+	in routine filter13 line 382 in file
 		'filter13.v'.
 ===============================================================================
 |    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
 ===============================================================================
-|    acc_final_reg    | Flip-flop |  35   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    acc_final_reg    | Flip-flop |  33   |  Y  | N  | Y  | N  | N  | N  | N  |
 ===============================================================================
 
 Inferred memory devices in process
-	in routine filter13 line 393 in file
+	in routine filter13 line 394 in file
 		'filter13.v'.
 ===============================================================================
 |    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
 ===============================================================================
-| output_register_reg | Flip-flop |  35   |  Y  | N  | Y  | N  | N  | N  | N  |
+| output_register_reg | Flip-flop |  33   |  Y  | N  | Y  | N  | N  | N  | N  |
 ===============================================================================
+Warning:  filter14.v:352: signed to unsigned part selection occurs. (VER-318)
 
 Inferred memory devices in process
 	in routine filter14 line 146 in file
@@ -561,30 +561,30 @@ Inferred memory devices in process
 ===============================================================================
 
 Inferred memory devices in process
-	in routine filter14 line 366 in file
+	in routine filter14 line 357 in file
 		'filter14.v'.
 ===============================================================================
 |    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
 ===============================================================================
-|    acc_out_1_reg    | Flip-flop |  35   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    acc_out_1_reg    | Flip-flop |  33   |  Y  | N  | Y  | N  | N  | N  | N  |
 ===============================================================================
 
 Inferred memory devices in process
-	in routine filter14 line 378 in file
+	in routine filter14 line 369 in file
 		'filter14.v'.
 ===============================================================================
 |    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
 ===============================================================================
-|    acc_final_reg    | Flip-flop |  35   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    acc_final_reg    | Flip-flop |  33   |  Y  | N  | Y  | N  | N  | N  | N  |
 ===============================================================================
 
 Inferred memory devices in process
-	in routine filter14 line 390 in file
+	in routine filter14 line 381 in file
 		'filter14.v'.
 ===============================================================================
 |    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
 ===============================================================================
-| output_register_reg | Flip-flop |  35   |  Y  | N  | Y  | N  | N  | N  | N  |
+| output_register_reg | Flip-flop |  33   |  Y  | N  | Y  | N  | N  | N  | N  |
 ===============================================================================
 Warning:  filter15.v:352: signed to unsigned part selection occurs. (VER-318)
 
@@ -604,7 +604,7 @@ Inferred memory devices in process
 ===============================================================================
 |    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
 ===============================================================================
-|    acc_out_1_reg    | Flip-flop |  35   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    acc_out_1_reg    | Flip-flop |  33   |  Y  | N  | Y  | N  | N  | N  | N  |
 ===============================================================================
 
 Inferred memory devices in process
@@ -613,7 +613,7 @@ Inferred memory devices in process
 ===============================================================================
 |    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
 ===============================================================================
-|    acc_final_reg    | Flip-flop |  35   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    acc_final_reg    | Flip-flop |  33   |  Y  | N  | Y  | N  | N  | N  | N  |
 ===============================================================================
 
 Inferred memory devices in process
@@ -622,9 +622,9 @@ Inferred memory devices in process
 ===============================================================================
 |    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
 ===============================================================================
-| output_register_reg | Flip-flop |  35   |  Y  | N  | Y  | N  | N  | N  | N  |
+| output_register_reg | Flip-flop |  33   |  Y  | N  | Y  | N  | N  | N  | N  |
 ===============================================================================
-Warning:  filter16.v:328: signed to unsigned part selection occurs. (VER-318)
+Warning:  filter16.v:325: signed to unsigned part selection occurs. (VER-318)
 
 Inferred memory devices in process
 	in routine filter16 line 146 in file
@@ -637,42 +637,42 @@ Inferred memory devices in process
 ===============================================================================
 
 Inferred memory devices in process
-	in routine filter16 line 333 in file
+	in routine filter16 line 330 in file
 		'filter16.v'.
 ===============================================================================
 |    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
 ===============================================================================
-|    acc_out_1_reg    | Flip-flop |  35   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    acc_out_1_reg    | Flip-flop |  33   |  Y  | N  | Y  | N  | N  | N  | N  |
 ===============================================================================
 
 Inferred memory devices in process
-	in routine filter16 line 345 in file
+	in routine filter16 line 342 in file
 		'filter16.v'.
 ===============================================================================
 |    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
 ===============================================================================
-|    acc_final_reg    | Flip-flop |  35   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    acc_final_reg    | Flip-flop |  33   |  Y  | N  | Y  | N  | N  | N  | N  |
 ===============================================================================
 
 Inferred memory devices in process
-	in routine filter16 line 357 in file
+	in routine filter16 line 354 in file
 		'filter16.v'.
 ===============================================================================
 |    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
 ===============================================================================
-| output_register_reg | Flip-flop |  35   |  Y  | N  | Y  | N  | N  | N  | N  |
+| output_register_reg | Flip-flop |  33   |  Y  | N  | Y  | N  | N  | N  | N  |
 ===============================================================================
 
 Inferred memory devices in process
 	in routine total_filter line 52 in file
-		'/afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_14_new/total_filter.v'.
+		'/afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_13_new/total_filter.v'.
 ===============================================================================
 |    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
 ===============================================================================
-| delay_pipeline_reg  | Flip-flop | 1666  |  Y  | N  | Y  | N  | N  | N  | N  |
+| delay_pipeline_reg  | Flip-flop | 1547  |  Y  | N  | Y  | N  | N  | N  | N  |
 ===============================================================================
 Presto compilation completed successfully.
-Current design is now '/afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_14_new/filter1.db:filter1'
+Current design is now '/afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_13_new/filter1.db:filter1'
 Loaded 17 designs.
 Current design is 'filter1'.
 filter1 filter2 filter3 filter4 filter5 filter6 filter7 filter8 filter9 filter10 filter11 filter12 filter13 filter14 filter15 filter16 total_filter
@@ -804,7 +804,7 @@ if {  $dc_shell_status != [list] } {
   set MAX_FANOUT $MAX_FANOUT
   set MAX_TRANSITION $MAX_TRANSITION
   uniquify
-#  ungroup -all -flatten
+  ungroup -all -flatten
   redirect $chk_file { check_design }
   # saif_map -start 
   # set_power_prediction
@@ -814,7 +814,7 @@ if {  $dc_shell_status != [list] } {
 #   write -hier -format verilog -output $netlist_file $design_name
 #   write -hier -format ddc -output $ddc_file $design_name
   redirect $power_file { report_power }
-  report_power -verbose -hierarchy -levels 2 > ./power2.out
+  report_power -verbose -hierarchy -levels 2 -analysis_effort low > ./power2.out
   # report_power
   # redirect -append $rep_file { report_area }
 #   redirect -append $rep_file { report_timing -max_paths 2 -input_pins -nets -transition_time -nosplit }
@@ -826,15 +826,14 @@ if {  $dc_shell_status != [list] } {
   quit
 } else {
    quit
-}
-Loading db file '/afs/umich.edu/user/s/u/sunsusan/Desktop/SC_FIR_hardware_syn/Nangate/NangateOpenCellLibrary.db'
+}Loading db file '/afs/umich.edu/user/s/u/sunsusan/Desktop/SC_FIR_hardware_syn/Nangate/NangateOpenCellLibrary.db'
 Information: Using CCS timing libraries. (TIM-024)
 Current design is 'total_filter'.
 
   Linking design 'total_filter'
   Using the following designs and libraries:
   --------------------------------------------------------------------------
-  * (17 designs)              /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_14_new/total_filter.db, etc
+  * (17 designs)              /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_13_new/total_filter.db, etc
   NangateOpenCellLibrary (library) /afs/umich.edu/user/s/u/sunsusan/Desktop/SC_FIR_hardware_syn/Nangate/NangateOpenCellLibrary.db
 
 Error: Can't find the specified library 'lec25dscc25_TT' in memory. (UID-131)
@@ -844,6 +843,11 @@ Current design is 'total_filter'.
 Warning: Dont_touch on net 'reset' may be overridden by compile because it
 	is connected to generic logic. Use all_connected to see net
 	connections. (OPT-461)
+Warning: Dont_touch on net 'reset' may be overridden by compile because it
+	is connected to generic logic. Use all_connected to see net
+	connections. (OPT-461)
+Information: Updating graph... (UID-83)
+Warning: Design 'total_filter' contains 15 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
 Warning: The compile -map_effort low is obsolete. Setting this variable now defaults to compile -map_effort medium. Please update your script accordingly. (OPT-1303)
 Information: Evaluating DesignWare library utilization. (UISN-27)
 
@@ -858,28 +862,12 @@ Warning: Dont_touch on net 'reset' may be overridden by compile because it
 	is connected to generic logic. Use all_connected to see net
 	connections. (OPT-461)
 
-Information: There are 1360 potential problems in your design. Please run 'check_design' for more information. (LINT-99)
+Information: There are 16 potential problems in your design. Please run 'check_design' for more information. (LINT-99)
 
 
 
   Beginning Pass 1 Mapping
   ------------------------
-  Processing 'filter16'
-  Processing 'filter15'
-  Processing 'filter14'
-  Processing 'filter13'
-  Processing 'filter12'
-  Processing 'filter11'
-  Processing 'filter10'
-  Processing 'filter9'
-  Processing 'filter8'
-  Processing 'filter7'
-  Processing 'filter6'
-  Processing 'filter5'
-  Processing 'filter4'
-  Processing 'filter3'
-  Processing 'filter2'
-  Processing 'filter1'
   Processing 'total_filter'
 
   Updating timing information
@@ -887,102 +875,102 @@ Information: Updating design information... (UID-85)
 
   Beginning Implementation Selection
   ----------------------------------
-  Processing 'filter16_DW01_add_0'
-  Processing 'filter16_DW01_inc_0'
-  Processing 'filter16_DW01_cmp2_0'
-  Processing 'filter15_DW01_add_0'
-  Processing 'filter15_DW01_inc_0'
-  Processing 'filter15_DW01_cmp2_0'
-  Processing 'filter14_DW01_add_0'
-  Processing 'filter14_DW01_inc_0'
-  Processing 'filter14_DW01_cmp2_0'
-  Processing 'filter13_DW01_add_0'
-  Processing 'filter13_DW01_inc_0'
-  Processing 'filter13_DW01_cmp2_0'
-  Processing 'filter12_DW01_add_0'
-  Processing 'filter12_DW01_inc_0'
-  Processing 'filter12_DW01_cmp2_0'
-  Processing 'filter11_DW01_add_0'
-  Processing 'filter11_DW01_inc_0'
-  Processing 'filter11_DW01_cmp2_0'
-  Processing 'filter10_DW01_add_0'
-  Processing 'filter10_DW01_inc_0'
-  Processing 'filter10_DW01_cmp2_0'
-  Processing 'filter9_DW01_add_0'
-  Processing 'filter9_DW01_inc_0'
-  Processing 'filter9_DW01_cmp2_0'
-  Processing 'filter8_DW01_add_0'
-  Processing 'filter8_DW01_inc_0'
-  Processing 'filter8_DW01_cmp2_0'
-  Processing 'filter7_DW01_add_0'
-  Processing 'filter7_DW01_inc_0'
-  Processing 'filter7_DW01_cmp2_0'
-  Processing 'filter6_DW01_add_0'
-  Processing 'filter6_DW01_inc_0'
-  Processing 'filter6_DW01_cmp2_0'
-  Processing 'filter5_DW01_add_0'
-  Processing 'filter5_DW01_inc_0'
-  Processing 'filter5_DW01_cmp2_0'
-  Processing 'filter4_DW01_add_0'
-  Processing 'filter4_DW01_inc_0'
-  Processing 'filter4_DW01_cmp2_0'
-  Processing 'filter3_DW01_add_0'
-  Processing 'filter3_DW01_inc_0'
-  Processing 'filter3_DW01_cmp2_0'
-  Processing 'filter2_DW01_add_0'
-  Processing 'filter2_DW01_inc_0'
-  Processing 'filter2_DW01_cmp2_0'
-  Processing 'filter1_DW01_add_0'
-  Processing 'filter1_DW01_inc_0'
-  Processing 'filter1_DW01_cmp2_0'
-  Processing 'filter6_DW02_mult_0'
-  Processing 'filter6_DW01_add_1'
-  Processing 'filter6_DW01_add_2'
-  Processing 'filter16_DW02_mult_0'
-  Processing 'filter16_DW01_add_1'
-  Processing 'filter16_DW01_add_2'
-  Processing 'filter12_DW02_mult_0'
-  Processing 'filter12_DW01_add_1'
-  Processing 'filter12_DW01_add_2'
-  Processing 'filter11_DW02_mult_0'
-  Processing 'filter11_DW01_add_1'
-  Processing 'filter11_DW01_add_2'
-  Processing 'filter10_DW02_mult_0'
-  Processing 'filter10_DW01_add_1'
-  Processing 'filter10_DW01_add_2'
-  Processing 'filter7_DW02_mult_0'
-  Processing 'filter7_DW01_add_1'
-  Processing 'filter7_DW01_add_2'
-  Processing 'filter5_DW02_mult_0'
-  Processing 'filter5_DW01_add_1'
-  Processing 'filter5_DW01_add_2'
-  Processing 'filter4_DW02_mult_0'
-  Processing 'filter4_DW01_add_1'
-  Processing 'filter4_DW01_add_2'
-  Processing 'filter3_DW02_mult_0'
-  Processing 'filter3_DW01_add_1'
-  Processing 'filter3_DW01_add_2'
-  Processing 'filter1_DW02_mult_0'
-  Processing 'filter1_DW01_add_1'
-  Processing 'filter1_DW01_add_2'
-  Processing 'filter14_DW02_mult_0'
-  Processing 'filter14_DW01_add_1'
-  Processing 'filter14_DW01_add_2'
-  Processing 'filter9_DW02_mult_0'
-  Processing 'filter9_DW01_add_1'
-  Processing 'filter9_DW01_add_2'
-  Processing 'filter2_DW02_mult_0'
-  Processing 'filter2_DW01_add_1'
-  Processing 'filter2_DW01_add_2'
-  Processing 'filter15_DW02_mult_0'
-  Processing 'filter15_DW01_add_1'
-  Processing 'filter15_DW01_add_2'
-  Processing 'filter13_DW02_mult_0'
-  Processing 'filter13_DW01_add_1'
-  Processing 'filter13_DW01_add_2'
-  Processing 'filter8_DW02_mult_0'
-  Processing 'filter8_DW01_add_1'
-  Processing 'filter8_DW01_add_2'
+  Processing 'total_filter_DW01_add_0'
+  Processing 'total_filter_DW01_inc_0'
+  Processing 'total_filter_DW01_cmp2_0'
+  Processing 'total_filter_DW01_add_1'
+  Processing 'total_filter_DW01_inc_1'
+  Processing 'total_filter_DW01_cmp2_1'
+  Processing 'total_filter_DW01_add_2'
+  Processing 'total_filter_DW01_inc_2'
+  Processing 'total_filter_DW01_cmp2_2'
+  Processing 'total_filter_DW01_add_3'
+  Processing 'total_filter_DW01_inc_3'
+  Processing 'total_filter_DW01_cmp2_3'
+  Processing 'total_filter_DW01_add_4'
+  Processing 'total_filter_DW01_inc_4'
+  Processing 'total_filter_DW01_cmp2_4'
+  Processing 'total_filter_DW01_add_5'
+  Processing 'total_filter_DW01_inc_5'
+  Processing 'total_filter_DW01_cmp2_5'
+  Processing 'total_filter_DW01_add_6'
+  Processing 'total_filter_DW01_inc_6'
+  Processing 'total_filter_DW01_cmp2_6'
+  Processing 'total_filter_DW01_add_7'
+  Processing 'total_filter_DW01_inc_7'
+  Processing 'total_filter_DW01_cmp2_7'
+  Processing 'total_filter_DW01_add_8'
+  Processing 'total_filter_DW01_inc_8'
+  Processing 'total_filter_DW01_cmp2_8'
+  Processing 'total_filter_DW01_add_9'
+  Processing 'total_filter_DW01_inc_9'
+  Processing 'total_filter_DW01_cmp2_9'
+  Processing 'total_filter_DW01_add_10'
+  Processing 'total_filter_DW01_inc_10'
+  Processing 'total_filter_DW01_cmp2_10'
+  Processing 'total_filter_DW01_add_11'
+  Processing 'total_filter_DW01_inc_11'
+  Processing 'total_filter_DW01_cmp2_11'
+  Processing 'total_filter_DW01_add_12'
+  Processing 'total_filter_DW01_inc_12'
+  Processing 'total_filter_DW01_cmp2_12'
+  Processing 'total_filter_DW01_add_13'
+  Processing 'total_filter_DW01_inc_13'
+  Processing 'total_filter_DW01_cmp2_13'
+  Processing 'total_filter_DW01_add_14'
+  Processing 'total_filter_DW01_inc_14'
+  Processing 'total_filter_DW01_cmp2_14'
+  Processing 'total_filter_DW01_add_15'
+  Processing 'total_filter_DW01_inc_15'
+  Processing 'total_filter_DW01_cmp2_15'
+  Processing 'total_filter_DW02_mult_0'
+  Processing 'total_filter_DW01_add_16'
+  Processing 'total_filter_DW01_add_17'
+  Processing 'total_filter_DW02_mult_1'
+  Processing 'total_filter_DW01_add_18'
+  Processing 'total_filter_DW01_add_19'
+  Processing 'total_filter_DW02_mult_2'
+  Processing 'total_filter_DW01_add_20'
+  Processing 'total_filter_DW01_add_21'
+  Processing 'total_filter_DW02_mult_3'
+  Processing 'total_filter_DW01_add_22'
+  Processing 'total_filter_DW01_add_23'
+  Processing 'total_filter_DW02_mult_4'
+  Processing 'total_filter_DW01_add_24'
+  Processing 'total_filter_DW01_add_25'
+  Processing 'total_filter_DW02_mult_5'
+  Processing 'total_filter_DW01_add_26'
+  Processing 'total_filter_DW01_add_27'
+  Processing 'total_filter_DW02_mult_6'
+  Processing 'total_filter_DW01_add_28'
+  Processing 'total_filter_DW01_add_29'
+  Processing 'total_filter_DW02_mult_7'
+  Processing 'total_filter_DW01_add_30'
+  Processing 'total_filter_DW01_add_31'
+  Processing 'total_filter_DW02_mult_8'
+  Processing 'total_filter_DW01_add_32'
+  Processing 'total_filter_DW01_add_33'
+  Processing 'total_filter_DW02_mult_9'
+  Processing 'total_filter_DW01_add_34'
+  Processing 'total_filter_DW01_add_35'
+  Processing 'total_filter_DW02_mult_10'
+  Processing 'total_filter_DW01_add_36'
+  Processing 'total_filter_DW01_add_37'
+  Processing 'total_filter_DW02_mult_11'
+  Processing 'total_filter_DW01_add_38'
+  Processing 'total_filter_DW01_add_39'
+  Processing 'total_filter_DW02_mult_12'
+  Processing 'total_filter_DW01_add_40'
+  Processing 'total_filter_DW01_add_41'
+  Processing 'total_filter_DW02_mult_13'
+  Processing 'total_filter_DW01_add_42'
+  Processing 'total_filter_DW01_add_43'
+  Processing 'total_filter_DW02_mult_14'
+  Processing 'total_filter_DW01_add_44'
+  Processing 'total_filter_DW01_add_45'
+  Processing 'total_filter_DW02_mult_15'
+  Processing 'total_filter_DW01_add_46'
+  Processing 'total_filter_DW01_add_47'
 
   Beginning Mapping Optimizations  (Medium effort)
   -------------------------------
@@ -991,10 +979,10 @@ Information: Updating design information... (UID-85)
    ELAPSED            WORST NEG   SETUP    DESIGN                              MIN DELAY 
     TIME      AREA      SLACK     COST    RULE COST         ENDPOINT             COST    
   --------- --------- --------- --------- --------- ------------------------- -----------
-    0:00:53   94043.5      0.00       0.0   23673.4                                0.00  
-    0:00:53   94043.5      0.00       0.0   23673.4                                0.00  
-    0:00:54   95171.1      0.00       0.0   17858.0                                0.00  
-    0:00:55   96300.2      0.00       0.0   12068.9                                0.00  
+    0:00:55   87362.9      0.00       0.0   29030.0                                0.00  
+    0:00:55   87362.9      0.00       0.0   29030.0                                0.00  
+    0:00:56   88182.2      0.00       0.0   14408.1                                0.00  
+    0:00:57   88963.4      0.00       0.0    7013.7                                0.00  
 
   Beginning Delay Optimization Phase
   ----------------------------------
@@ -1003,9 +991,9 @@ Information: Updating design information... (UID-85)
    ELAPSED            WORST NEG   SETUP    DESIGN                              MIN DELAY 
     TIME      AREA      SLACK     COST    RULE COST         ENDPOINT             COST    
   --------- --------- --------- --------- --------- ------------------------- -----------
-    0:01:00   97859.3      0.00       0.0    6505.0                                0.00  
-    0:01:06   98242.3      0.00       0.0    6505.0                                0.00  
-    0:01:06   98242.3      0.00       0.0    6505.0                                0.00  
+    0:01:02   90091.8      0.00       0.0     815.5                                0.00  
+    0:01:05   90449.3      0.00       0.0     815.5                                0.00  
+    0:01:05   90449.3      0.00       0.0     815.5                                0.00  
 
 
   Beginning Design Rule Fixing  (max_capacitance)
@@ -1015,25 +1003,14 @@ Information: Updating design information... (UID-85)
    ELAPSED            WORST NEG   SETUP    DESIGN                              MIN DELAY 
     TIME      AREA      SLACK     COST    RULE COST         ENDPOINT             COST    
   --------- --------- --------- --------- --------- ------------------------- -----------
-    0:01:08   98242.3      0.00       0.0    6505.0                                0.00  
-    0:01:09   97890.1      0.00       0.0    5728.4 delay_pipeline[45][1]          0.00  
-    0:01:10   97442.2      0.00       0.0    4980.1 delay_pipeline[59][1]          0.00  
-    0:01:11   97001.2      0.00       0.0    4249.3 delay_pipeline[90][13]         0.00  
-    0:01:12   96481.4      0.00       0.0    3502.1 delay_pipeline[105][13]        0.00  
-    0:01:14   95983.4      0.00       0.0    2809.9 delay_pipeline[61][11]         0.00  
-    0:01:15   95504.1      0.00       0.0    2276.2 delay_pipeline[8][9]           0.00  
-    0:01:16   95026.4      0.00       0.0    1797.5 delay_pipeline[85][3]          0.00  
-    0:01:18   94546.5      0.00       0.0    1357.4 delay_pipeline[80][5]          0.00  
-    0:01:19   94057.1      0.00       0.0    1063.4 delay_pipeline[66][3]          0.00  
-    0:01:20   93521.9      0.00       0.0     691.8 delay_pipeline[18][1]          0.00  
-    0:01:22   92990.4      0.00       0.0     349.5 delay_pipeline[15][6]          0.00  
-    0:01:22   92923.4      0.00       0.0     178.0 delay_pipeline[37][6]          0.00  
-    0:01:23   92997.9      0.00       0.0     111.3 delay_pipeline[63][5]          0.00  
-    0:01:24   92722.3      0.00       0.0      44.1 delay_pipeline[65][5]          0.00  
-    0:01:24   92796.8      0.00       0.0      11.9 delay_pipeline[44][5]          0.00  
-    0:01:24   92871.2      0.00       0.0       1.4 delay_pipeline[12][5]          0.00  
-    0:01:25   92945.7      0.00       0.0       0.1 delay_pipeline[32][5]          0.00  
-    0:01:25   92961.7      0.00       0.0       0.0                                0.00  
+    0:01:07   90449.3      0.00       0.0     815.5                                0.00  
+    0:01:08   90222.4      0.00       0.0     513.1 n2299                          0.00  
+    0:01:09   89879.5      0.00       0.0     310.1 n14161                         0.00  
+    0:01:10   89521.8      0.00       0.0     179.4 n12212                         0.00  
+    0:01:11   89218.3      0.00       0.0      70.7 n1056                          0.00  
+    0:01:12   88810.8      0.00       0.0      22.7 n16051                         0.00  
+    0:01:13   88465.7      0.00       0.0       4.9 n23154                         0.00  
+    0:01:14   88245.2      0.00       0.0       0.0                                0.00  
 
 
   Beginning Critical Range Optimization
@@ -1043,7 +1020,7 @@ Information: Updating design information... (UID-85)
    ELAPSED            WORST NEG   SETUP    DESIGN                              MIN DELAY 
     TIME      AREA      SLACK     COST    RULE COST         ENDPOINT             COST    
   --------- --------- --------- --------- --------- ------------------------- -----------
-    0:01:25   92961.7      0.00       0.0       0.0                                0.00  
+    0:01:14   88245.2      0.00       0.0       0.0                                0.00  
 
 
   Beginning Area-Recovery Phase  (cleanup)
@@ -1053,32 +1030,32 @@ Information: Updating design information... (UID-85)
    ELAPSED            WORST NEG   SETUP    DESIGN                              MIN DELAY 
     TIME      AREA      SLACK     COST    RULE COST         ENDPOINT             COST    
   --------- --------- --------- --------- --------- ------------------------- -----------
-    0:01:25   92961.7      0.00       0.0       0.0                                0.00  
-    0:01:25   92961.7      0.00       0.0       0.0                                0.00  
-    0:01:36   91855.4      0.00       0.0       0.0                                0.00  
-    0:01:50   91448.7      0.00       0.0       0.0                                0.00  
-    0:01:51   91327.6      0.00       0.0       0.0                                0.00  
-    0:01:52   91213.0      0.00       0.0       0.0                                0.00  
-    0:01:53   91190.1      0.00       0.0       0.0                                0.00  
-    0:01:53   91167.5      0.00       0.0       0.0                                0.00  
-    0:01:54   91155.8      0.00       0.0       0.0                                0.00  
-    0:01:54   91149.7      0.00       0.0       0.0                                0.00  
-    0:01:54   91146.8      0.00       0.0       0.0                                0.00  
-    0:01:54   91144.6      0.00       0.0       0.0                                0.00  
-    0:01:54   91143.3      0.00       0.0       0.0                                0.00  
-    0:01:54   91142.5      0.00       0.0       0.0                                0.00  
-    0:01:55   91141.7      0.00       0.0       0.0                                0.00  
-    0:01:55   91140.9      0.00       0.0       0.0                                0.00  
-    0:01:55   91140.1      0.00       0.0       0.0                                0.00  
-    0:01:55   91138.8      0.00       0.0       0.0                                0.00  
-    0:01:55   91138.8      0.00       0.0       0.0                                0.00  
-    0:01:56   91138.8      0.00       0.0       0.0                                0.00  
-    0:02:10   73561.0      0.00       0.0       0.0                                0.00  
-    0:02:10   73561.0      0.00       0.0       0.0                                0.00  
-    0:02:10   73561.0      0.00       0.0       0.0                                0.00  
-    0:02:10   73561.0      0.00       0.0       0.0                                0.00  
-    0:02:10   73561.0      0.00       0.0       0.0                                0.00  
-    0:02:10   73561.0      0.00       0.0       0.0                                0.00  
+    0:01:14   88245.2      0.00       0.0       0.0                                0.00  
+    0:01:14   88245.2      0.00       0.0       0.0                                0.00  
+    0:01:23   86376.9      0.00       0.0       0.0                                0.00  
+    0:01:26   85559.7      0.00       0.0       0.0                                0.00  
+    0:01:29   85173.5      0.00       0.0       0.0                                0.00  
+    0:01:33   84969.7      0.00       0.0       0.0                                0.00  
+    0:01:34   84922.4      0.00       0.0       0.0                                0.00  
+    0:01:35   84906.9      0.00       0.0       0.0                                0.00  
+    0:01:35   84893.1      0.00       0.0       0.0                                0.00  
+    0:01:40   84884.6      0.00       0.0       0.0                                0.00  
+    0:01:41   84878.7      0.00       0.0       0.0                                0.00  
+    0:01:41   84875.3      0.00       0.0       0.0                                0.00  
+    0:01:41   84872.1      0.00       0.0       0.0                                0.00  
+    0:01:41   84868.9      0.00       0.0       0.0                                0.00  
+    0:01:41   84866.2      0.00       0.0       0.0                                0.00  
+    0:01:42   84863.6      0.00       0.0       0.0                                0.00  
+    0:01:42   84860.9      0.00       0.0       0.0                                0.00  
+    0:01:42   84858.3      0.00       0.0       0.0                                0.00  
+    0:01:42   84858.3      0.00       0.0       0.0                                0.00  
+    0:01:42   84858.3      0.00       0.0       0.0                                0.00  
+    0:01:55   65372.4      0.00       0.0       0.0                                0.00  
+    0:01:55   65372.4      0.00       0.0       0.0                                0.00  
+    0:01:55   65372.4      0.00       0.0       0.0                                0.00  
+    0:01:55   65372.4      0.00       0.0       0.0                                0.00  
+    0:01:55   65372.4      0.00       0.0       0.0                                0.00  
+    0:01:55   65372.4      0.00       0.0       0.0                                0.00  
 
 
   Beginning Critical Range Optimization
@@ -1088,8 +1065,8 @@ Information: Updating design information... (UID-85)
    ELAPSED            WORST NEG   SETUP    DESIGN                              MIN DELAY 
     TIME      AREA      SLACK     COST    RULE COST         ENDPOINT             COST    
   --------- --------- --------- --------- --------- ------------------------- -----------
-    0:02:10   73561.0      0.00       0.0       0.0                                0.00  
-    0:02:11   73561.0      0.00       0.0       0.0                                0.00  
+    0:01:55   65372.4      0.00       0.0       0.0                                0.00  
+    0:01:55   65372.4      0.00       0.0       0.0                                0.00  
 
 
 Note: Symbol # after min delay cost means estimated hold TNS across all active scenarios 
@@ -1098,6 +1075,6 @@ Note: Symbol # after min delay cost means estimated hold TNS across all active s
   Optimization Complete
   ---------------------
 Warning: Design 'total_filter' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
-     Net 'f16/clk': 3442 load(s), 1 driver(s)
+     Net 'clock': 3227 load(s), 1 driver(s)
 
 Thank you...
