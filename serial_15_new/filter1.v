@@ -42,7 +42,8 @@ module filter1
                 reset,
                 filter_in,
                 delay_pipeline,
-                filter_out
+                filter_out,
+                phase_59
                 );
 
   input   clk; 
@@ -51,6 +52,7 @@ module filter1
   input   signed [14:0] filter_in; //sfix15_En14
   input   signed [14:0] delay_pipeline [0:118] ; // sfix15_En14
   output  signed [36:0] filter_out; //sfix37_En32
+  output wire phase_59; // boolean
 
 ////////////////////////////////////////////////////////////////
 //Module Architecture: filter1
@@ -122,7 +124,6 @@ module filter1
   parameter signed [14:0] const_zero = 15'b000000000000000; //sfix15_En14
   // Signals
   reg  [5:0] cur_count; // ufix6
-  wire phase_59; // boolean
   wire phase_0; // boolean
   wire signed [14:0] preaddmux_a1; // sfix15_En14
   wire signed [14:0] preaddmux_b1; // sfix15_En14
