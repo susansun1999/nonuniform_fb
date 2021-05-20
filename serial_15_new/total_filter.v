@@ -25,10 +25,10 @@ module total_filter(
     input   clock; 
     input   clk_enable; 
     input   reset; 
-    input   signed [15:0] filter_in;        //sfix15_En14
-    output  signed [38:0] filter_out [15:0]; //sfix37_En32
+    input   signed [14:0] filter_in;        //sfix15_En14
+    output  signed [36:0] filter_out [15:0]; //sfix37_En32
 
-    reg     signed [15:0] delay_pipeline [0:118] ; // sfix13_En12
+    reg     signed [14:0] delay_pipeline [0:118] ; // sfix13_En12
     wire    phase_59; // boolean
 
     filter1 f1(.clk(clock), .clk_enable(clk_enable), .reset(reset), .filter_in(filter_in), .filter_out(filter_out[0]), .delay_pipeline(delay_pipeline),.phase_59(phase_59));

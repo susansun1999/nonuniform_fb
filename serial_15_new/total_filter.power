@@ -1,16 +1,19 @@
+Error: Can't find inout port 'phase_59' on reference to 'filter1' in 'total_filter'. (LINK-1)
+Warning: Unable to resolve reference 'filter1' in 'total_filter'. (LINK-5)
 Loading db file '/afs/umich.edu/user/s/u/sunsusan/Desktop/SC_FIR_hardware_syn/Nangate/NangateOpenCellLibrary.db'
 Information: Updating design information... (UID-85)
-Warning: Design 'total_filter' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+Warning: Design 'total_filter' contains 2 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
 Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
 Warning: Design has unannotated primary inputs. (PWR-414)
 Warning: Design has unannotated sequential cell outputs. (PWR-415)
+Warning: Design has unannotated black box outputs. (PWR-428)
  
 ****************************************
 Report : power
         -analysis_effort low
 Design : total_filter
 Version: O-2018.06
-Date   : Mon May 17 15:04:53 2021
+Date   : Mon May 17 14:43:24 2021
 ****************************************
 
 
@@ -36,12 +39,12 @@ Power-specific unit information :
     Leakage Power Units = 1nW
 
 
-  Cell Internal Power  =  29.1526 uW   (83%)
-  Net Switching Power  =   5.9696 uW   (17%)
+  Cell Internal Power  =  31.9684 uW   (64%)
+  Net Switching Power  =  17.6438 uW   (36%)
                          ---------
-Total Dynamic Power    =  35.1222 uW  (100%)
+Total Dynamic Power    =  49.6122 uW  (100%)
 
-Cell Leakage Power     =   1.9190 mW
+Cell Leakage Power     =   1.6672 mW
 
 
                  Internal         Switching           Leakage            Total
@@ -50,10 +53,10 @@ Power Group      Power            Power               Power              Power  
 io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
 memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
 black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
-clock_network      0.0000            0.0000            0.0000            0.0000  (   0.00%)
-register          26.2054            0.3233        3.2299e+05          349.5137  (  17.89%)
+clock_network      9.6518           14.9383        1.2474e+06        1.2720e+03  (  74.09%)
+register          21.9823            1.2774        2.9676e+05          320.0214  (  18.64%)
 sequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)
-combinational      2.9470            5.6464        1.5960e+06        1.6046e+03  (  82.11%)
+combinational      0.3343            1.4282        1.2310e+05          124.8589  (   7.27%)
 --------------------------------------------------------------------------------------------------
-Total             29.1525 uW         5.9697 uW     1.9190e+06 nW     1.9541e+03 uW
+Total             31.9685 uW        17.6439 uW     1.6672e+06 nW     1.7169e+03 uW
 1
