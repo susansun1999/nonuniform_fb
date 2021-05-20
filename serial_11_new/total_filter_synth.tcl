@@ -22,7 +22,7 @@ analyze -f sverilog [list "total_filter.v"]
 elaborate total_filter
 set design_name total_filter
 set clock_name clock
-set CLK_PERIOD 1077
+set CLK_PERIOD 1116
 
 
 #/***********************************************************/
@@ -113,7 +113,7 @@ if {  $dc_shell_status != [list] } {
   set MAX_FANOUT $MAX_FANOUT
   set MAX_TRANSITION $MAX_TRANSITION
   uniquify
-#  ungroup -all -flatten
+  ungroup -all -flatten
   redirect $chk_file { check_design }
   compile -map_effort medium
   write -hier -format verilog -output $netlist_file $design_name

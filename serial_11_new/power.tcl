@@ -15,8 +15,8 @@ read_file -f sverilog [list "total_filter.v"]
 set design_name total_filter
 set clock_name clock
 set reset_name reset
-set CLK_PERIOD 1077
-#1041 = 62500/58
+set CLK_PERIOD 1116
+#1041 = 62500/56
 
 
 
@@ -128,7 +128,7 @@ if {  $dc_shell_status != [list] } {
   set MAX_FANOUT $MAX_FANOUT
   set MAX_TRANSITION $MAX_TRANSITION
   uniquify
-#  ungroup -all -flatten
+  ungroup -all -flatten
   redirect $chk_file { check_design }
   # saif_map -start 
   # set_power_prediction
@@ -138,7 +138,7 @@ if {  $dc_shell_status != [list] } {
 #   write -hier -format verilog -output $netlist_file $design_name
 #   write -hier -format ddc -output $ddc_file $design_name
   redirect $power_file { report_power }
-  report_power -verbose -hierarchy -levels 2 > ./power2.out
+  report_power -verbose -hierarchy -levels 2 -analysis_effort low > ./power2.out
   # report_power
   # redirect -append $rep_file { report_area }
 #   redirect -append $rep_file { report_timing -max_paths 2 -input_pins -nets -transition_time -nosplit }
