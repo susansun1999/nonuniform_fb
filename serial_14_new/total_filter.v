@@ -32,7 +32,7 @@ module total_filter(
     wire phase_59; // boolean
 
     control ctrl(.clock(clock),.reset(reset),.filter_in(filter_in),.phase_59(phase_59),.out(delay_pipeline));
-    filter_core core(.clock(clock),.clk_enable(clk_enable),.reset(reset), .filter_in(filter_in), .delay_pipeline(delay_pipeline), .filter_out(filter_out),.phase_59(phase_59));
+    filterbank_core core(.clock(clock),.clk_enable(clk_enable),.reset(reset), .filter_in(filter_in), .delay_pipeline(delay_pipeline), .filter_out(filter_out),.phase_59(phase_59));
 
 endmodule
 
