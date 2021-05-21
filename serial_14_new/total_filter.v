@@ -42,7 +42,7 @@ module control  (
 	input  wire phase_59,
 	output wire [13:0] out [118:0]
 );
-  reg     signed [13:0] registers [0:118] ; // sfix13_En12
+  reg     signed [13:0] registers [118:0] ; // sfix13_En12
 
 	assign out[0] = registers[0];
 	assign out[1] = registers[1];
