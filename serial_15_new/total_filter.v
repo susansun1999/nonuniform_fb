@@ -43,7 +43,6 @@ module control  (
 	output wire [14:0] out [0:118]
 );
   reg     signed [14:0] registers [0:118] ; // sfix13_En12
-1
 	assign out[0] = registers[0];
 	assign out[1] = registers[1];
 	assign out[2] = registers[2];
