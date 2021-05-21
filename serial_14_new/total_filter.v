@@ -172,7 +172,7 @@ module control  (
 			for(int i=0; i<119; i=i+1) registers[i] <= 'b0;
 		end
 		else begin
-      registers[1:118:] <= registers[0:117];
+      registers[1:118] <= registers[0:117];
       registers[0] <= filter_in;
 		end
 	end
