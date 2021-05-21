@@ -31,8 +31,8 @@ module total_filter(
     wire    [9:0] delay_pipeline [0:118] ; // sfix13_En12
     wire    phase_52; // boolean
 
-    control ctrl(.clock(clock),.reset(reset),.filter_in(filter_in),.phase_59(phase_59),.out(delay_pipeline));
-    filterbank_core core(.clock(clock),.clk_enable(clk_enable),.reset(reset), .filter_in(filter_in), .delay_pipeline(delay_pipeline), .filter_out(filter_out),.phase_59(phase_59));
+    control ctrl(.clock(clock),.reset(reset),.filter_in(filter_in),.phase_52(phase_52),.out(delay_pipeline));
+    filterbank_core core(.clock(clock),.clk_enable(clk_enable),.reset(reset), .filter_in(filter_in), .delay_pipeline(delay_pipeline), .filter_out(filter_out),.phase_52(phase_52));
 
 endmodule
 
