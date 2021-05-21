@@ -3,7 +3,7 @@
 
 module testbench();
   logic [13:0] filt_in;
-  wire signed [34:0][15:0] filt_out;
+  wire signed [34:0] filt_out [15:0];
   logic clock, reset, clk_enable;
   logic [13:0] filter_in_data[0:3904];
    
