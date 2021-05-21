@@ -663,20 +663,139 @@ Inferred memory devices in process
 ===============================================================================
 | output_register_reg | Flip-flop |  31   |  Y  | N  | Y  | N  | N  | N  | N  |
 ===============================================================================
+Warning:  /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_12_new/total_filter.v:47: signed to unsigned assignment occurs. (VER-318)
+Warning:  /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_12_new/total_filter.v:48: signed to unsigned assignment occurs. (VER-318)
+Warning:  /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_12_new/total_filter.v:49: signed to unsigned assignment occurs. (VER-318)
+Warning:  /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_12_new/total_filter.v:50: signed to unsigned assignment occurs. (VER-318)
+Warning:  /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_12_new/total_filter.v:51: signed to unsigned assignment occurs. (VER-318)
+Warning:  /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_12_new/total_filter.v:52: signed to unsigned assignment occurs. (VER-318)
+Warning:  /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_12_new/total_filter.v:53: signed to unsigned assignment occurs. (VER-318)
+Warning:  /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_12_new/total_filter.v:54: signed to unsigned assignment occurs. (VER-318)
+Warning:  /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_12_new/total_filter.v:55: signed to unsigned assignment occurs. (VER-318)
+Warning:  /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_12_new/total_filter.v:56: signed to unsigned assignment occurs. (VER-318)
+Warning:  /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_12_new/total_filter.v:57: signed to unsigned assignment occurs. (VER-318)
+Warning:  /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_12_new/total_filter.v:58: signed to unsigned assignment occurs. (VER-318)
+Warning:  /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_12_new/total_filter.v:59: signed to unsigned assignment occurs. (VER-318)
+Warning:  /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_12_new/total_filter.v:60: signed to unsigned assignment occurs. (VER-318)
+Warning:  /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_12_new/total_filter.v:61: signed to unsigned assignment occurs. (VER-318)
+Warning:  /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_12_new/total_filter.v:62: signed to unsigned assignment occurs. (VER-318)
+Warning:  /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_12_new/total_filter.v:63: signed to unsigned assignment occurs. (VER-318)
+Warning:  /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_12_new/total_filter.v:64: signed to unsigned assignment occurs. (VER-318)
+Warning:  /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_12_new/total_filter.v:65: signed to unsigned assignment occurs. (VER-318)
+Warning:  /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_12_new/total_filter.v:66: signed to unsigned assignment occurs. (VER-318)
+Warning:  /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_12_new/total_filter.v:67: signed to unsigned assignment occurs. (VER-318)
+Warning:  /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_12_new/total_filter.v:68: signed to unsigned assignment occurs. (VER-318)
+Warning:  /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_12_new/total_filter.v:69: signed to unsigned assignment occurs. (VER-318)
+Warning:  /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_12_new/total_filter.v:70: signed to unsigned assignment occurs. (VER-318)
+Warning:  /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_12_new/total_filter.v:71: signed to unsigned assignment occurs. (VER-318)
+Warning:  /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_12_new/total_filter.v:72: signed to unsigned assignment occurs. (VER-318)
+Warning:  /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_12_new/total_filter.v:73: signed to unsigned assignment occurs. (VER-318)
+Warning:  /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_12_new/total_filter.v:74: signed to unsigned assignment occurs. (VER-318)
+Warning:  /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_12_new/total_filter.v:75: signed to unsigned assignment occurs. (VER-318)
+Warning:  /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_12_new/total_filter.v:76: signed to unsigned assignment occurs. (VER-318)
+Warning:  /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_12_new/total_filter.v:77: signed to unsigned assignment occurs. (VER-318)
+Warning:  /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_12_new/total_filter.v:78: signed to unsigned assignment occurs. (VER-318)
+Warning:  /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_12_new/total_filter.v:79: signed to unsigned assignment occurs. (VER-318)
+Warning:  /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_12_new/total_filter.v:80: signed to unsigned assignment occurs. (VER-318)
+Warning:  /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_12_new/total_filter.v:81: signed to unsigned assignment occurs. (VER-318)
+Warning:  /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_12_new/total_filter.v:82: signed to unsigned assignment occurs. (VER-318)
+Warning:  /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_12_new/total_filter.v:83: signed to unsigned assignment occurs. (VER-318)
+Warning:  /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_12_new/total_filter.v:84: signed to unsigned assignment occurs. (VER-318)
+Warning:  /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_12_new/total_filter.v:85: signed to unsigned assignment occurs. (VER-318)
+Warning:  /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_12_new/total_filter.v:86: signed to unsigned assignment occurs. (VER-318)
+Warning:  /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_12_new/total_filter.v:87: signed to unsigned assignment occurs. (VER-318)
+Warning:  /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_12_new/total_filter.v:88: signed to unsigned assignment occurs. (VER-318)
+Warning:  /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_12_new/total_filter.v:89: signed to unsigned assignment occurs. (VER-318)
+Warning:  /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_12_new/total_filter.v:90: signed to unsigned assignment occurs. (VER-318)
+Warning:  /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_12_new/total_filter.v:91: signed to unsigned assignment occurs. (VER-318)
+Warning:  /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_12_new/total_filter.v:92: signed to unsigned assignment occurs. (VER-318)
+Warning:  /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_12_new/total_filter.v:93: signed to unsigned assignment occurs. (VER-318)
+Warning:  /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_12_new/total_filter.v:94: signed to unsigned assignment occurs. (VER-318)
+Warning:  /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_12_new/total_filter.v:95: signed to unsigned assignment occurs. (VER-318)
+Warning:  /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_12_new/total_filter.v:96: signed to unsigned assignment occurs. (VER-318)
+Warning:  /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_12_new/total_filter.v:97: signed to unsigned assignment occurs. (VER-318)
+Warning:  /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_12_new/total_filter.v:98: signed to unsigned assignment occurs. (VER-318)
+Warning:  /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_12_new/total_filter.v:99: signed to unsigned assignment occurs. (VER-318)
+Warning:  /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_12_new/total_filter.v:100: signed to unsigned assignment occurs. (VER-318)
+Warning:  /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_12_new/total_filter.v:101: signed to unsigned assignment occurs. (VER-318)
+Warning:  /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_12_new/total_filter.v:102: signed to unsigned assignment occurs. (VER-318)
+Warning:  /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_12_new/total_filter.v:103: signed to unsigned assignment occurs. (VER-318)
+Warning:  /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_12_new/total_filter.v:104: signed to unsigned assignment occurs. (VER-318)
+Warning:  /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_12_new/total_filter.v:105: signed to unsigned assignment occurs. (VER-318)
+Warning:  /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_12_new/total_filter.v:106: signed to unsigned assignment occurs. (VER-318)
+Warning:  /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_12_new/total_filter.v:107: signed to unsigned assignment occurs. (VER-318)
+Warning:  /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_12_new/total_filter.v:108: signed to unsigned assignment occurs. (VER-318)
+Warning:  /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_12_new/total_filter.v:109: signed to unsigned assignment occurs. (VER-318)
+Warning:  /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_12_new/total_filter.v:110: signed to unsigned assignment occurs. (VER-318)
+Warning:  /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_12_new/total_filter.v:111: signed to unsigned assignment occurs. (VER-318)
+Warning:  /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_12_new/total_filter.v:112: signed to unsigned assignment occurs. (VER-318)
+Warning:  /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_12_new/total_filter.v:113: signed to unsigned assignment occurs. (VER-318)
+Warning:  /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_12_new/total_filter.v:114: signed to unsigned assignment occurs. (VER-318)
+Warning:  /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_12_new/total_filter.v:115: signed to unsigned assignment occurs. (VER-318)
+Warning:  /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_12_new/total_filter.v:116: signed to unsigned assignment occurs. (VER-318)
+Warning:  /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_12_new/total_filter.v:117: signed to unsigned assignment occurs. (VER-318)
+Warning:  /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_12_new/total_filter.v:118: signed to unsigned assignment occurs. (VER-318)
+Warning:  /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_12_new/total_filter.v:119: signed to unsigned assignment occurs. (VER-318)
+Warning:  /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_12_new/total_filter.v:120: signed to unsigned assignment occurs. (VER-318)
+Warning:  /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_12_new/total_filter.v:121: signed to unsigned assignment occurs. (VER-318)
+Warning:  /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_12_new/total_filter.v:122: signed to unsigned assignment occurs. (VER-318)
+Warning:  /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_12_new/total_filter.v:123: signed to unsigned assignment occurs. (VER-318)
+Warning:  /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_12_new/total_filter.v:124: signed to unsigned assignment occurs. (VER-318)
+Warning:  /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_12_new/total_filter.v:125: signed to unsigned assignment occurs. (VER-318)
+Warning:  /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_12_new/total_filter.v:126: signed to unsigned assignment occurs. (VER-318)
+Warning:  /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_12_new/total_filter.v:127: signed to unsigned assignment occurs. (VER-318)
+Warning:  /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_12_new/total_filter.v:128: signed to unsigned assignment occurs. (VER-318)
+Warning:  /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_12_new/total_filter.v:129: signed to unsigned assignment occurs. (VER-318)
+Warning:  /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_12_new/total_filter.v:130: signed to unsigned assignment occurs. (VER-318)
+Warning:  /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_12_new/total_filter.v:131: signed to unsigned assignment occurs. (VER-318)
+Warning:  /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_12_new/total_filter.v:132: signed to unsigned assignment occurs. (VER-318)
+Warning:  /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_12_new/total_filter.v:133: signed to unsigned assignment occurs. (VER-318)
+Warning:  /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_12_new/total_filter.v:134: signed to unsigned assignment occurs. (VER-318)
+Warning:  /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_12_new/total_filter.v:135: signed to unsigned assignment occurs. (VER-318)
+Warning:  /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_12_new/total_filter.v:136: signed to unsigned assignment occurs. (VER-318)
+Warning:  /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_12_new/total_filter.v:137: signed to unsigned assignment occurs. (VER-318)
+Warning:  /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_12_new/total_filter.v:138: signed to unsigned assignment occurs. (VER-318)
+Warning:  /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_12_new/total_filter.v:139: signed to unsigned assignment occurs. (VER-318)
+Warning:  /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_12_new/total_filter.v:140: signed to unsigned assignment occurs. (VER-318)
+Warning:  /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_12_new/total_filter.v:141: signed to unsigned assignment occurs. (VER-318)
+Warning:  /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_12_new/total_filter.v:142: signed to unsigned assignment occurs. (VER-318)
+Warning:  /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_12_new/total_filter.v:143: signed to unsigned assignment occurs. (VER-318)
+Warning:  /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_12_new/total_filter.v:144: signed to unsigned assignment occurs. (VER-318)
+Warning:  /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_12_new/total_filter.v:145: signed to unsigned assignment occurs. (VER-318)
+Warning:  /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_12_new/total_filter.v:146: signed to unsigned assignment occurs. (VER-318)
+Warning:  /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_12_new/total_filter.v:147: signed to unsigned assignment occurs. (VER-318)
+Warning:  /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_12_new/total_filter.v:148: signed to unsigned assignment occurs. (VER-318)
+Warning:  /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_12_new/total_filter.v:149: signed to unsigned assignment occurs. (VER-318)
+Warning:  /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_12_new/total_filter.v:150: signed to unsigned assignment occurs. (VER-318)
+Warning:  /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_12_new/total_filter.v:151: signed to unsigned assignment occurs. (VER-318)
+Warning:  /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_12_new/total_filter.v:152: signed to unsigned assignment occurs. (VER-318)
+Warning:  /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_12_new/total_filter.v:153: signed to unsigned assignment occurs. (VER-318)
+Warning:  /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_12_new/total_filter.v:154: signed to unsigned assignment occurs. (VER-318)
+Warning:  /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_12_new/total_filter.v:155: signed to unsigned assignment occurs. (VER-318)
+Warning:  /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_12_new/total_filter.v:156: signed to unsigned assignment occurs. (VER-318)
+Warning:  /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_12_new/total_filter.v:157: signed to unsigned assignment occurs. (VER-318)
+Warning:  /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_12_new/total_filter.v:158: signed to unsigned assignment occurs. (VER-318)
+Warning:  /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_12_new/total_filter.v:159: signed to unsigned assignment occurs. (VER-318)
+Warning:  /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_12_new/total_filter.v:160: signed to unsigned assignment occurs. (VER-318)
+Warning:  /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_12_new/total_filter.v:161: signed to unsigned assignment occurs. (VER-318)
+Warning:  /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_12_new/total_filter.v:162: signed to unsigned assignment occurs. (VER-318)
+Warning:  /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_12_new/total_filter.v:163: signed to unsigned assignment occurs. (VER-318)
+Warning:  /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_12_new/total_filter.v:164: signed to unsigned assignment occurs. (VER-318)
+Warning:  /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_12_new/total_filter.v:165: signed to unsigned assignment occurs. (VER-318)
 
 Inferred memory devices in process
-	in routine total_filter line 52 in file
+	in routine control line 170 in file
 		'/afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_12_new/total_filter.v'.
 ===============================================================================
 |    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
 ===============================================================================
-| delay_pipeline_reg  | Flip-flop | 1428  |  Y  | N  | Y  | N  | N  | N  | N  |
+|    registers_reg    | Flip-flop | 1428  |  Y  | N  | N  | N  | N  | N  | N  |
 ===============================================================================
 Presto compilation completed successfully.
 Current design is now '/afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_12_new/filter1.db:filter1'
-Loaded 17 designs.
+Loaded 19 designs.
 Current design is 'filter1'.
-filter1 filter2 filter3 filter4 filter5 filter6 filter7 filter8 filter9 filter10 filter11 filter12 filter13 filter14 filter15 filter16 total_filter
+filter1 filter2 filter3 filter4 filter5 filter6 filter7 filter8 filter9 filter10 filter11 filter12 filter13 filter14 filter15 filter16 total_filter control filterbank_core
 set design_name total_filter
 total_filter
 set clock_name clock
@@ -805,7 +924,7 @@ if {  $dc_shell_status != [list] } {
   set MAX_FANOUT $MAX_FANOUT
   set MAX_TRANSITION $MAX_TRANSITION
   uniquify
-#  ungroup -all -flatten
+  ungroup core -flatten
   redirect $chk_file { check_design }
   # saif_map -start 
   # set_power_prediction
@@ -835,16 +954,15 @@ Current design is 'total_filter'.
   Linking design 'total_filter'
   Using the following designs and libraries:
   --------------------------------------------------------------------------
-  * (17 designs)              /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_12_new/total_filter.db, etc
+  * (19 designs)              /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_12_new/total_filter.db, etc
   NangateOpenCellLibrary (library) /afs/umich.edu/user/s/u/sunsusan/Desktop/SC_FIR_hardware_syn/Nangate/NangateOpenCellLibrary.db
 
 Error: Can't find the specified library 'lec25dscc25_TT' in memory. (UID-131)
 Error: Wire load 'tsmcwire' not found. (UID-40)
 Error: Cannot find the specified driving cell in memory.   (UID-993)
 Current design is 'total_filter'.
-Warning: Dont_touch on net 'reset' may be overridden by compile because it
-	is connected to generic logic. Use all_connected to see net
-	connections. (OPT-461)
+Information: Updating graph... (UID-83)
+Warning: Design 'total_filter' contains 4 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
 Warning: The compile -map_effort low is obsolete. Setting this variable now defaults to compile -map_effort medium. Please update your script accordingly. (OPT-1303)
 Information: Evaluating DesignWare library utilization. (UISN-27)
 
@@ -859,28 +977,13 @@ Warning: Dont_touch on net 'reset' may be overridden by compile because it
 	is connected to generic logic. Use all_connected to see net
 	connections. (OPT-461)
 
-Information: There are 2368 potential problems in your design. Please run 'check_design' for more information. (LINT-99)
+Information: There are 16 potential problems in your design. Please run 'check_design' for more information. (LINT-99)
 
 
 
   Beginning Pass 1 Mapping
   ------------------------
-  Processing 'filter16'
-  Processing 'filter15'
-  Processing 'filter14'
-  Processing 'filter13'
-  Processing 'filter12'
-  Processing 'filter11'
-  Processing 'filter10'
-  Processing 'filter9'
-  Processing 'filter8'
-  Processing 'filter7'
-  Processing 'filter6'
-  Processing 'filter5'
-  Processing 'filter4'
-  Processing 'filter3'
-  Processing 'filter2'
-  Processing 'filter1'
+  Processing 'control'
   Processing 'total_filter'
 
   Updating timing information
@@ -888,102 +991,102 @@ Information: Updating design information... (UID-85)
 
   Beginning Implementation Selection
   ----------------------------------
-  Processing 'filter16_DW01_add_0'
-  Processing 'filter16_DW01_inc_0'
-  Processing 'filter16_DW01_cmp2_0'
-  Processing 'filter15_DW01_add_0'
-  Processing 'filter15_DW01_inc_0'
-  Processing 'filter15_DW01_cmp2_0'
-  Processing 'filter14_DW01_add_0'
-  Processing 'filter14_DW01_inc_0'
-  Processing 'filter14_DW01_cmp2_0'
-  Processing 'filter13_DW01_add_0'
-  Processing 'filter13_DW01_inc_0'
-  Processing 'filter13_DW01_cmp2_0'
-  Processing 'filter12_DW01_add_0'
-  Processing 'filter12_DW01_inc_0'
-  Processing 'filter12_DW01_cmp2_0'
-  Processing 'filter11_DW01_add_0'
-  Processing 'filter11_DW01_inc_0'
-  Processing 'filter11_DW01_cmp2_0'
-  Processing 'filter10_DW01_add_0'
-  Processing 'filter10_DW01_inc_0'
-  Processing 'filter10_DW01_cmp2_0'
-  Processing 'filter9_DW01_add_0'
-  Processing 'filter9_DW01_inc_0'
-  Processing 'filter9_DW01_cmp2_0'
-  Processing 'filter8_DW01_add_0'
-  Processing 'filter8_DW01_inc_0'
-  Processing 'filter8_DW01_cmp2_0'
-  Processing 'filter7_DW01_add_0'
-  Processing 'filter7_DW01_inc_0'
-  Processing 'filter7_DW01_cmp2_0'
-  Processing 'filter6_DW01_add_0'
-  Processing 'filter6_DW01_inc_0'
-  Processing 'filter6_DW01_cmp2_0'
-  Processing 'filter5_DW01_add_0'
-  Processing 'filter5_DW01_inc_0'
-  Processing 'filter5_DW01_cmp2_0'
-  Processing 'filter4_DW01_add_0'
-  Processing 'filter4_DW01_inc_0'
-  Processing 'filter4_DW01_cmp2_0'
-  Processing 'filter3_DW01_add_0'
-  Processing 'filter3_DW01_inc_0'
-  Processing 'filter3_DW01_cmp2_0'
-  Processing 'filter2_DW01_add_0'
-  Processing 'filter2_DW01_inc_0'
-  Processing 'filter2_DW01_cmp2_0'
-  Processing 'filter1_DW01_add_0'
-  Processing 'filter1_DW01_inc_0'
-  Processing 'filter1_DW01_cmp2_0'
-  Processing 'filter14_DW02_mult_0'
-  Processing 'filter14_DW01_add_1'
-  Processing 'filter14_DW01_add_2'
-  Processing 'filter8_DW02_mult_0'
-  Processing 'filter8_DW01_add_1'
-  Processing 'filter8_DW01_add_2'
-  Processing 'filter16_DW02_mult_0'
-  Processing 'filter16_DW01_add_1'
-  Processing 'filter16_DW01_add_2'
-  Processing 'filter12_DW02_mult_0'
-  Processing 'filter12_DW01_add_1'
-  Processing 'filter12_DW01_add_2'
-  Processing 'filter11_DW02_mult_0'
-  Processing 'filter11_DW01_add_1'
-  Processing 'filter11_DW01_add_2'
-  Processing 'filter10_DW02_mult_0'
-  Processing 'filter10_DW01_add_1'
-  Processing 'filter10_DW01_add_2'
-  Processing 'filter6_DW02_mult_0'
-  Processing 'filter6_DW01_add_1'
-  Processing 'filter6_DW01_add_2'
-  Processing 'filter4_DW02_mult_0'
-  Processing 'filter4_DW01_add_1'
-  Processing 'filter4_DW01_add_2'
-  Processing 'filter3_DW02_mult_0'
-  Processing 'filter3_DW01_add_1'
-  Processing 'filter3_DW01_add_2'
-  Processing 'filter13_DW02_mult_0'
-  Processing 'filter13_DW01_add_1'
-  Processing 'filter13_DW01_add_2'
-  Processing 'filter9_DW02_mult_0'
-  Processing 'filter9_DW01_add_1'
-  Processing 'filter9_DW01_add_2'
-  Processing 'filter5_DW02_mult_0'
-  Processing 'filter5_DW01_add_1'
-  Processing 'filter5_DW01_add_2'
-  Processing 'filter2_DW02_mult_0'
-  Processing 'filter2_DW01_add_1'
-  Processing 'filter2_DW01_add_2'
-  Processing 'filter7_DW02_mult_0'
-  Processing 'filter7_DW01_add_1'
-  Processing 'filter7_DW01_add_2'
-  Processing 'filter15_DW02_mult_0'
-  Processing 'filter15_DW01_add_1'
-  Processing 'filter15_DW01_add_2'
-  Processing 'filter1_DW02_mult_0'
-  Processing 'filter1_DW01_add_1'
-  Processing 'filter1_DW01_add_2'
+  Processing 'total_filter_DW01_add_0'
+  Processing 'total_filter_DW01_inc_0'
+  Processing 'total_filter_DW01_cmp2_0'
+  Processing 'total_filter_DW01_add_1'
+  Processing 'total_filter_DW01_inc_1'
+  Processing 'total_filter_DW01_cmp2_1'
+  Processing 'total_filter_DW01_add_2'
+  Processing 'total_filter_DW01_inc_2'
+  Processing 'total_filter_DW01_cmp2_2'
+  Processing 'total_filter_DW01_add_3'
+  Processing 'total_filter_DW01_inc_3'
+  Processing 'total_filter_DW01_cmp2_3'
+  Processing 'total_filter_DW01_add_4'
+  Processing 'total_filter_DW01_inc_4'
+  Processing 'total_filter_DW01_cmp2_4'
+  Processing 'total_filter_DW01_add_5'
+  Processing 'total_filter_DW01_inc_5'
+  Processing 'total_filter_DW01_cmp2_5'
+  Processing 'total_filter_DW01_add_6'
+  Processing 'total_filter_DW01_inc_6'
+  Processing 'total_filter_DW01_cmp2_6'
+  Processing 'total_filter_DW01_add_7'
+  Processing 'total_filter_DW01_inc_7'
+  Processing 'total_filter_DW01_cmp2_7'
+  Processing 'total_filter_DW01_add_8'
+  Processing 'total_filter_DW01_inc_8'
+  Processing 'total_filter_DW01_cmp2_8'
+  Processing 'total_filter_DW01_add_9'
+  Processing 'total_filter_DW01_inc_9'
+  Processing 'total_filter_DW01_cmp2_9'
+  Processing 'total_filter_DW01_add_10'
+  Processing 'total_filter_DW01_inc_10'
+  Processing 'total_filter_DW01_cmp2_10'
+  Processing 'total_filter_DW01_add_11'
+  Processing 'total_filter_DW01_inc_11'
+  Processing 'total_filter_DW01_cmp2_11'
+  Processing 'total_filter_DW01_add_12'
+  Processing 'total_filter_DW01_inc_12'
+  Processing 'total_filter_DW01_cmp2_12'
+  Processing 'total_filter_DW01_add_13'
+  Processing 'total_filter_DW01_inc_13'
+  Processing 'total_filter_DW01_cmp2_13'
+  Processing 'total_filter_DW01_add_14'
+  Processing 'total_filter_DW01_inc_14'
+  Processing 'total_filter_DW01_cmp2_14'
+  Processing 'total_filter_DW01_add_15'
+  Processing 'total_filter_DW01_inc_15'
+  Processing 'total_filter_DW01_cmp2_15'
+  Processing 'total_filter_DW02_mult_0'
+  Processing 'total_filter_DW01_add_16'
+  Processing 'total_filter_DW01_add_17'
+  Processing 'total_filter_DW02_mult_1'
+  Processing 'total_filter_DW01_add_18'
+  Processing 'total_filter_DW01_add_19'
+  Processing 'total_filter_DW02_mult_2'
+  Processing 'total_filter_DW01_add_20'
+  Processing 'total_filter_DW01_add_21'
+  Processing 'total_filter_DW02_mult_3'
+  Processing 'total_filter_DW01_add_22'
+  Processing 'total_filter_DW01_add_23'
+  Processing 'total_filter_DW02_mult_4'
+  Processing 'total_filter_DW01_add_24'
+  Processing 'total_filter_DW01_add_25'
+  Processing 'total_filter_DW02_mult_5'
+  Processing 'total_filter_DW01_add_26'
+  Processing 'total_filter_DW01_add_27'
+  Processing 'total_filter_DW02_mult_6'
+  Processing 'total_filter_DW01_add_28'
+  Processing 'total_filter_DW01_add_29'
+  Processing 'total_filter_DW02_mult_7'
+  Processing 'total_filter_DW01_add_30'
+  Processing 'total_filter_DW01_add_31'
+  Processing 'total_filter_DW02_mult_8'
+  Processing 'total_filter_DW01_add_32'
+  Processing 'total_filter_DW01_add_33'
+  Processing 'total_filter_DW02_mult_9'
+  Processing 'total_filter_DW01_add_34'
+  Processing 'total_filter_DW01_add_35'
+  Processing 'total_filter_DW02_mult_10'
+  Processing 'total_filter_DW01_add_36'
+  Processing 'total_filter_DW01_add_37'
+  Processing 'total_filter_DW02_mult_11'
+  Processing 'total_filter_DW01_add_38'
+  Processing 'total_filter_DW01_add_39'
+  Processing 'total_filter_DW02_mult_12'
+  Processing 'total_filter_DW01_add_40'
+  Processing 'total_filter_DW01_add_41'
+  Processing 'total_filter_DW02_mult_13'
+  Processing 'total_filter_DW01_add_42'
+  Processing 'total_filter_DW01_add_43'
+  Processing 'total_filter_DW02_mult_14'
+  Processing 'total_filter_DW01_add_44'
+  Processing 'total_filter_DW01_add_45'
+  Processing 'total_filter_DW02_mult_15'
+  Processing 'total_filter_DW01_add_46'
+  Processing 'total_filter_DW01_add_47'
 
   Beginning Mapping Optimizations  (Medium effort)
   -------------------------------
@@ -992,10 +1095,10 @@ Information: Updating design information... (UID-85)
    ELAPSED            WORST NEG   SETUP    DESIGN                              MIN DELAY 
     TIME      AREA      SLACK     COST    RULE COST         ENDPOINT             COST    
   --------- --------- --------- --------- --------- ------------------------- -----------
-    0:00:44   77889.1      0.00       0.0   11240.9                                0.00  
-    0:00:44   77889.1      0.00       0.0   11240.9                                0.00  
-    0:00:44   78715.8      0.00       0.0    8876.5                                0.00  
-    0:00:45   79568.0      0.00       0.0    6276.5                                0.00  
+    0:00:45   75574.9      0.00       0.0   25316.0                                0.00  
+    0:00:45   75574.9      0.00       0.0   25316.0                                0.00  
+    0:00:46   76241.2      0.00       0.0   13603.0                                0.00  
+    0:00:47   76927.5      0.00       0.0    3822.7                                0.00  
 
   Beginning Delay Optimization Phase
   ----------------------------------
@@ -1004,9 +1107,9 @@ Information: Updating design information... (UID-85)
    ELAPSED            WORST NEG   SETUP    DESIGN                              MIN DELAY 
     TIME      AREA      SLACK     COST    RULE COST         ENDPOINT             COST    
   --------- --------- --------- --------- --------- ------------------------- -----------
-    0:00:50   81169.9      0.00       0.0    4722.2                                0.00  
-    0:00:54   81501.9      0.00       0.0    4722.2                                0.00  
-    0:00:55   81501.9      0.00       0.0    4722.2                                0.00  
+    0:00:51   78058.8      0.00       0.0     174.1                                0.00  
+    0:00:55   78390.7      0.00       0.0     174.1                                0.00  
+    0:00:55   78390.7      0.00       0.0     174.1                                0.00  
 
 
   Beginning Design Rule Fixing  (max_capacitance)
@@ -1016,19 +1119,8 @@ Information: Updating design information... (UID-85)
    ELAPSED            WORST NEG   SETUP    DESIGN                              MIN DELAY 
     TIME      AREA      SLACK     COST    RULE COST         ENDPOINT             COST    
   --------- --------- --------- --------- --------- ------------------------- -----------
-    0:00:56   81501.9      0.00       0.0    4722.2                                0.00  
-    0:00:57   81171.0      0.00       0.0    3992.7 delay_pipeline[80][1]          0.00  
-    0:00:58   80698.0      0.00       0.0    3466.6 delay_pipeline[90][5]          0.00  
-    0:00:59   80279.3      0.00       0.0    2792.4 delay_pipeline[38][7]          0.00  
-    0:01:00   79808.8      0.00       0.0    2294.4 delay_pipeline[53][9]          0.00  
-    0:01:02   79342.7      0.00       0.0    1848.9 delay_pipeline[83][11]         0.00  
-    0:01:03   78842.1      0.00       0.0    1428.2 delay_pipeline[70][1]          0.00  
-    0:01:04   78360.7      0.00       0.0    1016.8 delay_pipeline[110][3]         0.00  
-    0:01:05   77814.8      0.00       0.0     563.0 delay_pipeline[62][5]          0.00  
-    0:01:07   77279.7      0.00       0.0     203.8 delay_pipeline[97][7]          0.00  
-    0:01:09   76701.9      0.00       0.0      62.4 delay_pipeline[73][3]          0.00  
-    0:01:10   76429.0      0.00       0.0       3.1 delay_pipeline[106][11]        0.00  
-    0:01:10   76424.2      0.00       0.0       0.0                                0.00  
+    0:00:56   78390.7      0.00       0.0     174.1                                0.00  
+    0:00:57   78215.4      0.00       0.0       0.0                                0.00  
 
 
   Beginning Critical Range Optimization
@@ -1038,7 +1130,7 @@ Information: Updating design information... (UID-85)
    ELAPSED            WORST NEG   SETUP    DESIGN                              MIN DELAY 
     TIME      AREA      SLACK     COST    RULE COST         ENDPOINT             COST    
   --------- --------- --------- --------- --------- ------------------------- -----------
-    0:01:10   76424.2      0.00       0.0       0.0                                0.00  
+    0:00:57   78215.4      0.00       0.0       0.0                                0.00  
 
 
   Beginning Area-Recovery Phase  (cleanup)
@@ -1048,32 +1140,23 @@ Information: Updating design information... (UID-85)
    ELAPSED            WORST NEG   SETUP    DESIGN                              MIN DELAY 
     TIME      AREA      SLACK     COST    RULE COST         ENDPOINT             COST    
   --------- --------- --------- --------- --------- ------------------------- -----------
-    0:01:10   76424.2      0.00       0.0       0.0                                0.00  
-    0:01:10   76424.2      0.00       0.0       0.0                                0.00  
-    0:01:19   75429.1      0.00       0.0       0.0                                0.00  
-    0:01:30   75043.7      0.00       0.0       0.0                                0.00  
-    0:01:30   74990.7      0.00       0.0       0.0                                0.00  
-    0:01:31   74935.4      0.00       0.0       0.0                                0.00  
-    0:01:31   74910.9      0.00       0.0       0.0                                0.00  
-    0:01:32   74897.1      0.00       0.0       0.0                                0.00  
-    0:01:32   74891.5      0.00       0.0       0.0                                0.00  
-    0:01:32   74888.8      0.00       0.0       0.0                                0.00  
-    0:01:32   74886.7      0.00       0.0       0.0                                0.00  
-    0:01:32   74884.6      0.00       0.0       0.0                                0.00  
-    0:01:32   74883.8      0.00       0.0       0.0                                0.00  
-    0:01:32   74883.0      0.00       0.0       0.0                                0.00  
-    0:01:33   74881.7      0.00       0.0       0.0                                0.00  
-    0:01:33   74880.3      0.00       0.0       0.0                                0.00  
-    0:01:33   74879.5      0.00       0.0       0.0                                0.00  
-    0:01:33   74878.7      0.00       0.0       0.0                                0.00  
-    0:01:33   74878.7      0.00       0.0       0.0                                0.00  
-    0:01:33   74878.7      0.00       0.0       0.0                                0.00  
-    0:01:45   60423.2      0.00       0.0       0.0                                0.00  
-    0:01:45   60423.2      0.00       0.0       0.0                                0.00  
-    0:01:45   60423.2      0.00       0.0       0.0                                0.00  
-    0:01:45   60423.2      0.00       0.0       0.0                                0.00  
-    0:01:45   60423.2      0.00       0.0       0.0                                0.00  
-    0:01:45   60423.2      0.00       0.0       0.0                                0.00  
+    0:00:57   78215.4      0.00       0.0       0.0                                0.00  
+    0:00:57   78215.4      0.00       0.0       0.0                                0.00  
+    0:01:05   77095.8      0.00       0.0       0.0                                0.00  
+    0:01:08   76577.1      0.00       0.0       0.0                                0.00  
+    0:01:09   76461.4      0.00       0.0       0.0                                0.00  
+    0:01:10   76411.2      0.00       0.0       0.0                                0.00  
+    0:01:10   76370.5      0.00       0.0       0.0                                0.00  
+    0:01:11   76342.5      0.00       0.0       0.0                                0.00  
+    0:01:11   76333.2      0.00       0.0       0.0                                0.00  
+    0:01:11   76333.2      0.00       0.0       0.0                                0.00  
+    0:01:11   76333.2      0.00       0.0       0.0                                0.00  
+    0:01:22   58202.7      0.00       0.0       0.0                                0.00  
+    0:01:22   58202.7      0.00       0.0       0.0                                0.00  
+    0:01:22   58202.7      0.00       0.0       0.0                                0.00  
+    0:01:22   58202.7      0.00       0.0       0.0                                0.00  
+    0:01:22   58202.7      0.00       0.0       0.0                                0.00  
+    0:01:22   58202.7      0.00       0.0       0.0                                0.00  
 
 
   Beginning Critical Range Optimization
@@ -1083,8 +1166,8 @@ Information: Updating design information... (UID-85)
    ELAPSED            WORST NEG   SETUP    DESIGN                              MIN DELAY 
     TIME      AREA      SLACK     COST    RULE COST         ENDPOINT             COST    
   --------- --------- --------- --------- --------- ------------------------- -----------
-    0:01:45   60423.2      0.00       0.0       0.0                                0.00  
-    0:01:46   60423.2      0.00       0.0       0.0                                0.00  
+    0:01:22   58202.7      0.00       0.0       0.0                                0.00  
+    0:01:23   58202.7      0.00       0.0       0.0                                0.00  
 
 
 Note: Symbol # after min delay cost means estimated hold TNS across all active scenarios 
@@ -1092,7 +1175,8 @@ Note: Symbol # after min delay cost means estimated hold TNS across all active s
 
   Optimization Complete
   ---------------------
-Warning: Design 'total_filter' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
-     Net 'f16/clk': 3012 load(s), 1 driver(s)
+Warning: Design 'total_filter' contains 2 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+     Net 'clock': 1585 load(s), 1 driver(s)
+     Net 'ctrl/clk_en': 1428 load(s), 1 driver(s)
 
 Thank you...
