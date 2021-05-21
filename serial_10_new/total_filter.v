@@ -25,11 +25,11 @@ module total_filter(
     input   clock; 
     input   clk_enable; 
     input   reset; 
-    input   signed [13:0] filter_in;        //sfix15_En14
-    output  signed [34:0] filter_out [15:0]; //sfix37_En32
+    input   signed [9:0] filter_in;        //sfix15_En14
+    output  signed [26:0] filter_out [15:0]; //sfix37_En32
 
-    wire    [13:0] delay_pipeline [0:118] ; // sfix13_En12
-    wire phase_59; // boolean
+    wire    [9:0] delay_pipeline [0:118] ; // sfix13_En12
+    wire    phase_52; // boolean
 
     control ctrl(.clock(clock),.reset(reset),.filter_in(filter_in),.phase_59(phase_59),.out(delay_pipeline));
     filterbank_core core(.clock(clock),.clk_enable(clk_enable),.reset(reset), .filter_in(filter_in), .delay_pipeline(delay_pipeline), .filter_out(filter_out),.phase_59(phase_59));
@@ -38,11 +38,11 @@ endmodule
 
 module control  (
 	input  clock, reset,
-  input  signed [13:0] filter_in,        //sfix15_En14
-	input  wire phase_59,
-	output wire [13:0] out [0:118]
+  input  signed [9:0] filter_in,        //sfix15_En14
+	input  wire phase_52,
+	output wire [9:0] out [0:118]
 );
-  reg     signed [13:0] registers [0:118] ; // sfix13_En12
+  reg     signed [9:0] registers [0:118] ; // sfix13_En12
 
 	assign out[0] = registers[0];
 	assign out[1] = registers[1];
@@ -165,7 +165,7 @@ module control  (
 	assign out[118] = registers[118];
   
   logic clk_en;
-  assign clk_en = clock & phase_59;
+  assign clk_en = clock & phase_52;
 
 	always_ff @(posedge clk_en) begin
 		if (reset == 1) begin
@@ -180,18 +180,18 @@ endmodule
 
 module filterbank_core(
   input clock,clk_enable,reset,
-  input signed [13:0] filter_in,        //sfix15_En14
-  input  signed [13:0] delay_pipeline [0:118], // sfix14_En13
-  output  signed [34:0] filter_out [15:0], //sfix37_En32
-  output wire phase_59
+  input signed [9:0] filter_in,        //sfix15_En14
+  input  signed [9:0] delay_pipeline [0:118], // sfix14_En13
+  output  signed [26:0] filter_out [15:0], //sfix37_En32
+  output wire phase_52
 );
 
-  filter1 f1(.clk(clock), .clk_enable(clk_enable), .reset(reset), .filter_in(filter_in), .filter_out(filter_out[0]), .delay_pipeline(delay_pipeline), .phase_59(phase_59));
+  filter1 f1(.clk(clock), .clk_enable(clk_enable), .reset(reset), .filter_in(filter_in), .filter_out(filter_out[0]), .delay_pipeline(delay_pipeline));
   filter2 f2(.clk(clock), .clk_enable(clk_enable), .reset(reset), .filter_in(filter_in), .filter_out(filter_out[1]), .delay_pipeline(delay_pipeline));
   filter3 f3(.clk(clock), .clk_enable(clk_enable), .reset(reset), .filter_in(filter_in), .filter_out(filter_out[2]), .delay_pipeline(delay_pipeline));
   filter4 f4(.clk(clock), .clk_enable(clk_enable), .reset(reset), .filter_in(filter_in), .filter_out(filter_out[3]), .delay_pipeline(delay_pipeline));
   filter5 f5(.clk(clock), .clk_enable(clk_enable), .reset(reset), .filter_in(filter_in), .filter_out(filter_out[4]), .delay_pipeline(delay_pipeline));
-  filter6 f6(.clk(clock), .clk_enable(clk_enable), .reset(reset), .filter_in(filter_in), .filter_out(filter_out[5]), .delay_pipeline(delay_pipeline));
+  filter6 f6(.clk(clock), .clk_enable(clk_enable), .reset(reset), .filter_in(filter_in), .filter_out(filter_out[5]), .delay_pipeline(delay_pipeline),.phase_52(phase_52));
   filter7 f7(.clk(clock), .clk_enable(clk_enable), .reset(reset), .filter_in(filter_in), .filter_out(filter_out[6]), .delay_pipeline(delay_pipeline));
   filter8 f8(.clk(clock), .clk_enable(clk_enable), .reset(reset), .filter_in(filter_in), .filter_out(filter_out[7]), .delay_pipeline(delay_pipeline));
   filter9 f9(.clk(clock), .clk_enable(clk_enable), .reset(reset), .filter_in(filter_in), .filter_out(filter_out[8]), .delay_pipeline(delay_pipeline));

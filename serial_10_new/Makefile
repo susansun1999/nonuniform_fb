@@ -87,7 +87,7 @@ VISFLAGS = -lncurses
 #TESTBENCH = SC_fb/HWA_total_test.v
 #TESTBENCH = BC_fb/BC_total_test.v
 #TESTBENCH = matlab_bc/bc_1_test.v
-TESTBENCH = bank_test.v
+TESTBENCH = 
 
 HEADERS = 
 
@@ -112,6 +112,11 @@ SYNFILES = total_filter.vg
 #SYNFILES = synth/fir1.vg
 #SYNFILES = synth/filter.vg
 
+export CLOCK_NET_NAME = clock
+export RESET_NET_NAME = reset
+#export HEADERS = params.svh 
+export SOURCES = verilog/rob.sv 
+export DESIGN_NAME = rob
 
 total_filter.vg:		$(HEADERS) $(SIMFILES) total_filter_synth.tcl
 	dc_shell-t -f ./total_filter_synth.tcl | tee synth.out 
@@ -191,5 +196,5 @@ clean:
 	rm -f *.elf *.dump *.mem debug_bin
 
 nuke:	clean
-	rm -rf *.ddc *.chk command.log *.syn
+	rm -rf *.vg *.ddc *.chk command.log *.syn
 	rm -rf command.log *.db *.svf *.mr *.pvl

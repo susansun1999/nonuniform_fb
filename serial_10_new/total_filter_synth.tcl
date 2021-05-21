@@ -1,4 +1,4 @@
-#/***********************************************************/
+#***********************************************************/
 #/*   FILE        : defaults.tcl                            */
 #/*   Description : Default Synopsys Design Compiler Script */
 #/*   Usage       : dc_shell -tcl_mode -f default.tcl       */
@@ -22,7 +22,7 @@ analyze -f sverilog [list "total_filter.v"]
 elaborate total_filter
 set design_name total_filter
 set clock_name clock
-set CLK_PERIOD 1041
+set CLK_PERIOD 1179
 
 
 #/***********************************************************/
