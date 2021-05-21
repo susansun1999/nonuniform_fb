@@ -40,9 +40,9 @@ module control  (
 	input  clock, reset,
   input  signed [13:0] filter_in,        //sfix15_En14
 	input  wire phase_59,
-	output wire [13:0] out [118:0]
+	output wire [13:0] out [0:118]
 );
-  reg     signed [13:0] registers [118:0] ; // sfix13_En12
+  reg     signed [13:0] registers [0:118] ; // sfix13_En12
 
 	assign out[0] = registers[0];
 	assign out[1] = registers[1];
@@ -172,7 +172,7 @@ module control  (
 			for(int i=0; i<119; i=i+1) registers[i] <= 'b0;
 		end
 		else begin
-      registers[118:1] <= registers[117:0];
+      registers[1:118:] <= registers[0:117];
       registers[0] <= filter_in;
 		end
 	end
