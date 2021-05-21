@@ -1,6 +1,6 @@
 Loading db file '/afs/umich.edu/user/s/u/sunsusan/Desktop/SC_FIR_hardware_syn/Nangate/NangateOpenCellLibrary.db'
 Information: Updating design information... (UID-85)
-Warning: Design 'total_filter' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+Warning: Design 'total_filter' contains 2 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
 Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
 Warning: Design has unannotated primary inputs. (PWR-414)
 Warning: Design has unannotated sequential cell outputs. (PWR-415)
@@ -10,7 +10,7 @@ Report : power
         -analysis_effort low
 Design : total_filter
 Version: O-2018.06
-Date   : Thu May 20 00:01:09 2021
+Date   : Fri May 21 14:53:44 2021
 ****************************************
 
 
@@ -36,12 +36,12 @@ Power-specific unit information :
     Leakage Power Units = 1nW
 
 
-  Cell Internal Power  =  16.6373 uW   (87%)
-  Net Switching Power  =   2.5379 uW   (13%)
+  Cell Internal Power  =  11.0569 uW   (82%)
+  Net Switching Power  =   2.5009 uW   (18%)
                          ---------
-Total Dynamic Power    =  19.1752 uW  (100%)
+Total Dynamic Power    =  13.5578 uW  (100%)
 
-Cell Leakage Power     = 839.0635 uW
+Cell Leakage Power     =   1.1258 mW
 
 
                  Internal         Switching           Leakage            Total
@@ -50,10 +50,10 @@ Power Group      Power            Power               Power              Power  
 io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
 memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
 black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
-clock_network      0.0000            0.0000            0.0000            0.0000  (   0.00%)
-register          15.6407            0.1647        2.0572e+05          221.5223  (  25.81%)
+clock_network  1.8537e-03            0.5378           50.8117            0.5905  (   0.05%)
+register          10.2346            0.1340        2.2684e+05          237.2086  (  20.82%)
 sequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)
-combinational      0.9967            2.3733        6.3335e+05          636.7165  (  74.19%)
+combinational      0.8201            1.8292        8.9887e+05          901.5230  (  79.13%)
 --------------------------------------------------------------------------------------------------
-Total             16.6374 uW         2.5379 uW     8.3906e+05 nW       858.2388 uW
+Total             11.0565 uW         2.5010 uW     1.1258e+06 nW     1.1393e+03 uW
 1
