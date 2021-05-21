@@ -173,7 +173,7 @@ module control  (
 		end
 		else begin
       registers[118:1] <= registers[117:0];
-      registers[0] <= in;
+      registers[0] <= filter_in;
 		end
 	end
 endmodule
