@@ -128,7 +128,7 @@ if {  $dc_shell_status != [list] } {
   set MAX_FANOUT $MAX_FANOUT
   set MAX_TRANSITION $MAX_TRANSITION
   uniquify
-#  ungroup -all -flatten
+  ungroup core -flatten
   redirect $chk_file { check_design }
   # saif_map -start 
   # set_power_prediction
