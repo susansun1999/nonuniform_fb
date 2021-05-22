@@ -1,0 +1,940 @@
+Information: Updating design information... (UID-85)
+Warning: Design 'total_filter' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+ 
+****************************************
+Report : design
+Design : total_filter
+Version: O-2018.06
+Date   : Sat May 22 15:50:41 2021
+****************************************
+
+Design allows ideal nets on clock nets.
+
+Library(s) Used:
+
+    NangateOpenCellLibrary (File: /afs/umich.edu/user/s/u/sunsusan/Desktop/SC_FIR_hardware_syn/Nangate/NangateOpenCellLibrary.db)
+
+Local Link Library:
+
+    {NangateOpenCellLibrary.db}
+
+Flip-Flop Types:
+
+    No flip-flop types specified.
+
+Latch Types:
+
+    No latch types specified.
+
+Operating Conditions:
+
+
+    Operating Condition Name : typical
+    Library : NangateOpenCellLibrary
+    Process :   1.00
+    Temperature :  25.00
+    Voltage :   1.10
+    Interconnect Model : balanced_tree
+
+Wire Loading Model:
+
+    Selected from the default (area not fully known).
+
+Name           :   5K_hvratio_1_1
+Location       :   NangateOpenCellLibrary
+Resistance     :   0.00357143
+Capacitance    :   0.1774
+Area           :   0
+Slope          :   5
+Fanout   Length   Points Average Cap Std Deviation
+--------------------------------------------------------------
+     1     1.75
+     2     3.94
+     3     6.46
+     4     9.22
+     5    11.91
+     6    14.84
+     7    18.62
+     8    22.67
+     9    25.48
+    11    27.03
+
+
+
+Wire Loading Model Mode: top.
+
+Timing Ranges:
+
+    No timing ranges specified.
+
+Pin Input Delays:
+
+    None specified.
+
+Pin Output Delays:
+
+    None specified.
+
+Disabled Timing Arcs:
+
+    No arcs disabled.
+
+Required Licenses:
+
+    None Required
+
+Design Parameters:
+
+    None specified.
+1
+ 
+****************************************
+Report : area
+Design : total_filter
+Version: O-2018.06
+Date   : Sat May 22 15:50:41 2021
+****************************************
+
+Library(s) Used:
+
+    NangateOpenCellLibrary (File: /afs/umich.edu/user/s/u/sunsusan/Desktop/SC_FIR_hardware_syn/Nangate/NangateOpenCellLibrary.db)
+
+Number of ports:                         4254
+Number of nets:                         24097
+Number of cells:                        17558
+Number of combinational cells:          14318
+Number of sequential cells:              3175
+Number of macros/black boxes:               0
+Number of buf/inv:                       2500
+Number of references:                      82
+
+Combinational area:              21943.936112
+Buf/Inv area:                     1472.043999
+Noncombinational area:           12190.248233
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (Wire load has zero net area)
+
+Total cell area:                 34134.184345
+Total area:                 undefined
+1
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -input_pins
+        -nets
+        -max_paths 2
+        -transition_time
+Design : total_filter
+Version: O-2018.06
+Date   : Sat May 22 15:50:41 2021
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+  Startpoint: core/f5/cur_count_reg[1]
+              (rising edge-triggered flip-flop clocked by clock)
+  Endpoint: core/f5/acc_out_1_reg[22]
+            (rising edge-triggered flip-flop clocked by clock)
+  Path Group: clock
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  total_filter       5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                       Fanout     Trans      Incr       Path
+  ------------------------------------------------------------------------------------
+  clock clock (rise edge)                                           0.00       0.00
+  clock network delay (ideal)                                       0.00       0.00
+  core/f5/cur_count_reg[1]/CK (DFFS_X1)                   0.00      0.00 #     0.00 r
+  core/f5/cur_count_reg[1]/Q (DFFS_X1)                    0.06      0.14       0.14 r
+  core/f5/cur_count[1] (net)                    9                   0.00       0.14 r
+  U11920/A2 (NOR2_X1)                                     0.06      0.02       0.16 r
+  U11920/ZN (NOR2_X1)                                     0.02      0.02       0.18 f
+  n3257 (net)                                   2                   0.00       0.18 f
+  U10557/A (INV_X1)                                       0.02      0.02       0.20 f
+  U10557/ZN (INV_X1)                                      0.01      0.02       0.22 r
+  n12281 (net)                                  2                   0.00       0.22 r
+  U10948/A2 (NOR2_X1)                                     0.01      0.02       0.24 r
+  U10948/ZN (NOR2_X1)                                     0.03      0.04       0.28 f
+  n3256 (net)                                   9                   0.00       0.28 f
+  U3998/A1 (NAND2_X1)                                     0.03      0.02       0.30 f
+  U3998/ZN (NAND2_X1)                                     0.06      0.08       0.38 r
+  n672 (net)                                   10                   0.00       0.38 r
+  U9923/A (INV_X1)                                        0.06      0.02       0.40 r
+  U9923/ZN (INV_X1)                                       0.03      0.05       0.45 f
+  n12279 (net)                                  9                   0.00       0.45 f
+  U14387/C2 (AOI222_X1)                                   0.03      0.02       0.47 f
+  U14387/ZN (AOI222_X1)                                   0.05      0.11       0.58 r
+  n3612 (net)                                   1                   0.00       0.58 r
+  U14386/A (OAI221_X1)                                    0.05      0.01       0.59 r
+  U14386/ZN (OAI221_X1)                                   0.02      0.04       0.64 f
+  n3611 (net)                                   1                   0.00       0.64 f
+  U11519/A4 (NOR4_X1)                                     0.02      0.01       0.65 f
+  U11519/ZN (NOR4_X1)                                     0.05      0.09       0.74 r
+  n3607 (net)                                   1                   0.00       0.74 r
+  U14664/A4 (NAND4_X1)                                    0.05      0.01       0.76 r
+  U14664/ZN (NAND4_X1)                                    0.03      0.05       0.80 f
+  core/f5/preaddmux_a1[0] (net)                 2                   0.00       0.80 f
+  core/f5/add_255/A[0] (total_filter_DW01_add_37)                   0.00       0.80 f
+  core/f5/add_255/A[0] (net)                                        0.00       0.80 f
+  core/f5/add_255/U1/A2 (AND2_X1)                         0.03      0.01       0.81 f
+  core/f5/add_255/U1/ZN (AND2_X1)                         0.01      0.04       0.86 f
+  core/f5/add_255/n1 (net)                      1                   0.00       0.86 f
+  core/f5/add_255/U1_1/CI (FA_X1)                         0.01      0.02       0.88 f
+  core/f5/add_255/U1_1/CO (FA_X1)                         0.02      0.07       0.95 f
+  core/f5/add_255/carry[2] (net)                1                   0.00       0.95 f
+  core/f5/add_255/U1_2/CI (FA_X1)                         0.02      0.02       0.97 f
+  core/f5/add_255/U1_2/S (FA_X1)                          0.02      0.12       1.09 r
+  core/f5/add_255/SUM[2] (net)                  2                   0.00       1.09 r
+  core/f5/add_255/SUM[2] (total_filter_DW01_add_37)                 0.00       1.09 r
+  core/f5/tapsum_1[2] (net)                                         0.00       1.09 r
+  core/f5/mult_303/A[2] (total_filter_DW02_mult_10)                 0.00       1.09 r
+  core/f5/mult_303/A[2] (net)                                       0.00       1.09 r
+  core/f5/mult_303/U45/A (INV_X1)                         0.02      0.02       1.10 r
+  core/f5/mult_303/U45/ZN (INV_X1)                        0.02      0.03       1.13 f
+  core/f5/mult_303/n41 (net)                    7                   0.00       1.13 f
+  core/f5/mult_303/U100/A2 (NOR2_X1)                      0.02      0.02       1.16 f
+  core/f5/mult_303/U100/ZN (NOR2_X1)                      0.03      0.05       1.20 r
+  core/f5/mult_303/ab[2][6] (net)               1                   0.00       1.20 r
+  core/f5/mult_303/S3_2_6/A (FA_X1)                       0.03      0.03       1.23 r
+  core/f5/mult_303/S3_2_6/S (FA_X1)                       0.02      0.10       1.33 f
+  core/f5/mult_303/SUMB[2][6] (net)             1                   0.00       1.33 f
+  core/f5/mult_303/S2_3_5/CI (FA_X1)                      0.02      0.02       1.35 f
+  core/f5/mult_303/S2_3_5/S (FA_X1)                       0.02      0.09       1.44 f
+  core/f5/mult_303/SUMB[3][5] (net)             1                   0.00       1.44 f
+  core/f5/mult_303/S2_4_4/CI (FA_X1)                      0.02      0.02       1.46 f
+  core/f5/mult_303/S2_4_4/S (FA_X1)                       0.02      0.12       1.58 r
+  core/f5/mult_303/SUMB[4][4] (net)             1                   0.00       1.58 r
+  core/f5/mult_303/S2_5_3/CI (FA_X1)                      0.02      0.02       1.60 r
+  core/f5/mult_303/S2_5_3/S (FA_X1)                       0.02      0.09       1.69 f
+  core/f5/mult_303/SUMB[5][3] (net)             1                   0.00       1.69 f
+  core/f5/mult_303/S2_6_2/CI (FA_X1)                      0.02      0.02       1.71 f
+  core/f5/mult_303/S2_6_2/S (FA_X1)                       0.02      0.12       1.83 r
+  core/f5/mult_303/SUMB[6][2] (net)             1                   0.00       1.83 r
+  core/f5/mult_303/S2_7_1/CI (FA_X1)                      0.02      0.02       1.85 r
+  core/f5/mult_303/S2_7_1/S (FA_X1)                       0.02      0.09       1.95 f
+  core/f5/mult_303/SUMB[7][1] (net)             1                   0.00       1.95 f
+  core/f5/mult_303/S4_0/CI (FA_X1)                        0.02      0.02       1.97 f
+  core/f5/mult_303/S4_0/S (FA_X1)                         0.02      0.12       2.09 r
+  core/f5/mult_303/SUMB[8][0] (net)             2                   0.00       2.09 r
+  core/f5/mult_303/U39/B (XOR2_X1)                        0.02      0.02       2.11 r
+  core/f5/mult_303/U39/Z (XOR2_X1)                        0.03      0.05       2.17 r
+  core/f5/mult_303/n30 (net)                    1                   0.00       2.17 r
+  core/f5/mult_303/FS_1/A[6] (total_filter_DW01_add_36)             0.00       2.17 r
+  core/f5/mult_303/FS_1/A[6] (net)                                  0.00       2.17 r
+  core/f5/mult_303/FS_1/U2/A (INV_X1)                     0.03      0.01       2.18 r
+  core/f5/mult_303/FS_1/U2/ZN (INV_X1)                    0.01      0.01       2.19 f
+  core/f5/mult_303/FS_1/n8 (net)                2                   0.00       2.19 f
+  core/f5/mult_303/FS_1/U45/A2 (NOR2_X1)                  0.01      0.02       2.21 f
+  core/f5/mult_303/FS_1/U45/ZN (NOR2_X1)                  0.06      0.07       2.28 r
+  core/f5/mult_303/FS_1/n18 (net)               4                   0.00       2.28 r
+  core/f5/mult_303/FS_1/U18/A (AOI21_X1)                  0.06      0.02       2.30 r
+  core/f5/mult_303/FS_1/U18/ZN (AOI21_X1)                 0.02      0.03       2.33 f
+  core/f5/mult_303/FS_1/SUM[6] (net)            2                   0.00       2.33 f
+  core/f5/mult_303/FS_1/SUM[6] (total_filter_DW01_add_36)           0.00       2.33 f
+  core/f5/mult_303/PRODUCT[8] (net)                                 0.00       2.33 f
+  core/f5/mult_303/PRODUCT[8] (total_filter_DW02_mult_10)           0.00       2.33 f
+  core/f5/product_1[8] (net)                                        0.00       2.33 f
+  core/f5/add_309/A[8] (total_filter_DW01_add_11)                   0.00       2.33 f
+  core/f5/add_309/A[8] (net)                                        0.00       2.33 f
+  core/f5/add_309/U1_8/A (FA_X1)                          0.02      0.03       2.37 f
+  core/f5/add_309/U1_8/CO (FA_X1)                         0.02      0.08       2.45 f
+  core/f5/add_309/carry[9] (net)                1                   0.00       2.45 f
+  core/f5/add_309/U1_9/CI (FA_X1)                         0.02      0.02       2.47 f
+  core/f5/add_309/U1_9/CO (FA_X1)                         0.02      0.07       2.54 f
+  core/f5/add_309/carry[10] (net)               1                   0.00       2.54 f
+  core/f5/add_309/U1_10/CI (FA_X1)                        0.02      0.02       2.56 f
+  core/f5/add_309/U1_10/CO (FA_X1)                        0.02      0.07       2.63 f
+  core/f5/add_309/carry[11] (net)               1                   0.00       2.63 f
+  core/f5/add_309/U1_11/CI (FA_X1)                        0.02      0.02       2.65 f
+  core/f5/add_309/U1_11/CO (FA_X1)                        0.02      0.07       2.73 f
+  core/f5/add_309/carry[12] (net)               1                   0.00       2.73 f
+  core/f5/add_309/U1_12/CI (FA_X1)                        0.02      0.02       2.75 f
+  core/f5/add_309/U1_12/CO (FA_X1)                        0.02      0.07       2.82 f
+  core/f5/add_309/carry[13] (net)               1                   0.00       2.82 f
+  core/f5/add_309/U1_13/CI (FA_X1)                        0.02      0.02       2.84 f
+  core/f5/add_309/U1_13/CO (FA_X1)                        0.02      0.07       2.91 f
+  core/f5/add_309/carry[14] (net)               1                   0.00       2.91 f
+  core/f5/add_309/U1_14/CI (FA_X1)                        0.02      0.02       2.93 f
+  core/f5/add_309/U1_14/CO (FA_X1)                        0.02      0.07       3.01 f
+  core/f5/add_309/carry[15] (net)               1                   0.00       3.01 f
+  core/f5/add_309/U1_15/CI (FA_X1)                        0.02      0.02       3.03 f
+  core/f5/add_309/U1_15/CO (FA_X1)                        0.02      0.07       3.10 f
+  core/f5/add_309/carry[16] (net)               1                   0.00       3.10 f
+  core/f5/add_309/U1_16/CI (FA_X1)                        0.02      0.02       3.12 f
+  core/f5/add_309/U1_16/CO (FA_X1)                        0.02      0.07       3.19 f
+  core/f5/add_309/carry[17] (net)               1                   0.00       3.19 f
+  core/f5/add_309/U1_17/CI (FA_X1)                        0.02      0.02       3.21 f
+  core/f5/add_309/U1_17/CO (FA_X1)                        0.02      0.07       3.28 f
+  core/f5/add_309/carry[18] (net)               1                   0.00       3.28 f
+  core/f5/add_309/U1_18/CI (FA_X1)                        0.02      0.02       3.30 f
+  core/f5/add_309/U1_18/CO (FA_X1)                        0.02      0.07       3.38 f
+  core/f5/add_309/carry[19] (net)               1                   0.00       3.38 f
+  core/f5/add_309/U1_19/CI (FA_X1)                        0.02      0.02       3.40 f
+  core/f5/add_309/U1_19/CO (FA_X1)                        0.02      0.07       3.47 f
+  core/f5/add_309/carry[20] (net)               1                   0.00       3.47 f
+  core/f5/add_309/U1_20/CI (FA_X1)                        0.02      0.02       3.49 f
+  core/f5/add_309/U1_20/CO (FA_X1)                        0.02      0.07       3.56 f
+  core/f5/add_309/carry[21] (net)               1                   0.00       3.56 f
+  core/f5/add_309/U1_21/CI (FA_X1)                        0.02      0.02       3.58 f
+  core/f5/add_309/U1_21/CO (FA_X1)                        0.02      0.07       3.66 f
+  core/f5/add_309/carry[22] (net)               1                   0.00       3.66 f
+  core/f5/add_309/U1_22/CI (FA_X1)                        0.02      0.02       3.68 f
+  core/f5/add_309/U1_22/S (FA_X1)                         0.01      0.11       3.79 r
+  core/f5/add_309/SUM[22] (net)                 1                   0.00       3.79 r
+  core/f5/add_309/SUM[22] (total_filter_DW01_add_11)                0.00       3.79 r
+  core/f5/add_temp[22] (net)                                        0.00       3.79 r
+  U14529/A (INV_X1)                                       0.01      0.01       3.81 r
+  U14529/ZN (INV_X1)                                      0.01      0.01       3.81 f
+  n11265 (net)                                  1                   0.00       3.81 f
+  U14528/B2 (OAI221_X1)                                   0.01      0.01       3.83 f
+  U14528/ZN (OAI221_X1)                                   0.03      0.05       3.88 r
+  n10402 (net)                                  1                   0.00       3.88 r
+  core/f5/acc_out_1_reg[22]/D (DFFR_X1)                   0.03      0.01       3.89 r
+  data arrival time                                                            3.89
+
+  clock clock (rise edge)                                        1330.00    1330.00
+  clock network delay (ideal)                                       0.00    1330.00
+  clock uncertainty                                                -0.10    1329.90
+  core/f5/acc_out_1_reg[22]/CK (DFFR_X1)                            0.00    1329.90 r
+  library setup time                                               -0.04    1329.86
+  data required time                                                        1329.86
+  ------------------------------------------------------------------------------------
+  data required time                                                        1329.86
+  data arrival time                                                           -3.89
+  ------------------------------------------------------------------------------------
+  slack (MET)                                                               1325.97
+
+
+  Startpoint: core/f9/cur_count_reg[1]
+              (rising edge-triggered flip-flop clocked by clock)
+  Endpoint: core/f9/acc_out_1_reg[22]
+            (rising edge-triggered flip-flop clocked by clock)
+  Path Group: clock
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  total_filter       5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                       Fanout     Trans      Incr       Path
+  ------------------------------------------------------------------------------------
+  clock clock (rise edge)                                           0.00       0.00
+  clock network delay (ideal)                                       0.00       0.00
+  core/f9/cur_count_reg[1]/CK (DFFS_X1)                   0.00      0.00 #     0.00 r
+  core/f9/cur_count_reg[1]/Q (DFFS_X1)                    0.07      0.15       0.15 r
+  core/f9/cur_count[1] (net)                    9                   0.00       0.15 r
+  U10946/A1 (NOR2_X1)                                     0.07      0.03       0.18 r
+  U10946/ZN (NOR2_X1)                                     0.03      0.04       0.22 f
+  n236 (net)                                    7                   0.00       0.22 f
+  U14752/A2 (AND3_X1)                                     0.03      0.01       0.23 f
+  U14752/ZN (AND3_X1)                                     0.01      0.06       0.29 f
+  n1542 (net)                                   4                   0.00       0.29 f
+  U2269/A2 (NAND2_X1)                                     0.01      0.02       0.31 f
+  U2269/ZN (NAND2_X1)                                     0.06      0.07       0.38 r
+  n830 (net)                                   10                   0.00       0.38 r
+  U10143/A (INV_X1)                                       0.06      0.02       0.40 r
+  U10143/ZN (INV_X1)                                      0.03      0.05       0.45 f
+  n12437 (net)                                  9                   0.00       0.45 f
+  U13888/B2 (AOI222_X1)                                   0.03      0.02       0.48 f
+  U13888/ZN (AOI222_X1)                                   0.05      0.10       0.57 r
+  n1180 (net)                                   1                   0.00       0.57 r
+  U13887/A (OAI221_X1)                                    0.05      0.01       0.59 r
+  U13887/ZN (OAI221_X1)                                   0.02      0.04       0.63 f
+  n1177 (net)                                   1                   0.00       0.63 f
+  U11386/A4 (NOR4_X1)                                     0.02      0.01       0.65 f
+  U11386/ZN (NOR4_X1)                                     0.05      0.09       0.74 r
+  n1173 (net)                                   1                   0.00       0.74 r
+  U14731/A4 (NAND4_X1)                                    0.05      0.01       0.75 r
+  U14731/ZN (NAND4_X1)                                    0.03      0.05       0.80 f
+  core/f9/preaddmux_b1[0] (net)                 2                   0.00       0.80 f
+  core/f9/add_255/B[0] (total_filter_DW01_add_23)                   0.00       0.80 f
+  core/f9/add_255/B[0] (net)                                        0.00       0.80 f
+  core/f9/add_255/U1/A1 (AND2_X1)                         0.03      0.01       0.81 f
+  core/f9/add_255/U1/ZN (AND2_X1)                         0.01      0.04       0.85 f
+  core/f9/add_255/n1 (net)                      1                   0.00       0.85 f
+  core/f9/add_255/U1_1/CI (FA_X1)                         0.01      0.02       0.87 f
+  core/f9/add_255/U1_1/CO (FA_X1)                         0.02      0.07       0.94 f
+  core/f9/add_255/carry[2] (net)                1                   0.00       0.94 f
+  core/f9/add_255/U1_2/CI (FA_X1)                         0.02      0.02       0.96 f
+  core/f9/add_255/U1_2/S (FA_X1)                          0.02      0.12       1.08 r
+  core/f9/add_255/SUM[2] (net)                  2                   0.00       1.08 r
+  core/f9/add_255/SUM[2] (total_filter_DW01_add_23)                 0.00       1.08 r
+  core/f9/tapsum_1[2] (net)                                         0.00       1.08 r
+  core/f9/mult_303/A[2] (total_filter_DW02_mult_3)                  0.00       1.08 r
+  core/f9/mult_303/A[2] (net)                                       0.00       1.08 r
+  core/f9/mult_303/U44/A (INV_X1)                         0.02      0.02       1.09 r
+  core/f9/mult_303/U44/ZN (INV_X1)                        0.02      0.03       1.13 f
+  core/f9/mult_303/n41 (net)                    7                   0.00       1.13 f
+  core/f9/mult_303/U100/A2 (NOR2_X1)                      0.02      0.02       1.15 f
+  core/f9/mult_303/U100/ZN (NOR2_X1)                      0.03      0.05       1.20 r
+  core/f9/mult_303/ab[2][6] (net)               1                   0.00       1.20 r
+  core/f9/mult_303/S3_2_6/A (FA_X1)                       0.03      0.03       1.22 r
+  core/f9/mult_303/S3_2_6/S (FA_X1)                       0.02      0.10       1.32 f
+  core/f9/mult_303/SUMB[2][6] (net)             1                   0.00       1.32 f
+  core/f9/mult_303/S2_3_5/CI (FA_X1)                      0.02      0.02       1.34 f
+  core/f9/mult_303/S2_3_5/S (FA_X1)                       0.02      0.09       1.43 f
+  core/f9/mult_303/SUMB[3][5] (net)             1                   0.00       1.43 f
+  core/f9/mult_303/S2_4_4/CI (FA_X1)                      0.02      0.02       1.45 f
+  core/f9/mult_303/S2_4_4/S (FA_X1)                       0.02      0.12       1.57 r
+  core/f9/mult_303/SUMB[4][4] (net)             1                   0.00       1.57 r
+  core/f9/mult_303/S2_5_3/CI (FA_X1)                      0.02      0.02       1.59 r
+  core/f9/mult_303/S2_5_3/S (FA_X1)                       0.02      0.09       1.69 f
+  core/f9/mult_303/SUMB[5][3] (net)             1                   0.00       1.69 f
+  core/f9/mult_303/S2_6_2/CI (FA_X1)                      0.02      0.02       1.71 f
+  core/f9/mult_303/S2_6_2/S (FA_X1)                       0.02      0.12       1.82 r
+  core/f9/mult_303/SUMB[6][2] (net)             1                   0.00       1.82 r
+  core/f9/mult_303/S2_7_1/CI (FA_X1)                      0.02      0.02       1.84 r
+  core/f9/mult_303/S2_7_1/S (FA_X1)                       0.02      0.09       1.94 f
+  core/f9/mult_303/SUMB[7][1] (net)             1                   0.00       1.94 f
+  core/f9/mult_303/S4_0/CI (FA_X1)                        0.02      0.02       1.96 f
+  core/f9/mult_303/S4_0/S (FA_X1)                         0.02      0.12       2.08 r
+  core/f9/mult_303/SUMB[8][0] (net)             2                   0.00       2.08 r
+  core/f9/mult_303/U42/B (XOR2_X1)                        0.02      0.02       2.10 r
+  core/f9/mult_303/U42/Z (XOR2_X1)                        0.03      0.05       2.16 r
+  core/f9/mult_303/n33 (net)                    1                   0.00       2.16 r
+  core/f9/mult_303/FS_1/A[6] (total_filter_DW01_add_22)             0.00       2.16 r
+  core/f9/mult_303/FS_1/A[6] (net)                                  0.00       2.16 r
+  core/f9/mult_303/FS_1/U2/A (INV_X1)                     0.03      0.01       2.17 r
+  core/f9/mult_303/FS_1/U2/ZN (INV_X1)                    0.01      0.01       2.19 f
+  core/f9/mult_303/FS_1/n8 (net)                2                   0.00       2.19 f
+  core/f9/mult_303/FS_1/U45/A2 (NOR2_X1)                  0.01      0.02       2.20 f
+  core/f9/mult_303/FS_1/U45/ZN (NOR2_X1)                  0.06      0.07       2.27 r
+  core/f9/mult_303/FS_1/n18 (net)               4                   0.00       2.27 r
+  core/f9/mult_303/FS_1/U18/A (AOI21_X1)                  0.06      0.02       2.29 r
+  core/f9/mult_303/FS_1/U18/ZN (AOI21_X1)                 0.02      0.03       2.33 f
+  core/f9/mult_303/FS_1/SUM[6] (net)            2                   0.00       2.33 f
+  core/f9/mult_303/FS_1/SUM[6] (total_filter_DW01_add_22)           0.00       2.33 f
+  core/f9/mult_303/PRODUCT[8] (net)                                 0.00       2.33 f
+  core/f9/mult_303/PRODUCT[8] (total_filter_DW02_mult_3)            0.00       2.33 f
+  core/f9/product_1[8] (net)                                        0.00       2.33 f
+  core/f9/add_309/A[8] (total_filter_DW01_add_7)                    0.00       2.33 f
+  core/f9/add_309/A[8] (net)                                        0.00       2.33 f
+  core/f9/add_309/U1_8/A (FA_X1)                          0.02      0.03       2.36 f
+  core/f9/add_309/U1_8/CO (FA_X1)                         0.02      0.08       2.44 f
+  core/f9/add_309/carry[9] (net)                1                   0.00       2.44 f
+  core/f9/add_309/U1_9/CI (FA_X1)                         0.02      0.02       2.46 f
+  core/f9/add_309/U1_9/CO (FA_X1)                         0.02      0.07       2.53 f
+  core/f9/add_309/carry[10] (net)               1                   0.00       2.53 f
+  core/f9/add_309/U1_10/CI (FA_X1)                        0.02      0.02       2.55 f
+  core/f9/add_309/U1_10/CO (FA_X1)                        0.02      0.07       2.62 f
+  core/f9/add_309/carry[11] (net)               1                   0.00       2.62 f
+  core/f9/add_309/U1_11/CI (FA_X1)                        0.02      0.02       2.64 f
+  core/f9/add_309/U1_11/CO (FA_X1)                        0.02      0.07       2.72 f
+  core/f9/add_309/carry[12] (net)               1                   0.00       2.72 f
+  core/f9/add_309/U1_12/CI (FA_X1)                        0.02      0.02       2.74 f
+  core/f9/add_309/U1_12/CO (FA_X1)                        0.02      0.07       2.81 f
+  core/f9/add_309/carry[13] (net)               1                   0.00       2.81 f
+  core/f9/add_309/U1_13/CI (FA_X1)                        0.02      0.02       2.83 f
+  core/f9/add_309/U1_13/CO (FA_X1)                        0.02      0.07       2.90 f
+  core/f9/add_309/carry[14] (net)               1                   0.00       2.90 f
+  core/f9/add_309/U1_14/CI (FA_X1)                        0.02      0.02       2.92 f
+  core/f9/add_309/U1_14/CO (FA_X1)                        0.02      0.07       3.00 f
+  core/f9/add_309/carry[15] (net)               1                   0.00       3.00 f
+  core/f9/add_309/U1_15/CI (FA_X1)                        0.02      0.02       3.02 f
+  core/f9/add_309/U1_15/CO (FA_X1)                        0.02      0.07       3.09 f
+  core/f9/add_309/carry[16] (net)               1                   0.00       3.09 f
+  core/f9/add_309/U1_16/CI (FA_X1)                        0.02      0.02       3.11 f
+  core/f9/add_309/U1_16/CO (FA_X1)                        0.02      0.07       3.18 f
+  core/f9/add_309/carry[17] (net)               1                   0.00       3.18 f
+  core/f9/add_309/U1_17/CI (FA_X1)                        0.02      0.02       3.20 f
+  core/f9/add_309/U1_17/CO (FA_X1)                        0.02      0.07       3.28 f
+  core/f9/add_309/carry[18] (net)               1                   0.00       3.28 f
+  core/f9/add_309/U1_18/CI (FA_X1)                        0.02      0.02       3.30 f
+  core/f9/add_309/U1_18/CO (FA_X1)                        0.02      0.07       3.37 f
+  core/f9/add_309/carry[19] (net)               1                   0.00       3.37 f
+  core/f9/add_309/U1_19/CI (FA_X1)                        0.02      0.02       3.39 f
+  core/f9/add_309/U1_19/CO (FA_X1)                        0.02      0.07       3.46 f
+  core/f9/add_309/carry[20] (net)               1                   0.00       3.46 f
+  core/f9/add_309/U1_20/CI (FA_X1)                        0.02      0.02       3.48 f
+  core/f9/add_309/U1_20/CO (FA_X1)                        0.02      0.07       3.55 f
+  core/f9/add_309/carry[21] (net)               1                   0.00       3.55 f
+  core/f9/add_309/U1_21/CI (FA_X1)                        0.02      0.02       3.57 f
+  core/f9/add_309/U1_21/CO (FA_X1)                        0.02      0.07       3.65 f
+  core/f9/add_309/carry[22] (net)               1                   0.00       3.65 f
+  core/f9/add_309/U1_22/CI (FA_X1)                        0.02      0.02       3.67 f
+  core/f9/add_309/U1_22/S (FA_X1)                         0.01      0.11       3.78 r
+  core/f9/add_309/SUM[22] (net)                 1                   0.00       3.78 r
+  core/f9/add_309/SUM[22] (total_filter_DW01_add_7)                 0.00       3.78 r
+  core/f9/add_temp[22] (net)                                        0.00       3.78 r
+  U14501/A (INV_X1)                                       0.01      0.01       3.80 r
+  U14501/ZN (INV_X1)                                      0.01      0.01       3.81 f
+  n11314 (net)                                  1                   0.00       3.81 f
+  U14500/B2 (OAI221_X1)                                   0.01      0.01       3.82 f
+  U14500/ZN (OAI221_X1)                                   0.03      0.05       3.87 r
+  n10287 (net)                                  1                   0.00       3.87 r
+  core/f9/acc_out_1_reg[22]/D (DFFR_X1)                   0.03      0.01       3.88 r
+  data arrival time                                                            3.88
+
+  clock clock (rise edge)                                        1330.00    1330.00
+  clock network delay (ideal)                                       0.00    1330.00
+  clock uncertainty                                                -0.10    1329.90
+  core/f9/acc_out_1_reg[22]/CK (DFFR_X1)                            0.00    1329.90 r
+  library setup time                                               -0.04    1329.86
+  data required time                                                        1329.86
+  ------------------------------------------------------------------------------------
+  data required time                                                        1329.86
+  data arrival time                                                           -3.88
+  ------------------------------------------------------------------------------------
+  slack (MET)                                                               1325.98
+
+
+  Startpoint: clk_enable (input port clocked by clock)
+  Endpoint: core/f15/acc_out_1_reg[16]
+            (rising edge-triggered flip-flop clocked by clock)
+  Path Group: input_grp
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  total_filter       5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                       Fanout     Trans      Incr       Path
+  ------------------------------------------------------------------------------------
+  clock clock (rise edge)                                           0.00       0.00
+  clock network delay (ideal)                                       0.00       0.00
+  input external delay                                              0.10       0.10 f
+  clk_enable (in)                                         0.01      0.01       0.11 f
+  clk_enable (net)                              2                   0.00       0.11 f
+  U18374/A (BUF_X1)                                       0.01      0.01       0.12 f
+  U18374/Z (BUF_X1)                                       0.01      0.03       0.14 f
+  n11162 (net)                                  1                   0.00       0.14 f
+  U13670/A (INV_X1)                                       0.01      0.01       0.16 f
+  U13670/ZN (INV_X1)                                      0.01      0.02       0.17 r
+  n11229 (net)                                  3                   0.00       0.17 r
+  U10717/A (BUF_X1)                                       0.01      0.01       0.19 r
+  U10717/Z (BUF_X1)                                       0.04      0.06       0.25 r
+  n11221 (net)                                  7                   0.00       0.25 r
+  U9980/A (INV_X1)                                        0.04      0.02       0.27 r
+  U9980/ZN (INV_X1)                                       0.03      0.05       0.32 f
+  n11210 (net)                                 11                   0.00       0.32 f
+  U1794/A2 (NAND2_X1)                                     0.03      0.02       0.34 f
+  U1794/ZN (NAND2_X1)                                     0.03      0.05       0.39 r
+  n143 (net)                                    7                   0.00       0.39 r
+  U9981/A (BUF_X1)                                        0.03      0.02       0.41 r
+  U9981/Z (BUF_X1)                                        0.02      0.05       0.46 r
+  n11119 (net)                                  4                   0.00       0.46 r
+  U9827/A (INV_X1)                                        0.02      0.02       0.48 r
+  U9827/ZN (INV_X1)                                       0.05      0.07       0.55 f
+  n11112 (net)                                 18                   0.00       0.55 f
+  U1792/A2 (NOR2_X2)                                      0.05      0.05       0.60 f
+  U1792/ZN (NOR2_X2)                                      0.12      0.15       0.75 r
+  n736 (net)                                   17                   0.00       0.75 r
+  U9812/A (INV_X1)                                        0.12      0.03       0.79 r
+  U9812/ZN (INV_X1)                                       0.04      0.05       0.83 f
+  n12148 (net)                                  7                   0.00       0.83 f
+  U17133/B1 (OAI221_X1)                                   0.04      0.02       0.85 f
+  U17133/ZN (OAI221_X1)                                   0.03      0.06       0.91 r
+  n10465 (net)                                  1                   0.00       0.91 r
+  core/f15/acc_out_1_reg[16]/D (DFFR_X1)                  0.03      0.01       0.92 r
+  data arrival time                                                            0.92
+
+  clock clock (rise edge)                                        1330.00    1330.00
+  clock network delay (ideal)                                       0.00    1330.00
+  clock uncertainty                                                -0.10    1329.90
+  core/f15/acc_out_1_reg[16]/CK (DFFR_X1)                           0.00    1329.90 r
+  library setup time                                               -0.04    1329.86
+  data required time                                                        1329.86
+  ------------------------------------------------------------------------------------
+  data required time                                                        1329.86
+  data arrival time                                                           -0.92
+  ------------------------------------------------------------------------------------
+  slack (MET)                                                               1328.94
+
+
+  Startpoint: clk_enable (input port clocked by clock)
+  Endpoint: core/f15/acc_out_1_reg[17]
+            (rising edge-triggered flip-flop clocked by clock)
+  Path Group: input_grp
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  total_filter       5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                       Fanout     Trans      Incr       Path
+  ------------------------------------------------------------------------------------
+  clock clock (rise edge)                                           0.00       0.00
+  clock network delay (ideal)                                       0.00       0.00
+  input external delay                                              0.10       0.10 f
+  clk_enable (in)                                         0.01      0.01       0.11 f
+  clk_enable (net)                              2                   0.00       0.11 f
+  U18374/A (BUF_X1)                                       0.01      0.01       0.12 f
+  U18374/Z (BUF_X1)                                       0.01      0.03       0.14 f
+  n11162 (net)                                  1                   0.00       0.14 f
+  U13670/A (INV_X1)                                       0.01      0.01       0.16 f
+  U13670/ZN (INV_X1)                                      0.01      0.02       0.17 r
+  n11229 (net)                                  3                   0.00       0.17 r
+  U10717/A (BUF_X1)                                       0.01      0.01       0.19 r
+  U10717/Z (BUF_X1)                                       0.04      0.06       0.25 r
+  n11221 (net)                                  7                   0.00       0.25 r
+  U9980/A (INV_X1)                                        0.04      0.02       0.27 r
+  U9980/ZN (INV_X1)                                       0.03      0.05       0.32 f
+  n11210 (net)                                 11                   0.00       0.32 f
+  U1794/A2 (NAND2_X1)                                     0.03      0.02       0.34 f
+  U1794/ZN (NAND2_X1)                                     0.03      0.05       0.39 r
+  n143 (net)                                    7                   0.00       0.39 r
+  U9981/A (BUF_X1)                                        0.03      0.02       0.41 r
+  U9981/Z (BUF_X1)                                        0.02      0.05       0.46 r
+  n11119 (net)                                  4                   0.00       0.46 r
+  U9827/A (INV_X1)                                        0.02      0.02       0.48 r
+  U9827/ZN (INV_X1)                                       0.05      0.07       0.55 f
+  n11112 (net)                                 18                   0.00       0.55 f
+  U1792/A2 (NOR2_X2)                                      0.05      0.05       0.60 f
+  U1792/ZN (NOR2_X2)                                      0.12      0.15       0.75 r
+  n736 (net)                                   17                   0.00       0.75 r
+  U9812/A (INV_X1)                                        0.12      0.03       0.79 r
+  U9812/ZN (INV_X1)                                       0.04      0.05       0.83 f
+  n12148 (net)                                  7                   0.00       0.83 f
+  U17131/B1 (OAI221_X1)                                   0.04      0.02       0.85 f
+  U17131/ZN (OAI221_X1)                                   0.03      0.06       0.91 r
+  n10466 (net)                                  1                   0.00       0.91 r
+  core/f15/acc_out_1_reg[17]/D (DFFR_X1)                  0.03      0.01       0.92 r
+  data arrival time                                                            0.92
+
+  clock clock (rise edge)                                        1330.00    1330.00
+  clock network delay (ideal)                                       0.00    1330.00
+  clock uncertainty                                                -0.10    1329.90
+  core/f15/acc_out_1_reg[17]/CK (DFFR_X1)                           0.00    1329.90 r
+  library setup time                                               -0.04    1329.86
+  data required time                                                        1329.86
+  ------------------------------------------------------------------------------------
+  data required time                                                        1329.86
+  data arrival time                                                           -0.92
+  ------------------------------------------------------------------------------------
+  slack (MET)                                                               1328.94
+
+
+  Startpoint: core/f1/output_register_reg[1]
+              (rising edge-triggered flip-flop clocked by clock)
+  Endpoint: filter_out[0][1]
+            (output port clocked by clock)
+  Path Group: output_grp
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  total_filter       5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                       Fanout     Trans      Incr       Path
+  ------------------------------------------------------------------------------------
+  core/f1/output_register_reg[1]/CK (DFFR_X1)             0.00      0.00 #     0.00 r
+  core/f1/output_register_reg[1]/Q (DFFR_X1)              0.01      0.10       0.10 r
+  filter_out[0][1] (net)                        1                   0.00       0.10 r
+  filter_out[0][1] (out)                                  0.01      0.00       0.10 r
+  data arrival time                                                            0.10
+
+  max_delay                                                      1330.00    1330.00
+  clock uncertainty                                                -0.10    1329.90
+  output external delay                                            -0.10    1329.80
+  data required time                                                        1329.80
+  ------------------------------------------------------------------------------------
+  data required time                                                        1329.80
+  data arrival time                                                           -0.10
+  ------------------------------------------------------------------------------------
+  slack (MET)                                                               1329.70
+
+
+  Startpoint: core/f1/output_register_reg[0]
+              (rising edge-triggered flip-flop clocked by clock)
+  Endpoint: filter_out[0][0]
+            (output port clocked by clock)
+  Path Group: output_grp
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  total_filter       5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                       Fanout     Trans      Incr       Path
+  ------------------------------------------------------------------------------------
+  core/f1/output_register_reg[0]/CK (DFFR_X1)             0.00      0.00 #     0.00 r
+  core/f1/output_register_reg[0]/Q (DFFR_X1)              0.01      0.10       0.10 r
+  filter_out[0][0] (net)                        1                   0.00       0.10 r
+  filter_out[0][0] (out)                                  0.01      0.00       0.10 r
+  data arrival time                                                            0.10
+
+  max_delay                                                      1330.00    1330.00
+  clock uncertainty                                                -0.10    1329.90
+  output external delay                                            -0.10    1329.80
+  data required time                                                        1329.80
+  ------------------------------------------------------------------------------------
+  data required time                                                        1329.80
+  data arrival time                                                           -0.10
+  ------------------------------------------------------------------------------------
+  slack (MET)                                                               1329.70
+
+
+1
+ 
+****************************************
+Report : constraint
+        -verbose
+        -max_delay
+Design : total_filter
+Version: O-2018.06
+Date   : Sat May 22 15:50:41 2021
+****************************************
+
+
+  Startpoint: core/f5/cur_count_reg[1]
+              (rising edge-triggered flip-flop clocked by clock)
+  Endpoint: core/f5/acc_out_1_reg[22]
+            (rising edge-triggered flip-flop clocked by clock)
+  Path Group: clock
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  total_filter       5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clock (rise edge)                                 0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  core/f5/cur_count_reg[1]/CK (DFFS_X1)                   0.00 #     0.00 r
+  core/f5/cur_count_reg[1]/Q (DFFS_X1)                    0.14       0.14 r
+  U11920/ZN (NOR2_X1)                                     0.05       0.18 f
+  U10557/ZN (INV_X1)                                      0.04       0.22 r
+  U10948/ZN (NOR2_X1)                                     0.05       0.28 f
+  U3998/ZN (NAND2_X1)                                     0.10       0.38 r
+  U9923/ZN (INV_X1)                                       0.07       0.45 f
+  U14387/ZN (AOI222_X1)                                   0.13       0.58 r
+  U14386/ZN (OAI221_X1)                                   0.06       0.64 f
+  U11519/ZN (NOR4_X1)                                     0.10       0.74 r
+  U14664/ZN (NAND4_X1)                                    0.06       0.80 f
+  core/f5/add_255/U1/ZN (AND2_X1)                         0.05       0.86 f
+  core/f5/add_255/U1_1/CO (FA_X1)                         0.09       0.95 f
+  core/f5/add_255/U1_2/S (FA_X1)                          0.14       1.09 r
+  core/f5/mult_303/U45/ZN (INV_X1)                        0.05       1.13 f
+  core/f5/mult_303/U100/ZN (NOR2_X1)                      0.07       1.20 r
+  core/f5/mult_303/S3_2_6/S (FA_X1)                       0.12       1.33 f
+  core/f5/mult_303/S2_3_5/S (FA_X1)                       0.11       1.44 f
+  core/f5/mult_303/S2_4_4/S (FA_X1)                       0.14       1.58 r
+  core/f5/mult_303/S2_5_3/S (FA_X1)                       0.12       1.69 f
+  core/f5/mult_303/S2_6_2/S (FA_X1)                       0.14       1.83 r
+  core/f5/mult_303/S2_7_1/S (FA_X1)                       0.12       1.95 f
+  core/f5/mult_303/S4_0/S (FA_X1)                         0.14       2.09 r
+  core/f5/mult_303/U39/Z (XOR2_X1)                        0.08       2.17 r
+  core/f5/mult_303/FS_1/U2/ZN (INV_X1)                    0.03       2.19 f
+  core/f5/mult_303/FS_1/U45/ZN (NOR2_X1)                  0.09       2.28 r
+  core/f5/mult_303/FS_1/U18/ZN (AOI21_X1)                 0.05       2.33 f
+  core/f5/add_309/U1_8/CO (FA_X1)                         0.11       2.45 f
+  core/f5/add_309/U1_9/CO (FA_X1)                         0.09       2.54 f
+  core/f5/add_309/U1_10/CO (FA_X1)                        0.09       2.63 f
+  core/f5/add_309/U1_11/CO (FA_X1)                        0.09       2.73 f
+  core/f5/add_309/U1_12/CO (FA_X1)                        0.09       2.82 f
+  core/f5/add_309/U1_13/CO (FA_X1)                        0.09       2.91 f
+  core/f5/add_309/U1_14/CO (FA_X1)                        0.09       3.01 f
+  core/f5/add_309/U1_15/CO (FA_X1)                        0.09       3.10 f
+  core/f5/add_309/U1_16/CO (FA_X1)                        0.09       3.19 f
+  core/f5/add_309/U1_17/CO (FA_X1)                        0.09       3.28 f
+  core/f5/add_309/U1_18/CO (FA_X1)                        0.09       3.38 f
+  core/f5/add_309/U1_19/CO (FA_X1)                        0.09       3.47 f
+  core/f5/add_309/U1_20/CO (FA_X1)                        0.09       3.56 f
+  core/f5/add_309/U1_21/CO (FA_X1)                        0.09       3.66 f
+  core/f5/add_309/U1_22/S (FA_X1)                         0.13       3.79 r
+  U14529/ZN (INV_X1)                                      0.02       3.81 f
+  U14528/ZN (OAI221_X1)                                   0.06       3.88 r
+  core/f5/acc_out_1_reg[22]/D (DFFR_X1)                   0.01       3.89 r
+  data arrival time                                                  3.89
+
+  clock clock (rise edge)                              1330.00    1330.00
+  clock network delay (ideal)                             0.00    1330.00
+  clock uncertainty                                      -0.10    1329.90
+  core/f5/acc_out_1_reg[22]/CK (DFFR_X1)                  0.00    1329.90 r
+  library setup time                                     -0.04    1329.86
+  data required time                                              1329.86
+  --------------------------------------------------------------------------
+  data required time                                              1329.86
+  data arrival time                                                 -3.89
+  --------------------------------------------------------------------------
+  slack (MET)                                                     1325.97
+
+
+  Startpoint: clk_enable (input port clocked by clock)
+  Endpoint: core/f15/acc_out_1_reg[16]
+            (rising edge-triggered flip-flop clocked by clock)
+  Path Group: input_grp
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  total_filter       5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clock (rise edge)                                 0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.10       0.10 f
+  clk_enable (in)                                         0.01       0.11 f
+  U18374/Z (BUF_X1)                                       0.04       0.14 f
+  U13670/ZN (INV_X1)                                      0.03       0.17 r
+  U10717/Z (BUF_X1)                                       0.08       0.25 r
+  U9980/ZN (INV_X1)                                       0.07       0.32 f
+  U1794/ZN (NAND2_X1)                                     0.07       0.39 r
+  U9981/Z (BUF_X1)                                        0.06       0.46 r
+  U9827/ZN (INV_X1)                                       0.09       0.55 f
+  U1792/ZN (NOR2_X2)                                      0.21       0.75 r
+  U9812/ZN (INV_X1)                                       0.08       0.83 f
+  U17133/ZN (OAI221_X1)                                   0.08       0.91 r
+  core/f15/acc_out_1_reg[16]/D (DFFR_X1)                  0.01       0.92 r
+  data arrival time                                                  0.92
+
+  clock clock (rise edge)                              1330.00    1330.00
+  clock network delay (ideal)                             0.00    1330.00
+  clock uncertainty                                      -0.10    1329.90
+  core/f15/acc_out_1_reg[16]/CK (DFFR_X1)                 0.00    1329.90 r
+  library setup time                                     -0.04    1329.86
+  data required time                                              1329.86
+  --------------------------------------------------------------------------
+  data required time                                              1329.86
+  data arrival time                                                 -0.92
+  --------------------------------------------------------------------------
+  slack (MET)                                                     1328.94
+
+
+  Startpoint: core/f1/output_register_reg[0]
+              (rising edge-triggered flip-flop clocked by clock)
+  Endpoint: filter_out[0][0]
+            (output port clocked by clock)
+  Path Group: output_grp
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  total_filter       5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  core/f1/output_register_reg[0]/CK (DFFR_X1)             0.00 #     0.00 r
+  core/f1/output_register_reg[0]/Q (DFFR_X1)              0.10       0.10 r
+  filter_out[0][0] (out)                                  0.00       0.10 r
+  data arrival time                                                  0.10
+
+  max_delay                                            1330.00    1330.00
+  clock uncertainty                                      -0.10    1329.90
+  output external delay                                  -0.10    1329.80
+  data required time                                              1329.80
+  --------------------------------------------------------------------------
+  data required time                                              1329.80
+  data arrival time                                                 -0.10
+  --------------------------------------------------------------------------
+  slack (MET)                                                     1329.70
+
+
+1
+Information: Updating graph... (UID-83)
+Warning: Design 'total_filter' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+ 
+****************************************
+Report : reference
+Design : total_filter
+Version: O-2018.06
+Date   : Sat May 22 15:50:44 2021
+****************************************
+
+Attributes:
+    b - black box (unknown)
+   bo - allows boundary optimization
+    d - dont_touch
+   mo - map_only
+    h - hierarchical
+    n - noncombinational
+    r - removable
+    s - synthetic operator
+    u - contains unmapped logic
+
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+AND2_X1            NangateOpenCellLibrary     1.064000     152   161.728002
+AND3_X1            NangateOpenCellLibrary     1.330000      92   122.360004
+AND4_X1            NangateOpenCellLibrary     1.596000      79   126.083997
+AOI21_X1           NangateOpenCellLibrary     1.064000      34    36.176000
+AOI22_X1           NangateOpenCellLibrary     1.330000     502   667.660022
+AOI211_X1          NangateOpenCellLibrary     1.330000      67    89.110003
+AOI211_X2          NangateOpenCellLibrary     2.394000       1     2.394000
+AOI221_X1          NangateOpenCellLibrary     1.596000     406   647.975982
+AOI222_X1          NangateOpenCellLibrary     2.128000    1008  2145.024021
+BUF_X1             NangateOpenCellLibrary     0.798000     168   134.063996
+CLKBUF_X1          NangateOpenCellLibrary     0.798000     294   234.611994
+DFFR_X1            NangateOpenCellLibrary     5.320000    1136  6043.520195 n
+DFFS_X1            NangateOpenCellLibrary     5.320000      63   335.160011 n
+HA_X1              NangateOpenCellLibrary     2.660000      63   167.580005 r
+INV_X1             NangateOpenCellLibrary     0.532000    1533   815.556008
+NAND2_X1           NangateOpenCellLibrary     0.798000     639   509.921986
+NAND3_X1           NangateOpenCellLibrary     1.064000     164   174.496002
+NAND4_X1           NangateOpenCellLibrary     1.330000     394   524.020017
+NOR2_X1            NangateOpenCellLibrary     0.798000     128   102.143997
+NOR2_X2            NangateOpenCellLibrary     1.330000      19    25.270001
+NOR3_X1            NangateOpenCellLibrary     1.064000      99   105.336001
+NOR3_X2            NangateOpenCellLibrary     1.862000      11    20.482000
+NOR4_X1            NangateOpenCellLibrary     1.330000     568   755.440024
+NOR4_X2            NangateOpenCellLibrary     2.394000       2     4.788000
+OAI21_X1           NangateOpenCellLibrary     1.064000     264   280.896003
+OAI22_X1           NangateOpenCellLibrary     1.330000    1096  1457.680047
+OAI211_X1          NangateOpenCellLibrary     1.330000      60    79.800003
+OAI221_X1          NangateOpenCellLibrary     1.596000     929  1482.683959
+OAI222_X1          NangateOpenCellLibrary     2.128000    1360  2894.080029
+OR2_X1             NangateOpenCellLibrary     1.064000      37    39.368000
+OR3_X1             NangateOpenCellLibrary     1.330000       2     2.660000
+OR4_X1             NangateOpenCellLibrary     1.596000       1     1.596000
+XNOR2_X1           NangateOpenCellLibrary     1.596000      16    25.535999
+control                        5879.398026       1   5879.398026  h, n
+total_filter_DW01_add_0          96.292001       1     96.292001  h
+total_filter_DW01_add_1          96.292001       1     96.292001  h
+total_filter_DW01_add_2          96.292001       1     96.292001  h
+total_filter_DW01_add_3          96.292001       1     96.292001  h
+total_filter_DW01_add_4          96.292001       1     96.292001  h
+total_filter_DW01_add_5          96.292001       1     96.292001  h
+total_filter_DW01_add_6          96.292001       1     96.292001  h
+total_filter_DW01_add_7          96.292001       1     96.292001  h
+total_filter_DW01_add_8          96.292001       1     96.292001  h
+total_filter_DW01_add_9          96.292001       1     96.292001  h
+total_filter_DW01_add_10         96.292001       1     96.292001  h
+total_filter_DW01_add_11         96.292001       1     96.292001  h
+total_filter_DW01_add_12         96.292001       1     96.292001  h
+total_filter_DW01_add_13         96.292001       1     96.292001  h
+total_filter_DW01_add_14         96.292001       1     96.292001  h
+total_filter_DW01_add_15         96.292001       1     96.292001  h
+total_filter_DW01_add_17         36.708000       1     36.708000  h
+total_filter_DW01_add_19         36.708000       1     36.708000  h
+total_filter_DW01_add_21         36.708000       1     36.708000  h
+total_filter_DW01_add_23         36.708000       1     36.708000  h
+total_filter_DW01_add_25         36.708000       1     36.708000  h
+total_filter_DW01_add_27         36.708000       1     36.708000  h
+total_filter_DW01_add_29         36.708000       1     36.708000  h
+total_filter_DW01_add_31         36.708000       1     36.708000  h
+total_filter_DW01_add_33         36.708000       1     36.708000  h
+total_filter_DW01_add_35         36.708000       1     36.708000  h
+total_filter_DW01_add_37         36.708000       1     36.708000  h
+total_filter_DW01_add_39         36.708000       1     36.708000  h
+total_filter_DW01_add_41         36.708000       1     36.708000  h
+total_filter_DW01_add_43         36.708000       1     36.708000  h
+total_filter_DW01_add_45         36.708000       1     36.708000  h
+total_filter_DW01_add_47         36.708000       1     36.708000  h
+total_filter_DW02_mult_0        369.474000       1    369.474000  h
+total_filter_DW02_mult_1        369.474000       1    369.474000  h
+total_filter_DW02_mult_2        369.474000       1    369.474000  h
+total_filter_DW02_mult_3        369.474000       1    369.474000  h
+total_filter_DW02_mult_4        369.474000       1    369.474000  h
+total_filter_DW02_mult_5        369.474000       1    369.474000  h
+total_filter_DW02_mult_6        369.474000       1    369.474000  h
+total_filter_DW02_mult_7        369.474000       1    369.474000  h
+total_filter_DW02_mult_8        369.474000       1    369.474000  h
+total_filter_DW02_mult_9        369.474000       1    369.474000  h
+total_filter_DW02_mult_10       369.474000       1    369.474000  h
+total_filter_DW02_mult_11       369.474000       1    369.474000  h
+total_filter_DW02_mult_12       369.474000       1    369.474000  h
+total_filter_DW02_mult_13       369.474000       1    369.474000  h
+total_filter_DW02_mult_14       369.474000       1    369.474000  h
+total_filter_DW02_mult_15       369.474000       1    369.474000  h
+-----------------------------------------------------------------------------
+Total 82 references                                 34134.184345
+1
