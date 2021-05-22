@@ -1,0 +1,30 @@
+ 
+****************************************
+check_design summary:
+Version:     O-2018.06
+Date:        Sat May 22 14:27:11 2021
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Cells                                                              16
+    Cells do not drive (LINT-1)                                    16
+--------------------------------------------------------------------------------
+
+Warning: In design 'total_filter', cell 'core/f1/C2621' does not drive any nets. (LINT-1)
+Warning: In design 'total_filter', cell 'core/f2/C2548' does not drive any nets. (LINT-1)
+Warning: In design 'total_filter', cell 'core/f3/C2584' does not drive any nets. (LINT-1)
+Warning: In design 'total_filter', cell 'core/f4/C2548' does not drive any nets. (LINT-1)
+Warning: In design 'total_filter', cell 'core/f5/C2584' does not drive any nets. (LINT-1)
+Warning: In design 'total_filter', cell 'core/f6/C2584' does not drive any nets. (LINT-1)
+Warning: In design 'total_filter', cell 'core/f7/C2584' does not drive any nets. (LINT-1)
+Warning: In design 'total_filter', cell 'core/f8/C2548' does not drive any nets. (LINT-1)
+Warning: In design 'total_filter', cell 'core/f9/C2548' does not drive any nets. (LINT-1)
+Warning: In design 'total_filter', cell 'core/f10/C2548' does not drive any nets. (LINT-1)
+Warning: In design 'total_filter', cell 'core/f11/C2584' does not drive any nets. (LINT-1)
+Warning: In design 'total_filter', cell 'core/f12/C2584' does not drive any nets. (LINT-1)
+Warning: In design 'total_filter', cell 'core/f13/C2621' does not drive any nets. (LINT-1)
+Warning: In design 'total_filter', cell 'core/f14/C2621' does not drive any nets. (LINT-1)
+Warning: In design 'total_filter', cell 'core/f15/C2584' does not drive any nets. (LINT-1)
+Warning: In design 'total_filter', cell 'core/f16/C2237' does not drive any nets. (LINT-1)
+1
