@@ -33,12 +33,12 @@ read_file -f sverilog [list "total_filter.v"]
 Loading db file '/usr/caen/synopsys-synth-2018.06/libraries/syn/gtech.db'
 Loading db file '/usr/caen/synopsys-synth-2018.06/libraries/syn/standard.sldb'
   Loading link library 'gtech'
-Loading sverilog file '/afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_15_new/total_filter.v'
+Loading sverilog file '/afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_16_new/total_filter.v'
 Detecting input file type automatically (-rtl or -netlist).
 Reading with Presto HDL Compiler (equivalent to -rtl option).
 Running PRESTO HDLC
 Warning: Can't read link_library file 'your_library.db'. (UID-3)
-Compiling source file /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_15_new/total_filter.v
+Compiling source file /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_16_new/total_filter.v
 Opening include file filter1.v
 Opening include file filter2.v
 Opening include file filter3.v
@@ -73,7 +73,7 @@ Inferred memory devices in process
 ===============================================================================
 |    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
 ===============================================================================
-|    acc_out_1_reg    | Flip-flop |  37   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    acc_out_1_reg    | Flip-flop |  39   |  Y  | N  | Y  | N  | N  | N  | N  |
 ===============================================================================
 
 Inferred memory devices in process
@@ -82,7 +82,7 @@ Inferred memory devices in process
 ===============================================================================
 |    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
 ===============================================================================
-|    acc_final_reg    | Flip-flop |  37   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    acc_final_reg    | Flip-flop |  39   |  Y  | N  | Y  | N  | N  | N  | N  |
 ===============================================================================
 
 Inferred memory devices in process
@@ -91,9 +91,9 @@ Inferred memory devices in process
 ===============================================================================
 |    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
 ===============================================================================
-| output_register_reg | Flip-flop |  37   |  Y  | N  | Y  | N  | N  | N  | N  |
+| output_register_reg | Flip-flop |  39   |  Y  | N  | Y  | N  | N  | N  | N  |
 ===============================================================================
-Warning:  filter2.v:355: signed to unsigned part selection occurs. (VER-318)
+Warning:  filter2.v:358: signed to unsigned part selection occurs. (VER-318)
 
 Inferred memory devices in process
 	in routine filter2 line 146 in file
@@ -106,30 +106,30 @@ Inferred memory devices in process
 ===============================================================================
 
 Inferred memory devices in process
-	in routine filter2 line 360 in file
+	in routine filter2 line 363 in file
 		'filter2.v'.
 ===============================================================================
 |    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
 ===============================================================================
-|    acc_out_1_reg    | Flip-flop |  37   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    acc_out_1_reg    | Flip-flop |  39   |  Y  | N  | Y  | N  | N  | N  | N  |
 ===============================================================================
 
 Inferred memory devices in process
-	in routine filter2 line 372 in file
+	in routine filter2 line 375 in file
 		'filter2.v'.
 ===============================================================================
 |    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
 ===============================================================================
-|    acc_final_reg    | Flip-flop |  37   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    acc_final_reg    | Flip-flop |  39   |  Y  | N  | Y  | N  | N  | N  | N  |
 ===============================================================================
 
 Inferred memory devices in process
-	in routine filter2 line 384 in file
+	in routine filter2 line 387 in file
 		'filter2.v'.
 ===============================================================================
 |    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
 ===============================================================================
-| output_register_reg | Flip-flop |  37   |  Y  | N  | Y  | N  | N  | N  | N  |
+| output_register_reg | Flip-flop |  39   |  Y  | N  | Y  | N  | N  | N  | N  |
 ===============================================================================
 Warning:  filter3.v:361: signed to unsigned part selection occurs. (VER-318)
 
@@ -149,7 +149,7 @@ Inferred memory devices in process
 ===============================================================================
 |    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
 ===============================================================================
-|    acc_out_1_reg    | Flip-flop |  37   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    acc_out_1_reg    | Flip-flop |  39   |  Y  | N  | Y  | N  | N  | N  | N  |
 ===============================================================================
 
 Inferred memory devices in process
@@ -158,7 +158,7 @@ Inferred memory devices in process
 ===============================================================================
 |    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
 ===============================================================================
-|    acc_final_reg    | Flip-flop |  37   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    acc_final_reg    | Flip-flop |  39   |  Y  | N  | Y  | N  | N  | N  | N  |
 ===============================================================================
 
 Inferred memory devices in process
@@ -167,7 +167,7 @@ Inferred memory devices in process
 ===============================================================================
 |    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
 ===============================================================================
-| output_register_reg | Flip-flop |  37   |  Y  | N  | Y  | N  | N  | N  | N  |
+| output_register_reg | Flip-flop |  39   |  Y  | N  | Y  | N  | N  | N  | N  |
 ===============================================================================
 Warning:  filter4.v:358: signed to unsigned part selection occurs. (VER-318)
 
@@ -187,7 +187,7 @@ Inferred memory devices in process
 ===============================================================================
 |    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
 ===============================================================================
-|    acc_out_1_reg    | Flip-flop |  37   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    acc_out_1_reg    | Flip-flop |  39   |  Y  | N  | Y  | N  | N  | N  | N  |
 ===============================================================================
 
 Inferred memory devices in process
@@ -196,7 +196,7 @@ Inferred memory devices in process
 ===============================================================================
 |    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
 ===============================================================================
-|    acc_final_reg    | Flip-flop |  37   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    acc_final_reg    | Flip-flop |  39   |  Y  | N  | Y  | N  | N  | N  | N  |
 ===============================================================================
 
 Inferred memory devices in process
@@ -205,7 +205,7 @@ Inferred memory devices in process
 ===============================================================================
 |    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
 ===============================================================================
-| output_register_reg | Flip-flop |  37   |  Y  | N  | Y  | N  | N  | N  | N  |
+| output_register_reg | Flip-flop |  39   |  Y  | N  | Y  | N  | N  | N  | N  |
 ===============================================================================
 Warning:  filter5.v:361: signed to unsigned part selection occurs. (VER-318)
 
@@ -225,7 +225,7 @@ Inferred memory devices in process
 ===============================================================================
 |    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
 ===============================================================================
-|    acc_out_1_reg    | Flip-flop |  37   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    acc_out_1_reg    | Flip-flop |  39   |  Y  | N  | Y  | N  | N  | N  | N  |
 ===============================================================================
 
 Inferred memory devices in process
@@ -234,7 +234,7 @@ Inferred memory devices in process
 ===============================================================================
 |    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
 ===============================================================================
-|    acc_final_reg    | Flip-flop |  37   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    acc_final_reg    | Flip-flop |  39   |  Y  | N  | Y  | N  | N  | N  | N  |
 ===============================================================================
 
 Inferred memory devices in process
@@ -243,7 +243,7 @@ Inferred memory devices in process
 ===============================================================================
 |    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
 ===============================================================================
-| output_register_reg | Flip-flop |  37   |  Y  | N  | Y  | N  | N  | N  | N  |
+| output_register_reg | Flip-flop |  39   |  Y  | N  | Y  | N  | N  | N  | N  |
 ===============================================================================
 Warning:  filter6.v:361: signed to unsigned part selection occurs. (VER-318)
 
@@ -263,7 +263,7 @@ Inferred memory devices in process
 ===============================================================================
 |    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
 ===============================================================================
-|    acc_out_1_reg    | Flip-flop |  37   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    acc_out_1_reg    | Flip-flop |  39   |  Y  | N  | Y  | N  | N  | N  | N  |
 ===============================================================================
 
 Inferred memory devices in process
@@ -272,7 +272,7 @@ Inferred memory devices in process
 ===============================================================================
 |    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
 ===============================================================================
-|    acc_final_reg    | Flip-flop |  37   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    acc_final_reg    | Flip-flop |  39   |  Y  | N  | Y  | N  | N  | N  | N  |
 ===============================================================================
 
 Inferred memory devices in process
@@ -281,7 +281,7 @@ Inferred memory devices in process
 ===============================================================================
 |    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
 ===============================================================================
-| output_register_reg | Flip-flop |  37   |  Y  | N  | Y  | N  | N  | N  | N  |
+| output_register_reg | Flip-flop |  39   |  Y  | N  | Y  | N  | N  | N  | N  |
 ===============================================================================
 Warning:  filter7.v:361: signed to unsigned part selection occurs. (VER-318)
 
@@ -301,7 +301,7 @@ Inferred memory devices in process
 ===============================================================================
 |    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
 ===============================================================================
-|    acc_out_1_reg    | Flip-flop |  37   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    acc_out_1_reg    | Flip-flop |  39   |  Y  | N  | Y  | N  | N  | N  | N  |
 ===============================================================================
 
 Inferred memory devices in process
@@ -310,7 +310,7 @@ Inferred memory devices in process
 ===============================================================================
 |    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
 ===============================================================================
-|    acc_final_reg    | Flip-flop |  37   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    acc_final_reg    | Flip-flop |  39   |  Y  | N  | Y  | N  | N  | N  | N  |
 ===============================================================================
 
 Inferred memory devices in process
@@ -319,7 +319,7 @@ Inferred memory devices in process
 ===============================================================================
 |    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
 ===============================================================================
-| output_register_reg | Flip-flop |  37   |  Y  | N  | Y  | N  | N  | N  | N  |
+| output_register_reg | Flip-flop |  39   |  Y  | N  | Y  | N  | N  | N  | N  |
 ===============================================================================
 Warning:  filter8.v:358: signed to unsigned part selection occurs. (VER-318)
 
@@ -339,7 +339,7 @@ Inferred memory devices in process
 ===============================================================================
 |    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
 ===============================================================================
-|    acc_out_1_reg    | Flip-flop |  37   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    acc_out_1_reg    | Flip-flop |  39   |  Y  | N  | Y  | N  | N  | N  | N  |
 ===============================================================================
 
 Inferred memory devices in process
@@ -348,7 +348,7 @@ Inferred memory devices in process
 ===============================================================================
 |    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
 ===============================================================================
-|    acc_final_reg    | Flip-flop |  37   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    acc_final_reg    | Flip-flop |  39   |  Y  | N  | Y  | N  | N  | N  | N  |
 ===============================================================================
 
 Inferred memory devices in process
@@ -357,7 +357,7 @@ Inferred memory devices in process
 ===============================================================================
 |    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
 ===============================================================================
-| output_register_reg | Flip-flop |  37   |  Y  | N  | Y  | N  | N  | N  | N  |
+| output_register_reg | Flip-flop |  39   |  Y  | N  | Y  | N  | N  | N  | N  |
 ===============================================================================
 Warning:  filter9.v:358: signed to unsigned part selection occurs. (VER-318)
 
@@ -377,7 +377,7 @@ Inferred memory devices in process
 ===============================================================================
 |    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
 ===============================================================================
-|    acc_out_1_reg    | Flip-flop |  37   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    acc_out_1_reg    | Flip-flop |  39   |  Y  | N  | Y  | N  | N  | N  | N  |
 ===============================================================================
 
 Inferred memory devices in process
@@ -386,7 +386,7 @@ Inferred memory devices in process
 ===============================================================================
 |    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
 ===============================================================================
-|    acc_final_reg    | Flip-flop |  37   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    acc_final_reg    | Flip-flop |  39   |  Y  | N  | Y  | N  | N  | N  | N  |
 ===============================================================================
 
 Inferred memory devices in process
@@ -395,7 +395,7 @@ Inferred memory devices in process
 ===============================================================================
 |    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
 ===============================================================================
-| output_register_reg | Flip-flop |  37   |  Y  | N  | Y  | N  | N  | N  | N  |
+| output_register_reg | Flip-flop |  39   |  Y  | N  | Y  | N  | N  | N  | N  |
 ===============================================================================
 Warning:  filter10.v:358: signed to unsigned part selection occurs. (VER-318)
 
@@ -415,7 +415,7 @@ Inferred memory devices in process
 ===============================================================================
 |    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
 ===============================================================================
-|    acc_out_1_reg    | Flip-flop |  37   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    acc_out_1_reg    | Flip-flop |  39   |  Y  | N  | Y  | N  | N  | N  | N  |
 ===============================================================================
 
 Inferred memory devices in process
@@ -424,7 +424,7 @@ Inferred memory devices in process
 ===============================================================================
 |    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
 ===============================================================================
-|    acc_final_reg    | Flip-flop |  37   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    acc_final_reg    | Flip-flop |  39   |  Y  | N  | Y  | N  | N  | N  | N  |
 ===============================================================================
 
 Inferred memory devices in process
@@ -433,9 +433,9 @@ Inferred memory devices in process
 ===============================================================================
 |    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
 ===============================================================================
-| output_register_reg | Flip-flop |  37   |  Y  | N  | Y  | N  | N  | N  | N  |
+| output_register_reg | Flip-flop |  39   |  Y  | N  | Y  | N  | N  | N  | N  |
 ===============================================================================
-Warning:  filter11.v:358: signed to unsigned part selection occurs. (VER-318)
+Warning:  filter11.v:361: signed to unsigned part selection occurs. (VER-318)
 
 Inferred memory devices in process
 	in routine filter11 line 146 in file
@@ -448,32 +448,31 @@ Inferred memory devices in process
 ===============================================================================
 
 Inferred memory devices in process
-	in routine filter11 line 363 in file
+	in routine filter11 line 366 in file
 		'filter11.v'.
 ===============================================================================
 |    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
 ===============================================================================
-|    acc_out_1_reg    | Flip-flop |  37   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    acc_out_1_reg    | Flip-flop |  39   |  Y  | N  | Y  | N  | N  | N  | N  |
 ===============================================================================
 
 Inferred memory devices in process
-	in routine filter11 line 375 in file
+	in routine filter11 line 378 in file
 		'filter11.v'.
 ===============================================================================
 |    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
 ===============================================================================
-|    acc_final_reg    | Flip-flop |  37   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    acc_final_reg    | Flip-flop |  39   |  Y  | N  | Y  | N  | N  | N  | N  |
 ===============================================================================
 
 Inferred memory devices in process
-	in routine filter11 line 387 in file
+	in routine filter11 line 390 in file
 		'filter11.v'.
 ===============================================================================
 |    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
 ===============================================================================
-| output_register_reg | Flip-flop |  37   |  Y  | N  | Y  | N  | N  | N  | N  |
+| output_register_reg | Flip-flop |  39   |  Y  | N  | Y  | N  | N  | N  | N  |
 ===============================================================================
-Warning:  filter12.v:355: signed to unsigned part selection occurs. (VER-318)
 
 Inferred memory devices in process
 	in routine filter12 line 146 in file
@@ -486,30 +485,30 @@ Inferred memory devices in process
 ===============================================================================
 
 Inferred memory devices in process
-	in routine filter12 line 360 in file
+	in routine filter12 line 366 in file
 		'filter12.v'.
 ===============================================================================
 |    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
 ===============================================================================
-|    acc_out_1_reg    | Flip-flop |  37   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    acc_out_1_reg    | Flip-flop |  39   |  Y  | N  | Y  | N  | N  | N  | N  |
 ===============================================================================
 
 Inferred memory devices in process
-	in routine filter12 line 372 in file
+	in routine filter12 line 378 in file
 		'filter12.v'.
 ===============================================================================
 |    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
 ===============================================================================
-|    acc_final_reg    | Flip-flop |  37   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    acc_final_reg    | Flip-flop |  39   |  Y  | N  | Y  | N  | N  | N  | N  |
 ===============================================================================
 
 Inferred memory devices in process
-	in routine filter12 line 384 in file
+	in routine filter12 line 390 in file
 		'filter12.v'.
 ===============================================================================
 |    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
 ===============================================================================
-| output_register_reg | Flip-flop |  37   |  Y  | N  | Y  | N  | N  | N  | N  |
+| output_register_reg | Flip-flop |  39   |  Y  | N  | Y  | N  | N  | N  | N  |
 ===============================================================================
 Warning:  filter13.v:364: signed to unsigned part selection occurs. (VER-318)
 
@@ -529,7 +528,7 @@ Inferred memory devices in process
 ===============================================================================
 |    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
 ===============================================================================
-|    acc_out_1_reg    | Flip-flop |  37   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    acc_out_1_reg    | Flip-flop |  39   |  Y  | N  | Y  | N  | N  | N  | N  |
 ===============================================================================
 
 Inferred memory devices in process
@@ -538,7 +537,7 @@ Inferred memory devices in process
 ===============================================================================
 |    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
 ===============================================================================
-|    acc_final_reg    | Flip-flop |  37   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    acc_final_reg    | Flip-flop |  39   |  Y  | N  | Y  | N  | N  | N  | N  |
 ===============================================================================
 
 Inferred memory devices in process
@@ -547,7 +546,7 @@ Inferred memory devices in process
 ===============================================================================
 |    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
 ===============================================================================
-| output_register_reg | Flip-flop |  37   |  Y  | N  | Y  | N  | N  | N  | N  |
+| output_register_reg | Flip-flop |  39   |  Y  | N  | Y  | N  | N  | N  | N  |
 ===============================================================================
 Warning:  filter14.v:364: signed to unsigned part selection occurs. (VER-318)
 
@@ -567,7 +566,7 @@ Inferred memory devices in process
 ===============================================================================
 |    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
 ===============================================================================
-|    acc_out_1_reg    | Flip-flop |  37   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    acc_out_1_reg    | Flip-flop |  39   |  Y  | N  | Y  | N  | N  | N  | N  |
 ===============================================================================
 
 Inferred memory devices in process
@@ -576,7 +575,7 @@ Inferred memory devices in process
 ===============================================================================
 |    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
 ===============================================================================
-|    acc_final_reg    | Flip-flop |  37   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    acc_final_reg    | Flip-flop |  39   |  Y  | N  | Y  | N  | N  | N  | N  |
 ===============================================================================
 
 Inferred memory devices in process
@@ -585,9 +584,8 @@ Inferred memory devices in process
 ===============================================================================
 |    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
 ===============================================================================
-| output_register_reg | Flip-flop |  37   |  Y  | N  | Y  | N  | N  | N  | N  |
+| output_register_reg | Flip-flop |  39   |  Y  | N  | Y  | N  | N  | N  | N  |
 ===============================================================================
-Warning:  filter15.v:355: signed to unsigned part selection occurs. (VER-318)
 
 Inferred memory devices in process
 	in routine filter15 line 146 in file
@@ -600,30 +598,30 @@ Inferred memory devices in process
 ===============================================================================
 
 Inferred memory devices in process
-	in routine filter15 line 360 in file
+	in routine filter15 line 366 in file
 		'filter15.v'.
 ===============================================================================
 |    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
 ===============================================================================
-|    acc_out_1_reg    | Flip-flop |  37   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    acc_out_1_reg    | Flip-flop |  39   |  Y  | N  | Y  | N  | N  | N  | N  |
 ===============================================================================
 
 Inferred memory devices in process
-	in routine filter15 line 372 in file
+	in routine filter15 line 378 in file
 		'filter15.v'.
 ===============================================================================
 |    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
 ===============================================================================
-|    acc_final_reg    | Flip-flop |  37   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    acc_final_reg    | Flip-flop |  39   |  Y  | N  | Y  | N  | N  | N  | N  |
 ===============================================================================
 
 Inferred memory devices in process
-	in routine filter15 line 384 in file
+	in routine filter15 line 390 in file
 		'filter15.v'.
 ===============================================================================
 |    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
 ===============================================================================
-| output_register_reg | Flip-flop |  37   |  Y  | N  | Y  | N  | N  | N  | N  |
+| output_register_reg | Flip-flop |  39   |  Y  | N  | Y  | N  | N  | N  | N  |
 ===============================================================================
 Warning:  filter16.v:331: signed to unsigned part selection occurs. (VER-318)
 
@@ -643,7 +641,7 @@ Inferred memory devices in process
 ===============================================================================
 |    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
 ===============================================================================
-|    acc_out_1_reg    | Flip-flop |  37   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    acc_out_1_reg    | Flip-flop |  39   |  Y  | N  | Y  | N  | N  | N  | N  |
 ===============================================================================
 
 Inferred memory devices in process
@@ -652,7 +650,7 @@ Inferred memory devices in process
 ===============================================================================
 |    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
 ===============================================================================
-|    acc_final_reg    | Flip-flop |  37   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    acc_final_reg    | Flip-flop |  39   |  Y  | N  | Y  | N  | N  | N  | N  |
 ===============================================================================
 
 Inferred memory devices in process
@@ -661,141 +659,22 @@ Inferred memory devices in process
 ===============================================================================
 |    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
 ===============================================================================
-| output_register_reg | Flip-flop |  37   |  Y  | N  | Y  | N  | N  | N  | N  |
+| output_register_reg | Flip-flop |  39   |  Y  | N  | Y  | N  | N  | N  | N  |
 ===============================================================================
-Warning:  /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_15_new/total_filter.v:46: signed to unsigned assignment occurs. (VER-318)
-Warning:  /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_15_new/total_filter.v:47: signed to unsigned assignment occurs. (VER-318)
-Warning:  /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_15_new/total_filter.v:48: signed to unsigned assignment occurs. (VER-318)
-Warning:  /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_15_new/total_filter.v:49: signed to unsigned assignment occurs. (VER-318)
-Warning:  /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_15_new/total_filter.v:50: signed to unsigned assignment occurs. (VER-318)
-Warning:  /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_15_new/total_filter.v:51: signed to unsigned assignment occurs. (VER-318)
-Warning:  /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_15_new/total_filter.v:52: signed to unsigned assignment occurs. (VER-318)
-Warning:  /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_15_new/total_filter.v:53: signed to unsigned assignment occurs. (VER-318)
-Warning:  /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_15_new/total_filter.v:54: signed to unsigned assignment occurs. (VER-318)
-Warning:  /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_15_new/total_filter.v:55: signed to unsigned assignment occurs. (VER-318)
-Warning:  /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_15_new/total_filter.v:56: signed to unsigned assignment occurs. (VER-318)
-Warning:  /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_15_new/total_filter.v:57: signed to unsigned assignment occurs. (VER-318)
-Warning:  /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_15_new/total_filter.v:58: signed to unsigned assignment occurs. (VER-318)
-Warning:  /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_15_new/total_filter.v:59: signed to unsigned assignment occurs. (VER-318)
-Warning:  /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_15_new/total_filter.v:60: signed to unsigned assignment occurs. (VER-318)
-Warning:  /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_15_new/total_filter.v:61: signed to unsigned assignment occurs. (VER-318)
-Warning:  /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_15_new/total_filter.v:62: signed to unsigned assignment occurs. (VER-318)
-Warning:  /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_15_new/total_filter.v:63: signed to unsigned assignment occurs. (VER-318)
-Warning:  /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_15_new/total_filter.v:64: signed to unsigned assignment occurs. (VER-318)
-Warning:  /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_15_new/total_filter.v:65: signed to unsigned assignment occurs. (VER-318)
-Warning:  /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_15_new/total_filter.v:66: signed to unsigned assignment occurs. (VER-318)
-Warning:  /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_15_new/total_filter.v:67: signed to unsigned assignment occurs. (VER-318)
-Warning:  /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_15_new/total_filter.v:68: signed to unsigned assignment occurs. (VER-318)
-Warning:  /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_15_new/total_filter.v:69: signed to unsigned assignment occurs. (VER-318)
-Warning:  /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_15_new/total_filter.v:70: signed to unsigned assignment occurs. (VER-318)
-Warning:  /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_15_new/total_filter.v:71: signed to unsigned assignment occurs. (VER-318)
-Warning:  /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_15_new/total_filter.v:72: signed to unsigned assignment occurs. (VER-318)
-Warning:  /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_15_new/total_filter.v:73: signed to unsigned assignment occurs. (VER-318)
-Warning:  /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_15_new/total_filter.v:74: signed to unsigned assignment occurs. (VER-318)
-Warning:  /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_15_new/total_filter.v:75: signed to unsigned assignment occurs. (VER-318)
-Warning:  /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_15_new/total_filter.v:76: signed to unsigned assignment occurs. (VER-318)
-Warning:  /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_15_new/total_filter.v:77: signed to unsigned assignment occurs. (VER-318)
-Warning:  /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_15_new/total_filter.v:78: signed to unsigned assignment occurs. (VER-318)
-Warning:  /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_15_new/total_filter.v:79: signed to unsigned assignment occurs. (VER-318)
-Warning:  /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_15_new/total_filter.v:80: signed to unsigned assignment occurs. (VER-318)
-Warning:  /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_15_new/total_filter.v:81: signed to unsigned assignment occurs. (VER-318)
-Warning:  /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_15_new/total_filter.v:82: signed to unsigned assignment occurs. (VER-318)
-Warning:  /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_15_new/total_filter.v:83: signed to unsigned assignment occurs. (VER-318)
-Warning:  /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_15_new/total_filter.v:84: signed to unsigned assignment occurs. (VER-318)
-Warning:  /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_15_new/total_filter.v:85: signed to unsigned assignment occurs. (VER-318)
-Warning:  /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_15_new/total_filter.v:86: signed to unsigned assignment occurs. (VER-318)
-Warning:  /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_15_new/total_filter.v:87: signed to unsigned assignment occurs. (VER-318)
-Warning:  /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_15_new/total_filter.v:88: signed to unsigned assignment occurs. (VER-318)
-Warning:  /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_15_new/total_filter.v:89: signed to unsigned assignment occurs. (VER-318)
-Warning:  /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_15_new/total_filter.v:90: signed to unsigned assignment occurs. (VER-318)
-Warning:  /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_15_new/total_filter.v:91: signed to unsigned assignment occurs. (VER-318)
-Warning:  /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_15_new/total_filter.v:92: signed to unsigned assignment occurs. (VER-318)
-Warning:  /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_15_new/total_filter.v:93: signed to unsigned assignment occurs. (VER-318)
-Warning:  /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_15_new/total_filter.v:94: signed to unsigned assignment occurs. (VER-318)
-Warning:  /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_15_new/total_filter.v:95: signed to unsigned assignment occurs. (VER-318)
-Warning:  /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_15_new/total_filter.v:96: signed to unsigned assignment occurs. (VER-318)
-Warning:  /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_15_new/total_filter.v:97: signed to unsigned assignment occurs. (VER-318)
-Warning:  /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_15_new/total_filter.v:98: signed to unsigned assignment occurs. (VER-318)
-Warning:  /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_15_new/total_filter.v:99: signed to unsigned assignment occurs. (VER-318)
-Warning:  /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_15_new/total_filter.v:100: signed to unsigned assignment occurs. (VER-318)
-Warning:  /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_15_new/total_filter.v:101: signed to unsigned assignment occurs. (VER-318)
-Warning:  /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_15_new/total_filter.v:102: signed to unsigned assignment occurs. (VER-318)
-Warning:  /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_15_new/total_filter.v:103: signed to unsigned assignment occurs. (VER-318)
-Warning:  /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_15_new/total_filter.v:104: signed to unsigned assignment occurs. (VER-318)
-Warning:  /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_15_new/total_filter.v:105: signed to unsigned assignment occurs. (VER-318)
-Warning:  /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_15_new/total_filter.v:106: signed to unsigned assignment occurs. (VER-318)
-Warning:  /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_15_new/total_filter.v:107: signed to unsigned assignment occurs. (VER-318)
-Warning:  /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_15_new/total_filter.v:108: signed to unsigned assignment occurs. (VER-318)
-Warning:  /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_15_new/total_filter.v:109: signed to unsigned assignment occurs. (VER-318)
-Warning:  /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_15_new/total_filter.v:110: signed to unsigned assignment occurs. (VER-318)
-Warning:  /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_15_new/total_filter.v:111: signed to unsigned assignment occurs. (VER-318)
-Warning:  /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_15_new/total_filter.v:112: signed to unsigned assignment occurs. (VER-318)
-Warning:  /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_15_new/total_filter.v:113: signed to unsigned assignment occurs. (VER-318)
-Warning:  /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_15_new/total_filter.v:114: signed to unsigned assignment occurs. (VER-318)
-Warning:  /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_15_new/total_filter.v:115: signed to unsigned assignment occurs. (VER-318)
-Warning:  /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_15_new/total_filter.v:116: signed to unsigned assignment occurs. (VER-318)
-Warning:  /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_15_new/total_filter.v:117: signed to unsigned assignment occurs. (VER-318)
-Warning:  /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_15_new/total_filter.v:118: signed to unsigned assignment occurs. (VER-318)
-Warning:  /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_15_new/total_filter.v:119: signed to unsigned assignment occurs. (VER-318)
-Warning:  /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_15_new/total_filter.v:120: signed to unsigned assignment occurs. (VER-318)
-Warning:  /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_15_new/total_filter.v:121: signed to unsigned assignment occurs. (VER-318)
-Warning:  /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_15_new/total_filter.v:122: signed to unsigned assignment occurs. (VER-318)
-Warning:  /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_15_new/total_filter.v:123: signed to unsigned assignment occurs. (VER-318)
-Warning:  /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_15_new/total_filter.v:124: signed to unsigned assignment occurs. (VER-318)
-Warning:  /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_15_new/total_filter.v:125: signed to unsigned assignment occurs. (VER-318)
-Warning:  /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_15_new/total_filter.v:126: signed to unsigned assignment occurs. (VER-318)
-Warning:  /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_15_new/total_filter.v:127: signed to unsigned assignment occurs. (VER-318)
-Warning:  /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_15_new/total_filter.v:128: signed to unsigned assignment occurs. (VER-318)
-Warning:  /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_15_new/total_filter.v:129: signed to unsigned assignment occurs. (VER-318)
-Warning:  /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_15_new/total_filter.v:130: signed to unsigned assignment occurs. (VER-318)
-Warning:  /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_15_new/total_filter.v:131: signed to unsigned assignment occurs. (VER-318)
-Warning:  /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_15_new/total_filter.v:132: signed to unsigned assignment occurs. (VER-318)
-Warning:  /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_15_new/total_filter.v:133: signed to unsigned assignment occurs. (VER-318)
-Warning:  /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_15_new/total_filter.v:134: signed to unsigned assignment occurs. (VER-318)
-Warning:  /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_15_new/total_filter.v:135: signed to unsigned assignment occurs. (VER-318)
-Warning:  /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_15_new/total_filter.v:136: signed to unsigned assignment occurs. (VER-318)
-Warning:  /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_15_new/total_filter.v:137: signed to unsigned assignment occurs. (VER-318)
-Warning:  /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_15_new/total_filter.v:138: signed to unsigned assignment occurs. (VER-318)
-Warning:  /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_15_new/total_filter.v:139: signed to unsigned assignment occurs. (VER-318)
-Warning:  /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_15_new/total_filter.v:140: signed to unsigned assignment occurs. (VER-318)
-Warning:  /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_15_new/total_filter.v:141: signed to unsigned assignment occurs. (VER-318)
-Warning:  /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_15_new/total_filter.v:142: signed to unsigned assignment occurs. (VER-318)
-Warning:  /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_15_new/total_filter.v:143: signed to unsigned assignment occurs. (VER-318)
-Warning:  /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_15_new/total_filter.v:144: signed to unsigned assignment occurs. (VER-318)
-Warning:  /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_15_new/total_filter.v:145: signed to unsigned assignment occurs. (VER-318)
-Warning:  /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_15_new/total_filter.v:146: signed to unsigned assignment occurs. (VER-318)
-Warning:  /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_15_new/total_filter.v:147: signed to unsigned assignment occurs. (VER-318)
-Warning:  /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_15_new/total_filter.v:148: signed to unsigned assignment occurs. (VER-318)
-Warning:  /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_15_new/total_filter.v:149: signed to unsigned assignment occurs. (VER-318)
-Warning:  /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_15_new/total_filter.v:150: signed to unsigned assignment occurs. (VER-318)
-Warning:  /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_15_new/total_filter.v:151: signed to unsigned assignment occurs. (VER-318)
-Warning:  /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_15_new/total_filter.v:152: signed to unsigned assignment occurs. (VER-318)
-Warning:  /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_15_new/total_filter.v:153: signed to unsigned assignment occurs. (VER-318)
-Warning:  /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_15_new/total_filter.v:154: signed to unsigned assignment occurs. (VER-318)
-Warning:  /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_15_new/total_filter.v:155: signed to unsigned assignment occurs. (VER-318)
-Warning:  /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_15_new/total_filter.v:156: signed to unsigned assignment occurs. (VER-318)
-Warning:  /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_15_new/total_filter.v:157: signed to unsigned assignment occurs. (VER-318)
-Warning:  /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_15_new/total_filter.v:158: signed to unsigned assignment occurs. (VER-318)
-Warning:  /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_15_new/total_filter.v:159: signed to unsigned assignment occurs. (VER-318)
-Warning:  /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_15_new/total_filter.v:160: signed to unsigned assignment occurs. (VER-318)
-Warning:  /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_15_new/total_filter.v:161: signed to unsigned assignment occurs. (VER-318)
-Warning:  /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_15_new/total_filter.v:162: signed to unsigned assignment occurs. (VER-318)
-Warning:  /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_15_new/total_filter.v:163: signed to unsigned assignment occurs. (VER-318)
-Warning:  /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_15_new/total_filter.v:164: signed to unsigned assignment occurs. (VER-318)
 
 Inferred memory devices in process
-	in routine control line 169 in file
-		'/afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_15_new/total_filter.v'.
+	in routine total_filter line 52 in file
+		'/afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_16_new/total_filter.v'.
 ===============================================================================
 |    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
 ===============================================================================
-|    registers_reg    | Flip-flop | 1785  |  Y  | N  | N  | N  | N  | N  | N  |
+| delay_pipeline_reg  | Flip-flop | 1904  |  Y  | N  | Y  | N  | N  | N  | N  |
 ===============================================================================
 Presto compilation completed successfully.
-Current design is now '/afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_15_new/filter1.db:filter1'
-Loaded 19 designs.
+Current design is now '/afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_16_new/filter1.db:filter1'
+Loaded 17 designs.
 Current design is 'filter1'.
-filter1 filter2 filter3 filter4 filter5 filter6 filter7 filter8 filter9 filter10 filter11 filter12 filter13 filter14 filter15 filter16 total_filter control filterbank_core
+filter1 filter2 filter3 filter4 filter5 filter6 filter7 filter8 filter9 filter10 filter11 filter12 filter13 filter14 filter15 filter16 total_filter
 set design_name total_filter
 total_filter
 set clock_name clock
@@ -924,7 +803,7 @@ if {  $dc_shell_status != [list] } {
   set MAX_FANOUT $MAX_FANOUT
   set MAX_TRANSITION $MAX_TRANSITION
   uniquify
-  ungroup core -flatten
+#  ungroup -all -flatten
   redirect $chk_file { check_design }
   # saif_map -start 
   # set_power_prediction
@@ -934,7 +813,7 @@ if {  $dc_shell_status != [list] } {
 #   write -hier -format verilog -output $netlist_file $design_name
 #   write -hier -format ddc -output $ddc_file $design_name
   redirect $power_file { report_power }
-  report_power -verbose -hierarchy -levels 2  > ./power2.out
+  report_power -verbose -hierarchy -levels 2 > ./power2.out
   # report_power
   # redirect -append $rep_file { report_area }
 #   redirect -append $rep_file { report_timing -max_paths 2 -input_pins -nets -transition_time -nosplit }
@@ -954,15 +833,16 @@ Current design is 'total_filter'.
   Linking design 'total_filter'
   Using the following designs and libraries:
   --------------------------------------------------------------------------
-  * (19 designs)              /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_15_new/total_filter.db, etc
+  * (17 designs)              /afs/umich.edu/user/s/u/sunsusan/Desktop/nonuniform_fb/serial_16_new/total_filter.db, etc
   NangateOpenCellLibrary (library) /afs/umich.edu/user/s/u/sunsusan/Desktop/SC_FIR_hardware_syn/Nangate/NangateOpenCellLibrary.db
 
 Error: Can't find the specified library 'lec25dscc25_TT' in memory. (UID-131)
 Error: Wire load 'tsmcwire' not found. (UID-40)
 Error: Cannot find the specified driving cell in memory.   (UID-993)
 Current design is 'total_filter'.
-Information: Updating graph... (UID-83)
-Warning: Design 'total_filter' contains 20 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+Warning: Dont_touch on net 'reset' may be overridden by compile because it
+	is connected to generic logic. Use all_connected to see net
+	connections. (OPT-461)
 Warning: The compile -map_effort low is obsolete. Setting this variable now defaults to compile -map_effort medium. Please update your script accordingly. (OPT-1303)
 Information: Evaluating DesignWare library utilization. (UISN-27)
 
@@ -977,13 +857,28 @@ Warning: Dont_touch on net 'reset' may be overridden by compile because it
 	is connected to generic logic. Use all_connected to see net
 	connections. (OPT-461)
 
-Information: There are 16 potential problems in your design. Please run 'check_design' for more information. (LINT-99)
+Information: There are 1168 potential problems in your design. Please run 'check_design' for more information. (LINT-99)
 
 
 
   Beginning Pass 1 Mapping
   ------------------------
-  Processing 'control'
+  Processing 'filter16'
+  Processing 'filter15'
+  Processing 'filter14'
+  Processing 'filter13'
+  Processing 'filter12'
+  Processing 'filter11'
+  Processing 'filter10'
+  Processing 'filter9'
+  Processing 'filter8'
+  Processing 'filter7'
+  Processing 'filter6'
+  Processing 'filter5'
+  Processing 'filter4'
+  Processing 'filter3'
+  Processing 'filter2'
+  Processing 'filter1'
   Processing 'total_filter'
 
   Updating timing information
@@ -991,102 +886,102 @@ Information: Updating design information... (UID-85)
 
   Beginning Implementation Selection
   ----------------------------------
-  Processing 'total_filter_DW01_add_0'
-  Processing 'total_filter_DW01_inc_0'
-  Processing 'total_filter_DW01_cmp2_0'
-  Processing 'total_filter_DW01_add_1'
-  Processing 'total_filter_DW01_inc_1'
-  Processing 'total_filter_DW01_cmp2_1'
-  Processing 'total_filter_DW01_add_2'
-  Processing 'total_filter_DW01_inc_2'
-  Processing 'total_filter_DW01_cmp2_2'
-  Processing 'total_filter_DW01_add_3'
-  Processing 'total_filter_DW01_inc_3'
-  Processing 'total_filter_DW01_cmp2_3'
-  Processing 'total_filter_DW01_add_4'
-  Processing 'total_filter_DW01_inc_4'
-  Processing 'total_filter_DW01_cmp2_4'
-  Processing 'total_filter_DW01_add_5'
-  Processing 'total_filter_DW01_inc_5'
-  Processing 'total_filter_DW01_cmp2_5'
-  Processing 'total_filter_DW01_add_6'
-  Processing 'total_filter_DW01_inc_6'
-  Processing 'total_filter_DW01_cmp2_6'
-  Processing 'total_filter_DW01_add_7'
-  Processing 'total_filter_DW01_inc_7'
-  Processing 'total_filter_DW01_cmp2_7'
-  Processing 'total_filter_DW01_add_8'
-  Processing 'total_filter_DW01_inc_8'
-  Processing 'total_filter_DW01_cmp2_8'
-  Processing 'total_filter_DW01_add_9'
-  Processing 'total_filter_DW01_inc_9'
-  Processing 'total_filter_DW01_cmp2_9'
-  Processing 'total_filter_DW01_add_10'
-  Processing 'total_filter_DW01_inc_10'
-  Processing 'total_filter_DW01_cmp2_10'
-  Processing 'total_filter_DW01_add_11'
-  Processing 'total_filter_DW01_inc_11'
-  Processing 'total_filter_DW01_cmp2_11'
-  Processing 'total_filter_DW01_add_12'
-  Processing 'total_filter_DW01_inc_12'
-  Processing 'total_filter_DW01_cmp2_12'
-  Processing 'total_filter_DW01_add_13'
-  Processing 'total_filter_DW01_inc_13'
-  Processing 'total_filter_DW01_cmp2_13'
-  Processing 'total_filter_DW01_add_14'
-  Processing 'total_filter_DW01_inc_14'
-  Processing 'total_filter_DW01_cmp2_14'
-  Processing 'total_filter_DW01_add_15'
-  Processing 'total_filter_DW01_inc_15'
-  Processing 'total_filter_DW01_cmp2_15'
-  Processing 'total_filter_DW02_mult_0'
-  Processing 'total_filter_DW01_add_16'
-  Processing 'total_filter_DW01_add_17'
-  Processing 'total_filter_DW02_mult_1'
-  Processing 'total_filter_DW01_add_18'
-  Processing 'total_filter_DW01_add_19'
-  Processing 'total_filter_DW02_mult_2'
-  Processing 'total_filter_DW01_add_20'
-  Processing 'total_filter_DW01_add_21'
-  Processing 'total_filter_DW02_mult_3'
-  Processing 'total_filter_DW01_add_22'
-  Processing 'total_filter_DW01_add_23'
-  Processing 'total_filter_DW02_mult_4'
-  Processing 'total_filter_DW01_add_24'
-  Processing 'total_filter_DW01_add_25'
-  Processing 'total_filter_DW02_mult_5'
-  Processing 'total_filter_DW01_add_26'
-  Processing 'total_filter_DW01_add_27'
-  Processing 'total_filter_DW02_mult_6'
-  Processing 'total_filter_DW01_add_28'
-  Processing 'total_filter_DW01_add_29'
-  Processing 'total_filter_DW02_mult_7'
-  Processing 'total_filter_DW01_add_30'
-  Processing 'total_filter_DW01_add_31'
-  Processing 'total_filter_DW02_mult_8'
-  Processing 'total_filter_DW01_add_32'
-  Processing 'total_filter_DW01_add_33'
-  Processing 'total_filter_DW02_mult_9'
-  Processing 'total_filter_DW01_add_34'
-  Processing 'total_filter_DW01_add_35'
-  Processing 'total_filter_DW02_mult_10'
-  Processing 'total_filter_DW01_add_36'
-  Processing 'total_filter_DW01_add_37'
-  Processing 'total_filter_DW02_mult_11'
-  Processing 'total_filter_DW01_add_38'
-  Processing 'total_filter_DW01_add_39'
-  Processing 'total_filter_DW02_mult_12'
-  Processing 'total_filter_DW01_add_40'
-  Processing 'total_filter_DW01_add_41'
-  Processing 'total_filter_DW02_mult_13'
-  Processing 'total_filter_DW01_add_42'
-  Processing 'total_filter_DW01_add_43'
-  Processing 'total_filter_DW02_mult_14'
-  Processing 'total_filter_DW01_add_44'
-  Processing 'total_filter_DW01_add_45'
-  Processing 'total_filter_DW02_mult_15'
-  Processing 'total_filter_DW01_add_46'
-  Processing 'total_filter_DW01_add_47'
+  Processing 'filter16_DW01_add_0'
+  Processing 'filter16_DW01_inc_0'
+  Processing 'filter16_DW01_cmp2_0'
+  Processing 'filter15_DW01_add_0'
+  Processing 'filter15_DW01_inc_0'
+  Processing 'filter15_DW01_cmp2_0'
+  Processing 'filter14_DW01_add_0'
+  Processing 'filter14_DW01_inc_0'
+  Processing 'filter14_DW01_cmp2_0'
+  Processing 'filter13_DW01_add_0'
+  Processing 'filter13_DW01_inc_0'
+  Processing 'filter13_DW01_cmp2_0'
+  Processing 'filter12_DW01_add_0'
+  Processing 'filter12_DW01_inc_0'
+  Processing 'filter12_DW01_cmp2_0'
+  Processing 'filter11_DW01_add_0'
+  Processing 'filter11_DW01_inc_0'
+  Processing 'filter11_DW01_cmp2_0'
+  Processing 'filter10_DW01_add_0'
+  Processing 'filter10_DW01_inc_0'
+  Processing 'filter10_DW01_cmp2_0'
+  Processing 'filter9_DW01_add_0'
+  Processing 'filter9_DW01_inc_0'
+  Processing 'filter9_DW01_cmp2_0'
+  Processing 'filter8_DW01_add_0'
+  Processing 'filter8_DW01_inc_0'
+  Processing 'filter8_DW01_cmp2_0'
+  Processing 'filter7_DW01_add_0'
+  Processing 'filter7_DW01_inc_0'
+  Processing 'filter7_DW01_cmp2_0'
+  Processing 'filter6_DW01_add_0'
+  Processing 'filter6_DW01_inc_0'
+  Processing 'filter6_DW01_cmp2_0'
+  Processing 'filter5_DW01_add_0'
+  Processing 'filter5_DW01_inc_0'
+  Processing 'filter5_DW01_cmp2_0'
+  Processing 'filter4_DW01_add_0'
+  Processing 'filter4_DW01_inc_0'
+  Processing 'filter4_DW01_cmp2_0'
+  Processing 'filter3_DW01_add_0'
+  Processing 'filter3_DW01_inc_0'
+  Processing 'filter3_DW01_cmp2_0'
+  Processing 'filter2_DW01_add_0'
+  Processing 'filter2_DW01_inc_0'
+  Processing 'filter2_DW01_cmp2_0'
+  Processing 'filter1_DW01_add_0'
+  Processing 'filter1_DW01_inc_0'
+  Processing 'filter1_DW01_cmp2_0'
+  Processing 'filter16_DW02_mult_0'
+  Processing 'filter16_DW01_add_1'
+  Processing 'filter16_DW01_add_2'
+  Processing 'filter14_DW02_mult_0'
+  Processing 'filter14_DW01_add_1'
+  Processing 'filter14_DW01_add_2'
+  Processing 'filter5_DW02_mult_0'
+  Processing 'filter5_DW01_add_1'
+  Processing 'filter5_DW01_add_2'
+  Processing 'filter13_DW02_mult_0'
+  Processing 'filter13_DW01_add_1'
+  Processing 'filter13_DW01_add_2'
+  Processing 'filter12_DW02_mult_0'
+  Processing 'filter12_DW01_add_1'
+  Processing 'filter12_DW01_add_2'
+  Processing 'filter7_DW02_mult_0'
+  Processing 'filter7_DW01_add_1'
+  Processing 'filter7_DW01_add_2'
+  Processing 'filter6_DW02_mult_0'
+  Processing 'filter6_DW01_add_1'
+  Processing 'filter6_DW01_add_2'
+  Processing 'filter11_DW02_mult_0'
+  Processing 'filter11_DW01_add_1'
+  Processing 'filter11_DW01_add_2'
+  Processing 'filter10_DW02_mult_0'
+  Processing 'filter10_DW01_add_1'
+  Processing 'filter10_DW01_add_2'
+  Processing 'filter9_DW02_mult_0'
+  Processing 'filter9_DW01_add_1'
+  Processing 'filter9_DW01_add_2'
+  Processing 'filter8_DW02_mult_0'
+  Processing 'filter8_DW01_add_1'
+  Processing 'filter8_DW01_add_2'
+  Processing 'filter15_DW02_mult_0'
+  Processing 'filter15_DW01_add_1'
+  Processing 'filter15_DW01_add_2'
+  Processing 'filter4_DW02_mult_0'
+  Processing 'filter4_DW01_add_1'
+  Processing 'filter4_DW01_add_2'
+  Processing 'filter3_DW02_mult_0'
+  Processing 'filter3_DW01_add_1'
+  Processing 'filter3_DW01_add_2'
+  Processing 'filter2_DW02_mult_0'
+  Processing 'filter2_DW01_add_1'
+  Processing 'filter2_DW01_add_2'
+  Processing 'filter1_DW02_mult_0'
+  Processing 'filter1_DW01_add_1'
+  Processing 'filter1_DW01_add_2'
 
   Beginning Mapping Optimizations  (Medium effort)
   -------------------------------
@@ -1095,10 +990,11 @@ Information: Updating design information... (UID-85)
    ELAPSED            WORST NEG   SETUP    DESIGN                              MIN DELAY 
     TIME      AREA      SLACK     COST    RULE COST         ENDPOINT             COST    
   --------- --------- --------- --------- --------- ------------------------- -----------
-    0:01:01   99428.7      0.00       0.0   36868.8                                0.00  
-    0:01:01   99428.7      0.00       0.0   36868.8                                0.00  
-    0:01:03  100218.7      0.00       0.0   18089.0                                0.00  
-    0:01:04  101075.2      0.00       0.0    6709.0                                0.00  
+    0:01:03  109727.9      0.00       0.0   41861.6                                0.00  
+    0:01:03  109727.9      0.00       0.0   41861.6                                0.00  
+    0:01:04  110905.5      0.00       0.0   30672.2                                0.00  
+    0:01:05  112090.5      0.00       0.0   19426.4                                0.00  
+    0:01:05  113264.1      0.00       0.0    8189.4                                0.00  
 
   Beginning Delay Optimization Phase
   ----------------------------------
@@ -1107,23 +1003,41 @@ Information: Updating design information... (UID-85)
    ELAPSED            WORST NEG   SETUP    DESIGN                              MIN DELAY 
     TIME      AREA      SLACK     COST    RULE COST         ENDPOINT             COST    
   --------- --------- --------- --------- --------- ------------------------- -----------
-    0:01:08  102261.0      0.00       0.0     938.8                                0.00  
-    0:01:13  102669.6      0.00       0.0     938.8                                0.00  
-    0:01:13  102669.6      0.00       0.0     938.8                                0.00  
+    0:01:11  113715.5      0.00       0.0    7973.5                                0.00  
+    0:01:17  114149.6      0.00       0.0    7973.5                                0.00  
+    0:01:17  114149.6      0.00       0.0    7973.5                                0.00  
 
 
-  Beginning Design Rule Fixing  (max_transition)  (max_capacitance)
+  Beginning Design Rule Fixing  (max_capacitance)
   ----------------------------
 
                                   TOTAL                                                  
    ELAPSED            WORST NEG   SETUP    DESIGN                              MIN DELAY 
     TIME      AREA      SLACK     COST    RULE COST         ENDPOINT             COST    
   --------- --------- --------- --------- --------- ------------------------- -----------
-    0:01:15  102669.6      0.00       0.0     938.8                                0.00  
-    0:01:16  102476.0      0.00       0.0     537.8 n10395                         0.00  
-    0:01:16  102192.9      0.00       0.0     316.7 n18831                         0.00  
-    0:01:17  101887.6      0.00       0.0     139.4 n14526                         0.00  
-    0:01:18  101572.4      0.00       0.0       0.0                                0.00  
+    0:01:19  114149.6      0.00       0.0    7973.5                                0.00  
+    0:01:20  113756.8      0.00       0.0    7199.2 delay_pipeline[73][5]          0.00  
+    0:01:21  113242.9      0.00       0.0    6498.2 delay_pipeline[88][9]          0.00  
+    0:01:22  112774.7      0.00       0.0    5901.8 delay_pipeline[30][5]          0.00  
+    0:01:23  112238.4      0.00       0.0    5119.8 delay_pipeline[92][7]          0.00  
+    0:01:24  111727.7      0.00       0.0    4320.1 delay_pipeline[61][13]         0.00  
+    0:01:25  111229.8      0.00       0.0    3751.4 delay_pipeline[56][11]         0.00  
+    0:01:27  110773.3      0.00       0.0    3104.4 delay_pipeline[76][5]          0.00  
+    0:01:28  110308.3      0.00       0.0    2689.7 delay_pipeline[110][0]         0.00  
+    0:01:29  109748.7      0.00       0.0    2180.6 delay_pipeline[66][10]         0.00  
+    0:01:30  109235.8      0.00       0.0    1822.9 delay_pipeline[82][4]          0.00  
+    0:01:31  108774.6      0.00       0.0    1547.4 delay_pipeline[100][14]        0.00  
+    0:01:33  108262.8      0.00       0.0    1215.2 delay_pipeline[48][8]          0.00  
+    0:01:34  107766.4      0.00       0.0     851.5 delay_pipeline[8][2]           0.00  
+    0:01:35  107263.2      0.00       0.0     673.6 delay_pipeline[38][12]         0.00  
+    0:01:37  106744.5      0.00       0.0     503.5 delay_pipeline[111][1]         0.00  
+    0:01:37  106733.8      0.00       0.0     388.3 delay_pipeline[12][4]          0.00  
+    0:01:39  106299.2      0.00       0.0     239.2 delay_pipeline[25][8]          0.00  
+    0:01:40  105827.3      0.00       0.0     143.6 delay_pipeline[93][12]         0.00  
+    0:01:40  105901.8      0.00       0.0      96.2 delay_pipeline[86][0]          0.00  
+    0:01:40  105901.8      0.00       0.0      49.1 delay_pipeline[44][8]          0.00  
+    0:01:41  105752.8      0.00       0.0       5.4 delay_pipeline[21][9]          0.00  
+    0:01:42  105827.3      0.00       0.0       0.0 delay_pipeline[63][13]         0.00  
 
 
   Beginning Critical Range Optimization
@@ -1133,7 +1047,7 @@ Information: Updating design information... (UID-85)
    ELAPSED            WORST NEG   SETUP    DESIGN                              MIN DELAY 
     TIME      AREA      SLACK     COST    RULE COST         ENDPOINT             COST    
   --------- --------- --------- --------- --------- ------------------------- -----------
-    0:01:18  101572.4      0.00       0.0       0.0                                0.00  
+    0:01:42  105827.3      0.00       0.0       0.0                                0.00  
 
 
   Beginning Area-Recovery Phase  (cleanup)
@@ -1143,25 +1057,32 @@ Information: Updating design information... (UID-85)
    ELAPSED            WORST NEG   SETUP    DESIGN                              MIN DELAY 
     TIME      AREA      SLACK     COST    RULE COST         ENDPOINT             COST    
   --------- --------- --------- --------- --------- ------------------------- -----------
-    0:01:18  101572.4      0.00       0.0       0.0                                0.00  
-    0:01:18  101572.4      0.00       0.0       0.0                                0.00  
-    0:01:30  100295.8      0.00       0.0       0.0                                0.00  
-    0:01:32   99763.0      0.00       0.0       0.0                                0.00  
-    0:01:34   99631.1      0.00       0.0       0.0                                0.00  
-    0:01:35   99602.4      0.00       0.0       0.0                                0.00  
-    0:01:35   99573.9      0.00       0.0       0.0                                0.00  
-    0:01:36   99561.4      0.00       0.0       0.0                                0.00  
-    0:01:36   99543.9      0.00       0.0       0.0                                0.00  
-    0:01:36   99541.2      0.00       0.0       0.0                                0.00  
-    0:01:36   99540.7      0.00       0.0       0.0                                0.00  
-    0:01:36   99540.7      0.00       0.0       0.0                                0.00  
-    0:01:37   99540.7      0.00       0.0       0.0                                0.00  
-    0:01:51   76614.9      0.00       0.0       0.0                                0.00  
-    0:01:51   76614.9      0.00       0.0       0.0                                0.00  
-    0:01:51   76614.9      0.00       0.0       0.0                                0.00  
-    0:01:51   76614.9      0.00       0.0       0.0                                0.00  
-    0:01:51   76614.9      0.00       0.0       0.0                                0.00  
-    0:01:51   76614.9      0.00       0.0       0.0                                0.00  
+    0:01:42  105827.3      0.00       0.0       0.0                                0.00  
+    0:01:42  105827.3      0.00       0.0       0.0                                0.00  
+    0:02:09  104596.8      0.00       0.0       0.0                                0.00  
+    0:02:12  104118.0      0.00       0.0       0.0                                0.00  
+    0:02:13  104004.9      0.00       0.0       0.0                                0.00  
+    0:02:14  103925.7      0.00       0.0       0.0                                0.00  
+    0:02:14  103918.0      0.00       0.0       0.0                                0.00  
+    0:02:14  103914.2      0.00       0.0       0.0                                0.00  
+    0:02:14  103911.0      0.00       0.0       0.0                                0.00  
+    0:02:15  103906.5      0.00       0.0       0.0                                0.00  
+    0:02:15  103903.1      0.00       0.0       0.0                                0.00  
+    0:02:15  103899.9      0.00       0.0       0.0                                0.00  
+    0:02:15  103896.1      0.00       0.0       0.0                                0.00  
+    0:02:16  103893.7      0.00       0.0       0.0                                0.00  
+    0:02:16  103891.1      0.00       0.0       0.0                                0.00  
+    0:02:16  103889.2      0.00       0.0       0.0                                0.00  
+    0:02:16  103887.4      0.00       0.0       0.0                                0.00  
+    0:02:16  103885.5      0.00       0.0       0.0                                0.00  
+    0:02:16  103885.5      0.00       0.0       0.0                                0.00  
+    0:02:17  103885.5      0.00       0.0       0.0                                0.00  
+    0:02:32   85814.3      0.00       0.0       0.0                                0.00  
+    0:02:32   85814.3      0.00       0.0       0.0                                0.00  
+    0:02:32   85814.3      0.00       0.0       0.0                                0.00  
+    0:02:32   85814.3      0.00       0.0       0.0                                0.00  
+    0:02:32   85814.3      0.00       0.0       0.0                                0.00  
+    0:02:32   85814.3      0.00       0.0       0.0                                0.00  
 
 
   Beginning Critical Range Optimization
@@ -1171,8 +1092,8 @@ Information: Updating design information... (UID-85)
    ELAPSED            WORST NEG   SETUP    DESIGN                              MIN DELAY 
     TIME      AREA      SLACK     COST    RULE COST         ENDPOINT             COST    
   --------- --------- --------- --------- --------- ------------------------- -----------
-    0:01:51   76614.9      0.00       0.0       0.0                                0.00  
-    0:01:52   76614.9      0.00       0.0       0.0                                0.00  
+    0:02:32   85814.3      0.00       0.0       0.0                                0.00  
+    0:02:34   85814.3      0.00       0.0       0.0                                0.00  
 
 
 Note: Symbol # after min delay cost means estimated hold TNS across all active scenarios 
@@ -1180,8 +1101,7 @@ Note: Symbol # after min delay cost means estimated hold TNS across all active s
 
   Optimization Complete
   ---------------------
-Warning: Design 'total_filter' contains 2 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
-     Net 'clock': 1873 load(s), 1 driver(s)
-     Net 'ctrl/clk_en': 1785 load(s), 1 driver(s)
+Warning: Design 'total_filter' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+     Net 'f16/clk': 3872 load(s), 1 driver(s)
 
 Thank you...
