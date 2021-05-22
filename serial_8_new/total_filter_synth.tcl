@@ -1,24 +1,28 @@
-#/***********************************************************/
-#/*   FILE        : tut_synth.tcl                          */
+#***********************************************************/
+#/*   FILE        : defaults.tcl                            */
 #/*   Description : Default Synopsys Design Compiler Script */
 #/*   Usage       : dc_shell -tcl_mode -f default.tcl       */
 #/*   You'll need to minimally set design_name & read files */
 #/***********************************************************/
+#set search_path [ list "./" "/afs/umich.edu/class/eecs470/lib/synopsys/" ]
+set search_path [ list "./" "/afs/umich.edu/user/s/u/sunsusan/Desktop/SC_FIR_hardware_syn/Nangate/" ]
+set target_library "NangateOpenCellLibrary.db"
+set link_library [concat  "*" $target_library]
+
+#/***********************************************************/
+#/* Set some flags to suppress warnings we don't care about */
+set suppress_errors [concat $suppress_errors "UID-401"]
+suppress_message {"VER-130"}
 
 #/***********************************************************/
 #/* The following five lines must be updated for every      */
 #/* new design                                              */
 #/***********************************************************/
-
-read_file -f sverilog [list "total_filter.v"]
-
+analyze -f sverilog [list "total_filter.v"]
+elaborate total_filter
 set design_name total_filter
 set clock_name clock
-set reset_name reset
-set CLK_PERIOD 1250
-#1041 = 62500/50
-
-
+set CLK_PERIOD 1330
 
 
 #/***********************************************************/
@@ -27,16 +31,13 @@ set CLK_PERIOD 1250
 #/* when synthesizing your final project.                   */
 #/***********************************************************/
 set SYN_DIR ./
-set search_path [ list "./" "/afs/umich.edu/user/s/u/sunsusan/Desktop/SC_FIR_hardware_syn/Nangate/" ]
-set target_library "NangateOpenCellLibrary.db"
-set link_library [concat  "*" $target_library]
 
 #/***********************************************************/
 #/* Set some flags for optimisation */
 
-# set compile_top_all_paths "true"
-# set auto_wire_load_selection "false"
-
+set compile_top_all_paths "true"
+set auto_wire_load_selection "true"
+set compile_seqmap_synchronous_extraction "true"
 
 #/***********************************************************/
 #/*  Clk Periods/uncertainty/transition                     */
@@ -68,7 +69,7 @@ set AVG_FANOUT_LOAD 10
 #/*BASIC_INPUT = cb18os120_tsmc_max/nd02d1/A1
 #BASIC_OUTPUT = cb18os120_tsmc_max/nd02d1/ZN*/
 
-set DRIVING_CELL dffacs1
+set DRIVING_CELL DFF_X1
 
 #/* DONT_USE_LIST = {   } */
 
@@ -86,26 +87,13 @@ set sys_clk $clock_name
 set netlist_file [format "%s%s"  [format "%s%s"  $SYN_DIR $design_name] ".vg"]
 set ddc_file [format "%s%s"  [format "%s%s"  $SYN_DIR $design_name] ".ddc"]
 set rep_file [format "%s%s"  [format "%s%s"  $SYN_DIR $design_name] ".rep"]
-set power_file [format "%s%s"  [format "%s%s"  $SYN_DIR $design_name] ".power"]
 set dc_shell_status [ set chk_file [format "%s%s"  [format "%s%s"  $SYN_DIR $design_name] ".chk"] ]
 
 #/* if we didnt find errors at this point, run */
 if {  $dc_shell_status != [list] } {
-  current_design $design_name
-#   set_tlu_plus_files
-#   # Then create your milkyway database
-#   define_design_lib WORK -path ./work;
- 
-# # create milky way database 
-#   set mw_design_library test_milkyway
- 
-#   create_mw_lib  -mw_reference_library $mw_design_library $mw_design_library 
-#   open_mw_lib $mw_design_library
- 
-  # check_tlu_plus_files
-  # check_library
+   current_design $design_name
   link
-  set_wire_load_model -name $WIRE_LOAD -lib $LOGICLIB $design_name
+#  set_wire_load_model -name $WIRE_LOAD -lib $LOGICLIB $design_name
   set_wire_load_mode top
   set_fix_multiple_port_nets -outputs -buffer_constants
   create_clock -period $CLK_PERIOD -name $sys_clk [find port $sys_clk]
@@ -120,9 +108,6 @@ if {  $dc_shell_status != [list] } {
   set_input_delay $AVG_INPUT_DELAY -clock $sys_clk [all_inputs]
   remove_input_delay -clock $sys_clk [find port $sys_clk]
   set_output_delay $AVG_OUTPUT_DELAY -clock $sys_clk [all_outputs]
-  set_dont_touch $reset_name
-  set_resistance 0 $reset_name
-  set_drive 0 $reset_name
   set_critical_range $CRIT_RANGE [current_design]
   set_max_delay $CLK_PERIOD [all_outputs]
   set MAX_FANOUT $MAX_FANOUT
@@ -130,23 +115,17 @@ if {  $dc_shell_status != [list] } {
   uniquify
   ungroup core -flatten
   redirect $chk_file { check_design }
-  # saif_map -start 
-  # set_power_prediction
-  compile -map_effort low
-  # compile_ultra -no_autoungroup 
-#   report_power
-#   write -hier -format verilog -output $netlist_file $design_name
-#   write -hier -format ddc -output $ddc_file $design_name
-  redirect $power_file { report_power }
-  report_power -verbose -hierarchy -levels 2 > ./power2.out
-  # report_power
-  # redirect -append $rep_file { report_area }
-#   redirect -append $rep_file { report_timing -max_paths 2 -input_pins -nets -transition_time -nosplit }
-#   redirect -append $rep_file { report_constraint -max_delay -verbose -nosplit }
-#   remove_design -all
-#   read_file -format verilog $netlist_file
-#   current_design $design_name
-#   redirect -append $rep_file { report_reference -nosplit }
+  compile -map_effort medium
+  write -hier -format verilog -output $netlist_file $design_name
+  write -hier -format ddc -output $ddc_file $design_name
+  redirect $rep_file { report_design -nosplit }
+  redirect -append $rep_file { report_area }
+  redirect -append $rep_file { report_timing -max_paths 2 -input_pins -nets -transition_time -nosplit }
+  redirect -append $rep_file { report_constraint -max_delay -verbose -nosplit }
+  remove_design -all
+  read_file -format verilog $netlist_file
+  current_design $design_name
+  redirect -append $rep_file { report_reference -nosplit }
   quit
 } else {
    quit

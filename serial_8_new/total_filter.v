@@ -25,24 +25,24 @@ module total_filter(
     input   clock; 
     input   clk_enable; 
     input   reset; 
-    input   signed [8:0] filter_in;        //sfix15_En14
-    output  signed [24:0] filter_out [15:0]; //sfix37_En32
+    input   signed [7:0] filter_in;        //sfix15_En14
+    output  signed [22:0] filter_out [15:0]; //sfix37_En32
 
-    reg     signed [8:0] delay_pipeline [0:118] ; // sfix13_En12
-    wire    phase_49; // boolean
+    reg     signed [7:0] delay_pipeline [0:118] ; // sfix13_En12
+    wire    phase_46; // boolean
 
-    control ctrl(.clock(clock),.reset(reset),.filter_in(filter_in),.phase_49(phase_49),.out(delay_pipeline));
-    filterbank_core core(.clock(clock),.clk_enable(clk_enable),.reset(reset), .filter_in(filter_in), .delay_pipeline(delay_pipeline), .filter_out(filter_out),.phase_49(phase_49));
+    control ctrl(.clock(clock),.reset(reset),.filter_in(filter_in),.phase_46(phase_46),.out(delay_pipeline));
+    filterbank_core core(.clock(clock),.clk_enable(clk_enable),.reset(reset), .filter_in(filter_in), .delay_pipeline(delay_pipeline), .filter_out(filter_out),.phase_46(phase_46));
 
 endmodule
 
 module control  (
 	input  clock, reset,
-  	input  signed [8:0] filter_in,        //sfix15_En14
-	input  wire phase_49,
-	output wire [8:0] out [0:118]
+  	input  signed [7:0] filter_in,        //sfix15_En14
+	input  wire phase_46,
+	output wire [7:0] out [0:118]
 );
-  	reg     signed [8:0] registers [0:118] ; // sfix13_En12
+  	reg     signed [7:0] registers [0:118] ; // sfix13_En12
 	assign out[0] = registers[0];
 	assign out[1] = registers[1];
 	assign out[2] = registers[2];
@@ -164,7 +164,7 @@ module control  (
 	assign out[118] = registers[118];
   
   logic clk_en;
-  assign clk_en = clock & phase_49;
+  assign clk_en = clock & phase_46;
 
 	always_ff @(posedge clk_en) begin
 		if (reset == 1) begin
@@ -179,13 +179,13 @@ endmodule
 
 module filterbank_core(
   input clock,clk_enable,reset,
-  input signed [8:0] filter_in,        //sfix15_En14
-  input  signed [8:0] delay_pipeline [0:118], // sfix14_En13
-  output  signed [24:0] filter_out [15:0], //sfix37_En32
-  output wire phase_49
+  input signed [7:0] filter_in,        //sfix15_En14
+  input  signed [7:0] delay_pipeline [0:118], // sfix14_En13
+  output  signed [22:0] filter_out [15:0], //sfix37_En32
+  output wire phase_46
 );
 
-  filter1 f1(.clk(clock), .clk_enable(clk_enable), .reset(reset), .filter_in(filter_in), .filter_out(filter_out[0]), .delay_pipeline(delay_pipeline), .phase_49(phase_49));
+  filter1 f1(.clk(clock), .clk_enable(clk_enable), .reset(reset), .filter_in(filter_in), .filter_out(filter_out[0]), .delay_pipeline(delay_pipeline), .phase_46(phase_46));
   filter2 f2(.clk(clock), .clk_enable(clk_enable), .reset(reset), .filter_in(filter_in), .filter_out(filter_out[1]), .delay_pipeline(delay_pipeline));
   filter3 f3(.clk(clock), .clk_enable(clk_enable), .reset(reset), .filter_in(filter_in), .filter_out(filter_out[2]), .delay_pipeline(delay_pipeline));
   filter4 f4(.clk(clock), .clk_enable(clk_enable), .reset(reset), .filter_in(filter_in), .filter_out(filter_out[3]), .delay_pipeline(delay_pipeline));

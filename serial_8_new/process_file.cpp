@@ -26,7 +26,7 @@ int main (int argc, char *argv[]) {
             }
             continue;
         }   
-        if(line == "  reg  signed [8:0] delay_pipeline [0:118] ; // sfix9_En8"){
+        if(line == "  reg  signed [7:0] delay_pipeline [0:118] ; // sfix8_En7"){
             continue;
         }     
         new_file << line << endl;
@@ -35,8 +35,8 @@ int main (int argc, char *argv[]) {
             new_file<<"                delay_pipeline,"<<endl;
         }
         
-        if(line == "  input   signed [8:0] filter_in; //sfix9_En8"){
-            new_file<<"  input   signed [8:0] delay_pipeline [0:118] ; // sfix9_En8"<<endl;
+        if(line == "  input   signed [7:0] filter_in; //sfix8_En7"){
+            new_file<<"  input   signed [7:0] delay_pipeline [0:118] ; // sfix8_En7"<<endl;
         }
     }
     new_file.close();
